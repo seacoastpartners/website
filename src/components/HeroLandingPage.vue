@@ -1,7 +1,7 @@
 <template>
   <div class="hero-section">
     <div class="hero-text-container">
-      <h1 class="hero-text">Build beauty</h1>
+      <h1 class="hero-text">Build beautiful</h1>
       <p class="hero-paragraph">
         We are a mission driven team of three East Coast-based software product
         builders.
@@ -24,11 +24,12 @@
   display: flex;
   flex-direction: column;
   height: 675px;
-  background-image: url('../assets/brian-yurasits-XKDSu-qvYqU-unsplash.jpg');
+  background-image: url('../assets/chad-greiter--0gBnnMdQPw-unsplash.jpg');
   background-size: cover;
   background-position: center;
   margin-top: -75px;
-  justify-content: end;
+  justify-content: flex-end;
+  padding: 12px 100px 100px 100px;
 }
 
 .hero-text-container {
@@ -40,7 +41,7 @@
 
 .hero-text {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 64px;
   margin: 0px;
 }
 
@@ -52,5 +53,15 @@
   display: flex;
   flex-direction: row;
   gap: 12px;
+}
+
+@media (max-width: 830px) {
+  .hero-section {
+    padding: 12px 12px 30px 12px;
+  }
+
+  .hero-text {
+    font-size: 48px;
+  }
 }
 </style>

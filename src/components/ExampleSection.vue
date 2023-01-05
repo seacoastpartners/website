@@ -18,6 +18,7 @@ import WorkTile from './WorkTile.vue'
 <style scoped>
 .example-section {
   max-width: 100%;
+  padding: 12px 100px 12px 100px;
 }
 
 .example-section-heading {
@@ -29,5 +30,11 @@ import WorkTile from './WorkTile.vue'
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+@media (max-width: 830px) {
+  .example-section {
+    padding: 12px;
+  }
 }
 </style>

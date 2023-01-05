@@ -10,7 +10,7 @@ import HomeView from './views/HomeView.vue'
 
 <style>
 body {
-  background-color: #0c0c0c;
+  background-color: rgb(12, 12, 12);
   margin: 0px;
 }
 

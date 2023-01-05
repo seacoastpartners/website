@@ -41,6 +41,7 @@ function handleScroll() {
   justify-content: space-between;
   align-items: baseline;
   padding: 12px 100px 12px 100px;
+
   transition: background-color 0.3s;
 }
 

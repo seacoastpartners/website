@@ -11,6 +11,7 @@
 .footer-container {
   max-width: 100%;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   height: fit-content;
   justify-content: center;
