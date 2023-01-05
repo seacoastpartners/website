@@ -1,7 +1,6 @@
 <template>
   <NavigationBar />
   <HeroLandingPage />
-
   <ExampleSection />
   <DividerArrow />
   <FooterComponent />
