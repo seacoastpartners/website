@@ -14,7 +14,6 @@
 
 <script setup>
 import NavigationBar from '@/components/NavigationBar.vue'
-
 ;(() => {
   if (window.localStorage) {
     // If there is no item as 'reload'

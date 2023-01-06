@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <LogoComponent />
-    <ButtonComponent />
+    <ButtonComponent text="Get Started" />
   </div>
 </template>
 
@@ -46,8 +46,8 @@ function handleScroll() {
 }
 
 .nav-bar-scrolled {
-  background-color: rgba(12, 12, 12, 0.5);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #424242);
+  backdrop-filter: blur(12px);
 }
 
 @media (max-width: 830px) {

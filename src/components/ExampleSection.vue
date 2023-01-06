@@ -18,7 +18,11 @@ import WorkTile from './WorkTile.vue'
 <style scoped>
 .example-section {
   max-width: 100%;
-  padding: 12px 100px 12px 100px;
+  background-image: url('../assets/example-section-bg.png');
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+  padding: 12px 100px 100px 100px;
 }
 
 .example-section-heading {
@@ -34,7 +38,7 @@ import WorkTile from './WorkTile.vue'
 
 @media (max-width: 830px) {
   .example-section {
-    padding: 12px;
+    padding: 40px 12px 80px 12px;
   }
 }
 </style>
