@@ -1,9 +1,9 @@
 <template>
   <NavigationBar />
   <HeroLandingPage />
-  <CTASection />
   <ExampleSection />
   <DividerArrow />
+  <AboutUsSection />
   <FooterComponent />
 </template>
 
@@ -13,7 +13,7 @@ import DividerArrow from '@/components/DividerArrow.vue'
 import HeroLandingPage from '@/components/HeroLandingPage.vue'
 import ExampleSection from '@/components/ExampleSection.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import CTASection from '@/components/CTASection.vue'
+import AboutUsSection from '@/components/AboutUsSection.vue'
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

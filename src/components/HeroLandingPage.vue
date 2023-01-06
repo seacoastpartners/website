@@ -11,11 +11,14 @@
         <span><img src="../assets/flag.png" /> </span>All projects designed and
         engineered in the USA.
       </p>
+      <ButtonComponent text="Book Meeting" />
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import ButtonComponent from './ButtonComponent.vue'
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -59,7 +62,7 @@
 
 @media (max-width: 830px) {
   .hero-section {
-    padding: 12px 12px 30px 12px;
+    padding: 12px 12px 80px 12px;
   }
 
   .hero-text {

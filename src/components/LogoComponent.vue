@@ -23,6 +23,7 @@ function handleClick() {
   max-width: fit-content;
   font-size: 30px;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .logo-subscript {
