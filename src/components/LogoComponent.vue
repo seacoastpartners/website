@@ -1,11 +1,17 @@
 <template>
-  <div class="logo-container">
+  <div @click="handleClick" class="logo-container">
     <div class="logo">STP</div>
     <div class="logo-subscript">SEACOAST TECHNICAL PARTNERS</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import router from '@/router'
+
+function handleClick() {
+  router.push({ name: 'home' })
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

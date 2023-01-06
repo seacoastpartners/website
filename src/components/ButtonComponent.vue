@@ -1,8 +1,14 @@
 <template>
-  <div class="button">Get Started</div>
+  <div @click="handleClick" class="button">Get Started</div>
 </template>
 
-<script setup></script>
+<script setup>
+import router from '@/router'
+
+function handleClick() {
+  router.push({ name: 'form' })
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
