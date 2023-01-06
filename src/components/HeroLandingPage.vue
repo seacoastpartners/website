@@ -3,8 +3,9 @@
     <div class="hero-text-container">
       <h1 class="hero-text">Build beautiful</h1>
       <p class="hero-paragraph">
-        We are a mission driven team of three East Coast-based software product
-        builders.
+        We are a mission driven team of East Coast-based software product
+        builders. We know and use the bleeding edge in web technologies and have
+        started companies from scratch.
       </p>
       <p class="hero-second-paragraph">
         <span><img src="../assets/flag.png" /> </span>All projects designed and
@@ -52,6 +53,7 @@
 .hero-second-paragraph {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 12px;
 }
 

@@ -18,5 +18,6 @@ function handleClick() {
   font-weight: 300;
   border-bottom: 2px solid;
   border-color: rgb(17, 134, 52);
+  cursor: pointer;
 }
 </style>
