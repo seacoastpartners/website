@@ -27,8 +27,9 @@ import ButtonComponent from './ButtonComponent.vue'
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 675px;
-  background-image: url('../assets/chad-greiter--0gBnnMdQPw-unsplash.jpg');
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
+    url('../assets/chad-greiter--0gBnnMdQPw-unsplash.jpg');
   background-size: cover;
   background-position: center;
   margin-top: -75px;
@@ -38,15 +39,18 @@ import ButtonComponent from './ButtonComponent.vue'
 
 .hero-text-container {
   max-width: 90%;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 75px;
 }
 
 .hero-text {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 100px;
   margin: 0px;
+  width: fit-content;
 }
 
 .hero-paragraph {
@@ -66,7 +70,7 @@ import ButtonComponent from './ButtonComponent.vue'
   }
 
   .hero-text {
-    font-size: 48px;
+    font-size: 64px;
   }
 }
 </style>

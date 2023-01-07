@@ -8,7 +8,7 @@
 <style scoped>
 .divider {
   max-width: 100%;
-  height: 1px;
+  height: 10px;
   background-color: rgb(255, 255, 255);
   margin: 30px 100px 30px 100px;
 }

@@ -2,14 +2,13 @@
   <NavigationBar />
   <HeroLandingPage />
   <ExampleSection />
-  <DividerArrow />
   <AboutUsSection />
   <FooterComponent />
 </template>
 
 <script setup>
 import NavigationBar from '@/components/NavigationBar.vue'
-import DividerArrow from '@/components/DividerArrow.vue'
+
 import HeroLandingPage from '@/components/HeroLandingPage.vue'
 import ExampleSection from '@/components/ExampleSection.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
