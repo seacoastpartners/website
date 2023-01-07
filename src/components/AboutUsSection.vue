@@ -1,9 +1,11 @@
 <template>
   <div class="who-we-are-section">
-    <h2>Who we are</h2>
-    <PersonComponent name="Ian Herrington" />
-    <PersonComponent name="Chris Cali" />
-    <PersonComponent name="Shane Earley" />
+    <h2 class="about-section-heading">Who we are</h2>
+    <div class="who-we-are-tiles">
+      <PersonComponent name="Ian" image="chris-headshot.jpg" />
+      <PersonComponent name="Chris" image="chris-headshot.jpg" />
+      <PersonComponent name="Shane" image="chris-headshot.jpg" />
+    </div>
   </div>
 </template>
 
@@ -15,7 +17,25 @@ import PersonComponent from './PersonComponent.vue'
 <style scoped>
 .who-we-are-section {
   max-width: 100%;
-  padding: 12px 100px 100px 100px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
+    url('../assets/example-section-bg.png');
+  background-size: cover;
+  background-position: top;
+
+  padding: 40px 100px 100px 100px;
+}
+
+.who-we-are-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.about-section-heading {
+  margin: 0px 0px 80px 0px;
+  font-size: 48px;
 }
 
 @media (max-width: 830px) {

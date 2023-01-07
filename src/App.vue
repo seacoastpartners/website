@@ -10,7 +10,7 @@
 
 <style>
 body {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(0, 0, 0);
   margin: 0px;
 }
 

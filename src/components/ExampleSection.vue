@@ -18,15 +18,16 @@ import WorkTile from './WorkTile.vue'
 <style scoped>
 .example-section {
   max-width: 100%;
-  background-image: url('../assets/example-section-bg.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
+    url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  background-color: black;
-  padding: 12px 100px 100px 100px;
+  padding: 40px 100px 100px 100px;
 }
 
 .example-section-heading {
-  font-size: 36px;
+  font-size: 48px;
+  margin: 0px 0px 80px 0px;
 }
 
 .example-tiles {
@@ -34,6 +35,7 @@ import WorkTile from './WorkTile.vue'
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 
 @media (max-width: 830px) {

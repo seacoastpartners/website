@@ -1,7 +1,15 @@
 <template>
   <div class="person-container">
-    <div>{{ props.name }}</div>
-    <div>{{ props.image }}</div>
+    <a href="https://www.w3docs.com/" target="_blank">
+      <span class="link"></span>
+    </a>
+    <h3 class="name">{{ props.name }}</h3>
+    <img
+      class="image"
+      :src="require(`@/assets/${props.image}`)"
+      height="100"
+      width="100"
+    />
   </div>
 </template>
 
@@ -19,10 +27,31 @@ const props = defineProps({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .person-container {
-  width: 300px;
-  height: 300px;
-  border: 1px solid white;
-  background-color: aqua;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+}
+
+.name {
+  margin: 0;
+  font-size: 36px;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image {
   border-radius: 12px;
 }
 </style>

@@ -41,13 +41,15 @@ function handleScroll() {
   justify-content: space-between;
   align-items: baseline;
   padding: 12px 100px 12px 100px;
-
   transition: background-color 0.3s;
 }
 
 .nav-bar-scrolled {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), #424242);
-  backdrop-filter: blur(12px);
+  background-image: url('../assets/example-section-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  backdrop-filter: saturate(80%) blur(12px);
 }
 
 @media (max-width: 830px) {
