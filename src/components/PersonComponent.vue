@@ -1,6 +1,6 @@
 <template>
   <div class="person-container">
-    <a href="https://www.w3docs.com/" target="_blank">
+    <a :href="props.url" target="_blank">
       <span class="link"></span>
     </a>
     <h3 class="name">{{ props.name }}</h3>

@@ -28,6 +28,7 @@ import ButtonComponent from './ButtonComponent.vue'
   display: flex;
   flex-direction: column;
   height: 100vh;
+  min-height: 500px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
     url('../assets/chad-greiter--0gBnnMdQPw-unsplash.jpg');
   background-size: cover;
@@ -35,6 +36,7 @@ import ButtonComponent from './ButtonComponent.vue'
   margin-top: -75px;
   justify-content: flex-end;
   padding: 12px 100px 100px 100px;
+  transition: all 0.3s;
 }
 
 .hero-text-container {
@@ -44,6 +46,9 @@ import ButtonComponent from './ButtonComponent.vue'
   flex-direction: column;
   gap: 12px;
   margin-bottom: 75px;
+  animation: fade-in ease-in 1;
+  animation-fill-mode: both;
+  animation-duration: 1s;
 }
 
 .hero-text {
@@ -71,6 +76,15 @@ import ButtonComponent from './ButtonComponent.vue'
 
   .hero-text {
     font-size: 64px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>

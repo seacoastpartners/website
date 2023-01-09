@@ -1,6 +1,6 @@
 <template>
   <div class="footer-container">
-    <div class="footer">2023 STP LLC</div>
+    <div class="footer">© 2023 Seacoast Technical Partners, LLC</div>
   </div>
 </template>
 
