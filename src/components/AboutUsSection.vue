@@ -2,9 +2,21 @@
   <div class="who-we-are-section">
     <h2 class="about-section-heading">Who we are</h2>
     <div class="who-we-are-tiles">
-      <PersonComponent name="Ian" image="chris-headshot.jpg" />
-      <PersonComponent name="Chris" image="chris-headshot.jpg" />
-      <PersonComponent name="Shane" image="chris-headshot.jpg" />
+      <PersonComponent
+        name="Ian"
+        image="ian-headshot.png"
+        url="https://ianherri.github.io/"
+      />
+      <PersonComponent
+        name="Chris"
+        image="chris-headshot.jpg"
+        url="https://github.com/ccali11"
+      />
+      <PersonComponent
+        name="Shane"
+        image="shane.jpeg"
+        url="https://github.com/shanejearley"
+      />
     </div>
   </div>
 </template>
@@ -21,7 +33,6 @@ import PersonComponent from './PersonComponent.vue'
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-
   padding: 40px 100px 100px 100px;
 }
 

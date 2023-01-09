@@ -1,11 +1,16 @@
 <template>
   <div class="example-section">
-    <h2 class="example-section-heading">Some of our work</h2>
+    <div class="example-section-heading">
+      <h2 class="example-section-h2">Some of our work</h2>
+    </div>
+
     <div class="example-tiles">
-      <WorkTile />
-      <WorkTile />
-      <WorkTile />
-      <WorkTile />
+      <WorkTile
+        title="HeyThanks"
+        image="heythanks-image.png"
+        url="https://www.heythanks.io/"
+        description="A Shopify application for tipping fulfillment workers"
+      />
     </div>
   </div>
 </template>
@@ -26,8 +31,17 @@ import WorkTile from './WorkTile.vue'
 }
 
 .example-section-heading {
-  font-size: 48px;
   margin: 0px 0px 80px 0px;
+}
+
+.example-section-h2 {
+  font-size: 48px;
+  margin: 0px 0px 12px 0px;
+}
+.example-section-h3 {
+  margin: 0px 0px 8px 0px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .example-tiles {
