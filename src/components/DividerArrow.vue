@@ -1,5 +1,7 @@
 <template>
-  <div class="divider"></div>
+  <div class="divider">
+    <div class="divider-line"></div>
+  </div>
 </template>
 
 <script setup></script>
@@ -8,9 +10,18 @@
 <style scoped>
 .divider {
   max-width: 100%;
-  height: 10px;
-  background-color: rgb(255, 255, 255);
-  margin: 30px 100px 30px 100px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px 30px 30px;
+}
+
+.divider-line {
+  background-color: white;
+  height: 1px;
+  width: 300px;
 }
 
 @media (max-width: 830px) {

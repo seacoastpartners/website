@@ -3,9 +3,8 @@
     <div class="hero-text-container">
       <h1 class="hero-text">Build beautiful</h1>
       <p class="hero-paragraph">
-        We are a mission driven team of East Coast-based software product
-        builders. We know and use the bleeding edge in web technologies and have
-        started companies from scratch.
+        Seacoast Technical Partners is a team of East Coast located software
+        product builders. We know and use the bleeding edge in web technologies.
       </p>
       <p class="hero-second-paragraph">
         <span><img src="../assets/flag.png" /> </span>All projects designed and

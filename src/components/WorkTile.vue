@@ -1,13 +1,5 @@
 <template>
-  <div
-    class="work-tile"
-    :style="{
-      'background-image':
-        'linear-gradient(to top, rgba(0, 0, 0, 0), #000000), url(\'' +
-        imageRef +
-        '\')',
-    }"
-  >
+  <div class="work-tile">
     <a :href="props.url" target="_blank">
       <span class="link"></span>
     </a>
@@ -17,9 +9,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue'
-
-const imageRef = ref(require(`@/assets/${props.image}`))
+import { defineProps } from 'vue'
 
 const props = defineProps({
   title: String,
@@ -34,21 +24,21 @@ const props = defineProps({
 <style scoped>
 .work-tile {
   border-radius: 12px;
-  padding: 12px 12px 20px 20px;
-  background-size: cover;
-  background-position: top;
+  padding: 20px 20px 20px 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid white;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: left;
   object-fit: cover;
-  height: 250px;
+  height: auto;
+  width: 200px;
 }
 
 .work-title {
   margin: 0;
-  font-size: 36px;
-  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  font-size: 24px;
 }
 
 .link {
@@ -58,5 +48,11 @@ const props = defineProps({
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.work-tile:hover {
+  background-color: rgba(0, 0, 0, 0.628);
+
+  transition: all 0.3s;
 }
 </style>

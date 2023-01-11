@@ -7,7 +7,7 @@
     <div class="example-tiles">
       <WorkTile
         title="HeyThanks"
-        image="heythanks-image.png"
+        image="heythanks-text.png"
         url="https://www.heythanks.io/"
         description="A Shopify application for tipping fulfillment workers"
       />
@@ -27,7 +27,7 @@ import WorkTile from './WorkTile.vue'
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  padding: 40px 100px 100px 100px;
+  padding: 100px 100px 100px 100px;
 }
 
 .example-section-heading {
@@ -54,7 +54,7 @@ import WorkTile from './WorkTile.vue'
 
 @media (max-width: 830px) {
   .example-section {
-    padding: 40px 12px 80px 12px;
+    padding: 80px 12px 80px 12px;
   }
 }
 </style>

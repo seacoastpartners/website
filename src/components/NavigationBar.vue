@@ -32,6 +32,7 @@ function handleScroll() {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-bar {
+  visibility: hidden;
   max-width: 100%;
   position: sticky;
   top: 0;
@@ -41,12 +42,12 @@ function handleScroll() {
   justify-content: space-between;
   align-items: baseline;
   padding: 12px 100px 12px 100px;
-  transition: all 0.3s;
 }
 
 .nav-bar-scrolled {
+  visibility: visible;
   backdrop-filter: saturate(80%) blur(12px);
-  border-bottom: 1px solid rgb(17, 134, 52);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 830px) {

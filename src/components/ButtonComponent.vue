@@ -20,17 +20,16 @@ function handleClick() {
 <style scoped>
 .button {
   width: fit-content;
-  font-size: 16px;
-  font-weight: 900;
-  background-color: rgb(17, 134, 52);
+  font-size: 14px;
+  font-weight: 500;
   padding: 4px 8px 4px 8px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: 1px solid;
   transition: all 0.25s;
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(12px);
+  border: 1px solid white;
 }
 </style>

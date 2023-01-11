@@ -33,7 +33,7 @@ import PersonComponent from './PersonComponent.vue'
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  padding: 40px 100px 100px 100px;
+  padding: 100px 100px 100px 100px;
 }
 
 .who-we-are-tiles {
@@ -51,7 +51,7 @@ import PersonComponent from './PersonComponent.vue'
 
 @media (max-width: 830px) {
   .who-we-are-section {
-    padding: 40px 12px 80px 12px;
+    padding: 80px 12px 80px 12px;
   }
 }
 </style>
