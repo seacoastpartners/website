@@ -34,7 +34,7 @@ import ButtonComponent from './ButtonComponent.vue'
   background-position: center;
   margin-top: -75px;
   justify-content: flex-end;
-  padding: 12px 100px 100px 100px;
+  padding: 12px 18% 100px 18%;
   transition: all 0.3s;
 }
 

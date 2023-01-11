@@ -33,7 +33,7 @@ import PersonComponent from './PersonComponent.vue'
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  padding: 100px 100px 100px 100px;
+  padding: 100px 18% 100px 18%;
 }
 
 .who-we-are-tiles {

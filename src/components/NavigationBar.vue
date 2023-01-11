@@ -41,7 +41,7 @@ function handleScroll() {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  padding: 12px 100px 12px 100px;
+  padding: 12px 18% 12px 18%;
 }
 
 .nav-bar-scrolled {
