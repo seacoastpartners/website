@@ -33,7 +33,7 @@ import PersonComponent from './PersonComponent.vue'
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  padding: 100px 18% 100px 18%;
+  padding: 60px 18% 60px 18%;
 }
 
 .who-we-are-tiles {
@@ -41,17 +41,22 @@ import PersonComponent from './PersonComponent.vue'
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .about-section-heading {
   margin: 0px 0px 80px 0px;
   font-size: 48px;
+  font-family: 'Times New Roman', serif;
 }
 
 @media (max-width: 830px) {
   .who-we-are-section {
-    padding: 80px 12px 80px 12px;
+    padding: 40px 12px 40px 12px;
+  }
+
+  .about-section-heading {
+    font-size: 36px;
   }
 }
 </style>

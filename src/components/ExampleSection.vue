@@ -23,11 +23,9 @@ import WorkTile from './WorkTile.vue'
 <style scoped>
 .example-section {
   max-width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
-    url('../assets/example-section-bg.png');
-  background-size: cover;
-  background-position: top;
-  padding: 100px 18% 100px 18%;
+  background-color: rgb(0, 0, 0);
+
+  padding: 60px 18% 60px 18%;
 }
 
 .example-section-heading {
@@ -37,6 +35,9 @@ import WorkTile from './WorkTile.vue'
 .example-section-h2 {
   font-size: 48px;
   margin: 0px 0px 12px 0px;
+  width: fit-content;
+  font-weight: 900;
+  font-family: 'Times New Roman', serif;
 }
 .example-section-h3 {
   margin: 0px 0px 8px 0px;
@@ -49,12 +50,16 @@ import WorkTile from './WorkTile.vue'
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: left;
 }
 
 @media (max-width: 830px) {
   .example-section {
-    padding: 80px 12px 80px 12px;
+    padding: 40px 12px 40px 12px;
+  }
+
+  .example-section-h2 {
+    font-size: 36px;
   }
 }
 </style>

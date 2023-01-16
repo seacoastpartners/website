@@ -23,16 +23,14 @@ const props = defineProps({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .work-tile {
-  border-radius: 12px;
   padding: 20px 20px 20px 20px;
-  backdrop-filter: blur(12px);
-  border: 1px solid white;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: left;
   object-fit: cover;
   height: auto;
+  background-color: antiquewhite;
   width: 200px;
 }
 

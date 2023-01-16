@@ -1,7 +1,7 @@
 <template>
   <div @click="handleClick" class="logo-container">
-    <div class="logo">STP</div>
-    <div class="logo-subscript">SEACOAST TECHNICAL PARTNERS</div>
+    <div class="logo">STP.</div>
+    <!-- <div class="logo-subscript">SEACOAST TECHNICAL PARTNERS</div> -->
   </div>
 </template>
 
@@ -18,10 +18,14 @@ function handleClick() {
 .logo-container {
   display: flex;
   flex-direction: column;
+  align-items: left;
+  color: rgb(11, 156, 18);
+  background-color: black;
+  padding: 6px 12px 6px 12px;
 }
 .logo {
   max-width: fit-content;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 900;
   cursor: pointer;
 }

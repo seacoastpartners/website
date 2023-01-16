@@ -20,16 +20,16 @@ function handleClick() {
 <style scoped>
 .button {
   width: fit-content;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 4px 8px 4px 8px;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 6px 12px 6px 12px;
   cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid;
+  background-color: black;
+
   transition: all 0.25s;
 }
 
 .button:hover {
-  border: 1px solid white;
+  color: green;
 }
 </style>

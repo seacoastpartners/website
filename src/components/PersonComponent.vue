@@ -27,7 +27,6 @@ const props = defineProps({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .person-container {
-  border-radius: 12px;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -49,9 +48,5 @@ const props = defineProps({
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.image {
-  border-radius: 12px;
 }
 </style>

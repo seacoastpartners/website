@@ -1,13 +1,11 @@
 <template>
   <div class="nav-bar">
     <LogoComponent />
-    <ButtonComponent text="Get Started" />
   </div>
 </template>
 
 <script setup>
 import LogoComponent from './LogoComponent.vue'
-import ButtonComponent from './ButtonComponent.vue'
 
 import { onMounted, onUnmounted } from 'vue'
 
@@ -32,23 +30,21 @@ function handleScroll() {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-bar {
-  visibility: hidden;
+  /* visibility: hidden; */
   max-width: 100%;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
   padding: 12px 18% 12px 18%;
 }
 
-.nav-bar-scrolled {
+/* .nav-bar-scrolled {
   visibility: visible;
   backdrop-filter: saturate(80%) blur(12px);
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 @media (max-width: 830px) {
   .nav-bar {
