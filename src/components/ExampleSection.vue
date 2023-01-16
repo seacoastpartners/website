@@ -9,7 +9,19 @@
         title="HeyThanks"
         image="heythanks-text.png"
         url="https://www.heythanks.io/"
-        description="A Shopify application for tipping fulfillment workers"
+        description="A Shopify application for tipping fulfillment workers."
+      />
+      <WorkTile
+        title="VitalView Technologies"
+        image=""
+        url="https://ideacenter.nd.edu/commercialization-engine/startups/vitalview/"
+        description="A smart health technology company that aims to seamlessly give people a greater understanding of their overall health."
+      />
+      <WorkTile
+        title="Otter Therapies"
+        image=""
+        url="https://ideacenter.nd.edu/commercialization-engine/startups/otter-therapies/"
+        description="A platform that allows streamlined communication between all stakeholders involved in the special needs child's care, ensuring that clinicians and parents are working toward the same goals."
       />
     </div>
   </div>
