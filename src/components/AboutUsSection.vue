@@ -6,16 +6,19 @@
         name="Ian"
         image="ian-headshot.png"
         url="https://ianherri.github.io/"
+        des="Ian is chief designer, front-end guru, and full time philosophizer."
       />
       <PersonComponent
         name="Chris"
         image="chris-headshot.jpg"
         url="https://github.com/ccali11"
+        des="Chris is chief executive, full stack guru, and part time philosophizer."
       />
       <PersonComponent
         name="Shane"
         image="shane.jpeg"
         url="https://github.com/shanejearley"
+        des="Shane is chief technical genius, full stack guru, and part time philosophizer."
       />
     </div>
   </div>

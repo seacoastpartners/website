@@ -3,13 +3,15 @@
     <a :href="props.url" target="_blank">
       <span class="link"></span>
     </a>
-    <h3 class="name">{{ props.name }}</h3>
+
     <img
       class="image"
       :src="require(`@/assets/${props.image}`)"
-      height="100"
-      width="100"
+      height="150"
+      width="150"
     />
+    <h3 class="name">{{ props.name }}</h3>
+    <p class="description">{{ props.des }}</p>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ const props = defineProps({
   image: String,
   book: String,
   url: String,
+  des: String,
 })
 </script>
 
@@ -30,15 +33,20 @@ const props = defineProps({
   padding: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   position: relative;
-  gap: 24px;
+  width: 150px;
+  gap: 12px;
 }
 
 .name {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.description {
   margin: 0;
-  font-size: 36px;
 }
 
 .link {

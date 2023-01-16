@@ -3,7 +3,10 @@
     <a :href="props.url" target="_blank">
       <span class="link"></span>
     </a>
-    <h3 class="work-title">{{ props.title }}</h3>
+    <h3 class="work-title">
+      {{ props.title
+      }}<span class="link-span"><img src="../assets/link.png" /></span>
+    </h3>
     <p>{{ props.description }}</p>
   </div>
 </template>
@@ -23,20 +26,21 @@ const props = defineProps({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .work-tile {
-  padding: 20px 20px 20px 20px;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: left;
   object-fit: cover;
   height: auto;
-  background-color: antiquewhite;
   width: 200px;
 }
 
 .work-title {
   margin: 0;
   font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .link {
@@ -46,6 +50,10 @@ const props = defineProps({
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.link-span {
+  padding-left: 12px;
 }
 
 .work-tile:hover {

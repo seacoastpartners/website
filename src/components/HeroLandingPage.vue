@@ -1,7 +1,7 @@
 <template>
   <div class="hero-section">
     <div class="hero-text-container">
-      <h1 class="hero-text">Build beautiful</h1>
+      <h1 class="hero-text-h1">Build beautiful</h1>
       <p class="hero-paragraph">
         <span class="inline-logo">Seacoast Technical Partners</span> is a team
         of East Coast located software product builders. We know and use the
@@ -45,17 +45,17 @@ import ButtonComponent from './ButtonComponent.vue'
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   animation: fade-in ease-in 1;
   animation-fill-mode: both;
   animation-duration: 1s;
 }
 
-.hero-text {
+.hero-text-h1 {
   font-weight: 900;
   font-size: 120px;
   line-height: 100px;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
   font-family: 'Times New Roman', serif;
   width: fit-content;
 }
@@ -93,9 +93,10 @@ import ButtonComponent from './ButtonComponent.vue'
     padding-right: 50px;
   }
 
-  .hero-text {
+  .hero-text-h1 {
     font-size: 64px;
     line-height: 70px;
+    margin: 0px 0px 10px 0px;
   }
 }
 
