@@ -1,7 +1,6 @@
 <template>
   <div @click="handleClick" class="logo-container">
-    <div class="logo">STP.</div>
-    <!-- <div class="logo-subscript">SEACOAST TECHNICAL PARTNERS</div> -->
+    <div class="logo">STP</div>
   </div>
 </template>
 
@@ -19,7 +18,7 @@ function handleClick() {
   display: flex;
   flex-direction: column;
   align-items: left;
-  color: rgb(11, 156, 18);
+  color: rgb(0, 123, 174);
   background-color: black;
   padding: 6px 12px 6px 12px;
 }

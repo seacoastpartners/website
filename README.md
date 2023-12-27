@@ -1,4 +1,6 @@
-# stp-site
+# Website
+
+> Seacoast Technical Partners website
 
 ## Project setup
 

@@ -25,11 +25,10 @@ function handleClick() {
   padding: 6px 12px 6px 12px;
   cursor: pointer;
   background-color: black;
-
   transition: all 0.25s;
 }
 
 .button:hover {
-  color: green;
+  color: rgb(0, 123, 174);
 }
 </style>
