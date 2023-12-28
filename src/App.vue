@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  padding: 60px 18% 60px 18%;
+  padding: 50px 18% 50px 18%;
 }
 
 h2 {
@@ -38,5 +38,10 @@ p {
   -moz-osx-font-smoothing: grayscale;
   color: #efeddd;
   margin: 0px;
+}
+
+.fade-in-on-scroll { 
+  opacity: 0; /* Start elements as invisible */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Increased duration for transform */
 }
 </style>

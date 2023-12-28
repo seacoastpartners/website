@@ -1,7 +1,7 @@
 <template>
   <section class="tech-stack-section">
     <!-- Text Section -->
-    <div class="text-section">
+    <div class="text-section fade-in-on-scroll">
       <h2>Our Expertise</h2>
       <p>
         We are a team of highly skilled developers with expertise in a wide
@@ -12,7 +12,7 @@
 
     <!-- Tech Stack Grid -->
     <div class="tech-grid">
-      <div class="tech-item" v-for="tech in technologies" :key="tech.name">
+      <div class="tech-item fade-in-on-scroll" v-for="tech in technologies" :key="tech.name">
         <img :src="tech.logo" :alt="tech.name" class="tech-logo"/>
         <span class="tech-name">{{ tech.name }}</span>
       </div>
@@ -21,6 +21,9 @@
 </template>
 
 <script setup>
+import useScrollEffects from "../composables/scrollEffects"
+
+const { runOnScroll } = useScrollEffects()
 const technologies = [
     { name: "AWS", logo: "/tech-stack-images/aws.png" },
     { name: "Google Cloud", logo: "/tech-stack-images/google-cloud.svg" },
@@ -33,6 +36,8 @@ const technologies = [
     { name: "Angular", logo: "./tech-stack-images/angular.webp" },
     { name: "MySql", logo: "./tech-stack-images/mysql.svg" },
 ]
+
+window.addEventListener("scroll", runOnScroll)
 </script>
 
 <style scoped>
