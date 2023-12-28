@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-section">
+  <section class="hero-section">
     <video
       class="hero-bg"
       playsinline
@@ -26,7 +26,7 @@
       </p>
       <ButtonComponent text="Book Meeting" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

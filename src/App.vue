@@ -15,11 +15,21 @@ body {
   flex-direction: column;
 }
 
+section {
+  padding: 60px 18% 60px 18%;
+}
+
 h2 {
   font-size: 48px;
   font-family: 'Times New Roman', serif;
   margin-bottom: 30px;
   font-weight: 900;
+}
+
+p {
+  font-size: 24px;
+  font-family: 'Times New Roman', serif;
+  line-height: 1.5;
 }
 
 #app {

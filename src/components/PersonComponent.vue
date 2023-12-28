@@ -43,7 +43,6 @@ const props = defineProps({
     justify-content: left;
     align-items: left;
     position: relative;
-    width: 150px;
     gap: 12px;
 }
 
@@ -63,5 +62,9 @@ const props = defineProps({
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.image {
+  border-radius: 50%;
 }
 </style>

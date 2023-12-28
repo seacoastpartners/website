@@ -1,15 +1,9 @@
 <template>
-  <div class="who-we-are-section">
+  <section class="who-we-are-section">
     <h2 class="about-section-heading">
       Who we are
     </h2>
     <div class="who-we-are-tiles">
-      <PersonComponent
-        name="Ian"
-        image="ian.png"
-        url="https://ianherri.github.io"
-        des="Ian is chief designer, front-end guru, and full time philosophizer."
-      />
       <PersonComponent
         name="Chris"
         image="chris.jpg"
@@ -22,8 +16,14 @@
         url="https://shanejearley.github.io"
         des="Shane is chief technical genius, full stack guru, and part time philosophizer."
       />
+      <PersonComponent
+        name="Ian"
+        image="ian.png"
+        url="https://ianherri.github.io"
+        des="Ian is chief designer, front-end guru, and full time philosophizer."
+      />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -37,24 +37,13 @@ import PersonComponent from "./PersonComponent.vue"
     url('../assets/example-section-bg.png');
   background-size: cover;
   background-position: top;
-  padding: 60px 18% 60px 18%;
 }
 
 .who-we-are-tiles {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
   justify-content: left;
-}
-
-@media (max-width: 830px) {
-  .who-we-are-section {
-    padding: 40px 12px 40px 12px;
-  }
-
-  .about-section-heading {
-    font-size: 36px;
-  }
+  width: 100%;
 }
 </style>

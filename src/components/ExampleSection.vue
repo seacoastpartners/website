@@ -1,5 +1,5 @@
 <template>
-  <div class="example-section">
+  <section class="example-section">
     <div class="example-section-heading">
       <h2 class="example-section-h2">
         Some of our work
@@ -27,7 +27,7 @@
         description="A platform that allows streamlined communication between all stakeholders involved in the special needs child's care, ensuring that clinicians and parents are working toward the same goals."
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -37,8 +37,6 @@ import WorkTile from "./WorkTile.vue"
 <style scoped>
 .example-section {
   max-width: 100%;
-  background-color: rgb(0, 0, 0);
-  padding: 60px 18% 60px 18%;
 }
 
 .example-section-heading {
@@ -57,11 +55,5 @@ import WorkTile from "./WorkTile.vue"
   flex-wrap: wrap;
   gap: 12px;
   justify-content: left;
-}
-
-@media (max-width: 830px) {
-  .example-section {
-    padding: 40px 12px 40px 12px;
-  }
 }
 </style>
