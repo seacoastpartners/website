@@ -1,18 +1,22 @@
 <template>
-  <div @click="handleClick" class="button">{{ props.text }}</div>
+  <div
+    class="button"
+    @click="handleClick"
+  >
+    {{ props.text }}
+  </div>
 </template>
 
 <script setup>
-import router from '@/router'
-
-import { defineProps } from 'vue'
+import router from "@/router"
+import { defineProps } from "vue"
 
 const props = defineProps({
-  text: String,
+    text: String,
 })
 
 function handleClick() {
-  router.push({ name: 'form' })
+    router.push({ name: "form" })
 }
 </script>
 

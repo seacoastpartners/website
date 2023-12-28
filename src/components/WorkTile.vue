@@ -1,25 +1,28 @@
 <template>
   <div class="work-tile">
-    <a :href="props.url" target="_blank">
-      <span class="link"></span>
+    <a
+      :href="props.url"
+      target="_blank"
+    >
+      <span class="link" />
     </a>
     <h3 class="work-title">
       {{ props.title
-      }}<span class="link-span"><img src="../assets/link.png" /></span>
+      }}<span class="link-span"><img src="../assets/link.png"></span>
     </h3>
     <p>{{ props.description }}</p>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue"
 
 const props = defineProps({
-  title: String,
-  subtitle: String,
-  description: String,
-  url: String,
-  image: String,
+    title: String,
+    subtitle: String,
+    description: String,
+    url: String,
+    image: String,
 })
 </script>
 

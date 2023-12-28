@@ -1,7 +1,9 @@
 <template>
   <div class="example-section">
     <div class="example-section-heading">
-      <h2 class="example-section-h2">Some of our work</h2>
+      <h2 class="example-section-h2">
+        Some of our work
+      </h2>
     </div>
 
     <div class="example-tiles">
@@ -12,10 +14,11 @@
         description="A Shopify application for tipping fulfillment workers."
       />
       <WorkTile
-        title="VitalView Technologies"
+        title="Vital View Technologies"
         image=""
         url="https://ideacenter.nd.edu/commercialization-engine/startups/vitalview/"
-        description="A smart health technology company that aims to seamlessly give people a greater understanding of their overall health."
+        description="A smart health technology company that aims to seamlessly give people a greater understanding of 
+        their overall health."
       />
       <WorkTile
         title="Otter Therapies"
@@ -28,15 +31,13 @@
 </template>
 
 <script setup>
-import WorkTile from './WorkTile.vue'
+import WorkTile from "./WorkTile.vue"
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .example-section {
   max-width: 100%;
   background-color: rgb(0, 0, 0);
-
   padding: 60px 18% 60px 18%;
 }
 
@@ -44,13 +45,6 @@ import WorkTile from './WorkTile.vue'
   margin: 0px 0px 80px 0px;
 }
 
-.example-section-h2 {
-  font-size: 48px;
-  margin: 0px 0px 12px 0px;
-  width: fit-content;
-  font-weight: 900;
-  font-family: 'Times New Roman', serif;
-}
 .example-section-h3 {
   margin: 0px 0px 8px 0px;
   font-size: 18px;
@@ -68,10 +62,6 @@ import WorkTile from './WorkTile.vue'
 @media (max-width: 830px) {
   .example-section {
     padding: 40px 12px 40px 12px;
-  }
-
-  .example-section-h2 {
-    font-size: 36px;
   }
 }
 </style>

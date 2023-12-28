@@ -1,17 +1,29 @@
 <template>
-    <div class="person-container">
-        <a :href="props.url" target="_blank">
-            <span class="link"></span>
-        </a>
+  <div class="person-container">
+    <a
+      :href="props.url"
+      target="_blank"
+    >
+      <span class="link" />
+    </a>
 
-        <img class="image" :src="require(`@/assets/${props.image}`)" height="150" width="150" />
-        <h3 class="name">{{ props.name }}</h3>
-        <p class="description">{{ props.des }}</p>
-    </div>
+    <img
+      class="image"
+      :src="require(`@/assets/${props.image}`)"
+      height="150"
+      width="150"
+    >
+    <h3 class="name">
+      {{ props.name }}
+    </h3>
+    <p class="description">
+      {{ props.des }}
+    </p>
+  </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue"
 
 const props = defineProps({
     name: String,

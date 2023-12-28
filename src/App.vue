@@ -4,10 +4,6 @@
   </div>
 </template>
 
-<script setup>
-// import HomeView from './views/HomeView.vue'
-</script>
-
 <style>
 body {
   background-color: rgb(0, 0, 0);
@@ -17,6 +13,13 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: 'Times New Roman', serif;
+  margin-bottom: 30px;
+  font-weight: 900;
 }
 
 #app {

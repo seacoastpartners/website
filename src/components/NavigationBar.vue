@@ -1,29 +1,25 @@
 <template>
-  <div class="nav-bar">
-    <LogoComponent />
-  </div>
+  <div class="nav-bar" />
 </template>
 
 <script setup>
-import LogoComponent from './LogoComponent.vue'
-
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted } from "vue"
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
 })
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+    window.removeEventListener("scroll", handleScroll)
 })
 
 function handleScroll() {
-  const nav = document.querySelector('.nav-bar')
-  if (window.scrollY > 0) {
-    nav.classList.add('nav-bar-scrolled')
-  } else {
-    nav.classList.remove('nav-bar-scrolled')
-  }
+    const nav = document.querySelector(".nav-bar")
+    if (window.scrollY > 0) {
+        nav.classList.add("nav-bar-scrolled")
+    } else {
+        nav.classList.remove("nav-bar-scrolled")
+    }
 }
 </script>
 

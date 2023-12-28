@@ -1,6 +1,8 @@
 <template>
   <div class="footer-container">
-    <div class="footer">© 2023 Seacoast Technical Partners, LLC</div>
+    <div class="footer">
+      © 2022 Seacoast Technical Partners, LLC
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,5 @@
   justify-content: center;
 }
 
-.footer {
-}
+.footer {}
 </style>
