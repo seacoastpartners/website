@@ -1,29 +1,37 @@
 <template>
-    <div>
-        <NavigationBar />
-        <div id="wrapper" class="form-container" data-tf-widget="gi3hGpQE" data-tf-opacity="100" data-tf-inline-on-mobile
-            data-tf-iframe-props="title=Lead Capture Form STP" data-tf-transitive-search-params data-tf-auto-focus />
-    </div>
+  <div>
+    <NavigationBar />
+    <div
+      id="wrapper"
+      class="form-container"
+      data-tf-widget="gi3hGpQE"
+      data-tf-opacity="100"
+      data-tf-inline-on-mobile
+      data-tf-iframe-props="title=Lead Capture Form STP"
+      data-tf-transitive-search-params
+      data-tf-auto-focus
+    />
+  </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import NavigationBar from "@/components/NavigationBar.vue"
-    ; (() => {
-        if (window.localStorage) {
-            // If there is no item as 'reload'
-            // in localstorage then create one &
-            // reload the page
-            if (!localStorage.getItem("reload")) {
-                localStorage["reload"] = true
-                window.location.reload()
-            } else {
-                // If there exists a 'reload' item
-                // then clear the 'reload' item in
-                // local storage
-                localStorage.removeItem("reload")
-            }
+; (() => {
+    if (window.localStorage) {
+        // If there is no item as 'reload'
+        // in localstorage then create one &
+        // reload the page
+        if (!localStorage.getItem("reload")) {
+            localStorage["reload"] = true
+            window.location.reload()
+        } else {
+            // If there exists a 'reload' item
+            // then clear the 'reload' item in
+            // local storage
+            localStorage.removeItem("reload")
         }
-    })()
+    }
+})()
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

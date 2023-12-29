@@ -1,15 +1,21 @@
 <template>
-    <div class="button" @click="handleClick">
-        {{ props.text }}
-    </div>
+  <div
+    class="button"
+    @click="handleClick"
+  >
+    {{ props.text }}
+  </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import router from "@/router"
 import { defineProps } from "vue"
 
 const props = defineProps({
-    text: String,
+    text: {
+        type: String,
+        required: true
+    }
 })
 
 function handleClick() {

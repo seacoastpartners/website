@@ -1,20 +1,31 @@
 <template>
-    <div class="client-testimonials-section fade-in-on-scroll">
-        <h2 class="testimonials-section-header">What Our Clients Say</h2>
-        <div class="testimonials-container">
-            <div v-for="(testimonial, index) in testimonials" :key="index"
-                :class="['testimonial', getPositionClass(index)]">
-                <div class="testimonial-content">
-                    <p class="testimonial-text">{{ testimonial.testimonial }}</p>
-                    <h3 class="client-name">{{ testimonial.name }}</h3>
-                    <p class="client-title">{{ testimonial.title }}</p>
-                </div>
-            </div>
+  <div class="client-testimonials-section fade-in-on-scroll">
+    <h2 class="testimonials-section-header">
+      What Our Clients Say
+    </h2>
+    <div class="testimonials-container">
+      <div
+        v-for="(testimonial, index) in testimonials"
+        :key="index"
+        :class="['testimonial', getPositionClass(index)]"
+      >
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            {{ testimonial.testimonial }}
+          </p>
+          <h3 class="client-name">
+            {{ testimonial.name }}
+          </h3>
+          <p class="client-title">
+            {{ testimonial.title }}
+          </p>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const testimonials = [
     {
         name: "Juan Manuel Segura",

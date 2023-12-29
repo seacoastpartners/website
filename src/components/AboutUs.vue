@@ -1,28 +1,55 @@
 <template>
-    <section class="who-we-are-section fade-in-on-scroll">
-        <!-- Founders Sub-Section -->
-        <div class="founders-section">
-            <h3 class="sub-section-heading">Founders</h3>
-            <div class="founders">
-                <div v-for="person in founders" :key="person.name" class="person-container">
-                    <img class="image" :src="`${person.image}`" alt="Profile Picture">
-                    <h3 class="name">{{ person.name }}</h3>
-                    <p class="description">{{ person.des }}</p>
-                    <div class="social-links">
-                        <a :href="person.linkedin" target="_blank">
-                            <img class="icon" src="/linkedin.png">
-                        </a>
-                        <a :href="person.github" target="_blank" class="github-logo">
-                            <img class="icon" src="/github.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <section class="who-we-are-section fade-in-on-scroll">
+    <!-- Founders Sub-Section -->
+    <div class="founders-section">
+      <h3 class="sub-section-heading">
+        Founders
+      </h3>
+      <div class="founders">
+        <div
+          v-for="person in founders"
+          :key="person.name"
+          class="person-container"
+        >
+          <img
+            class="image"
+            :src="`${person.image}`"
+            alt="Profile Picture"
+          >
+          <h3 class="name">
+            {{ person.name }}
+          </h3>
+          <p class="description">
+            {{ person.des }}
+          </p>
+          <div class="social-links">
+            <a
+              :href="person.linkedin"
+              target="_blank"
+            >
+              <img
+                class="icon"
+                src="/linkedin.png"
+              >
+            </a>
+            <a
+              :href="person.github"
+              target="_blank"
+              class="github-logo"
+            >
+              <img
+                class="icon"
+                src="/github.png"
+              >
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const people = [
     {
         name: "Chris",

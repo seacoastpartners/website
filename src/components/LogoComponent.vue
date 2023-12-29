@@ -1,12 +1,15 @@
 <template>
-    <div class="logo-container" @click="handleClick">
-        <div class="logo">
-            STP
-        </div>
+  <div
+    class="logo-container"
+    @click="handleClick"
+  >
+    <div class="logo">
+      STP
     </div>
+  </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import router from "@/router"
 
 function handleClick() {

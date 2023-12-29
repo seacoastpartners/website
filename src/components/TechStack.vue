@@ -1,26 +1,34 @@
 <template>
-    <section class="tech-stack-section">
-        <!-- Text Section -->
-        <div class="text-section fade-in-on-scroll">
-            <h2>Our Expertise</h2>
-            <p>
-                We are a team of highly skilled developers with expertise in a wide
-                range of technologies. We have experience in developing web and mobile
-                applications, and we are also well versed in cloud technologies.
-            </p>
-        </div>
+  <section class="tech-stack-section">
+    <!-- Text Section -->
+    <div class="text-section fade-in-on-scroll">
+      <h2>Our Expertise</h2>
+      <p>
+        We are a team of highly skilled developers with expertise in a wide
+        range of technologies. We have experience in developing web and mobile
+        applications, and we are also well versed in cloud technologies.
+      </p>
+    </div>
 
-        <!-- Tech Stack Grid -->
-        <div class="tech-grid">
-            <div class="tech-item fade-in-on-scroll" v-for="tech in technologies" :key="tech.name">
-                <img :src="tech.logo" :alt="tech.name" class="tech-logo" />
-                <span class="tech-name">{{ tech.name }}</span>
-            </div>
-        </div>
-    </section>
+    <!-- Tech Stack Grid -->
+    <div class="tech-grid">
+      <div
+        v-for="tech in technologies"
+        :key="tech.name"
+        class="tech-item fade-in-on-scroll"
+      >
+        <img
+          :src="tech.logo"
+          :alt="tech.name"
+          class="tech-logo"
+        >
+        <span class="tech-name">{{ tech.name }}</span>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import useScrollEffects from "../composables/scrollEffects"
 
 const { runOnScroll } = useScrollEffects()

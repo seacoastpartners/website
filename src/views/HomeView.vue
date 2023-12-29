@@ -1,16 +1,16 @@
 <template>
-    <div>
-        <NavigationBar />
-        <HeroLandingPage />
-        <TechStack />
-        <OurWork />
-        <ClientTestimonials />
-        <AboutUs />
-        <FooterComponent />
-    </div>
+  <div>
+    <NavigationBar />
+    <HeroLandingPage />
+    <TechStack />
+    <OurWork />
+    <ClientTestimonials />
+    <AboutUs />
+    <FooterComponent />
+  </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import NavigationBar from "@/components/NavigationBar.vue"
 import HeroLandingPage from "@/components/HeroLandingPage.vue"
 import TechStack from "@/components/TechStack.vue"

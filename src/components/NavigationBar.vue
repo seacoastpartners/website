@@ -1,8 +1,8 @@
 <template>
-    <div class="nav-bar" />
+  <div class="nav-bar" />
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { onMounted, onUnmounted } from "vue"
 
 onMounted(() => {
