@@ -1,14 +1,19 @@
 <template>
-  <div @click="handleClick" class="logo-container">
-    <div class="logo">STP</div>
+  <div
+    class="logo-container"
+    @click="handleClick"
+  >
+    <div class="logo">
+      STP
+    </div>
   </div>
 </template>
 
 <script setup>
-import router from '@/router'
+import router from "@/router"
 
 function handleClick() {
-  router.push({ name: 'home' })
+    router.push({ name: "home" })
 }
 </script>
 

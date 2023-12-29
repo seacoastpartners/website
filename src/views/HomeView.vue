@@ -1,18 +1,23 @@
 <template>
-  <NavigationBar />
-  <HeroLandingPage />
-  <ExampleSection />
-  <AboutUsSection />
-  <FooterComponent />
+  <div>
+    <NavigationBar />
+    <HeroLandingPage />
+    <TechStack />
+    <OurWork />
+    <ClientTestimonials />
+    <AboutUs />
+    <FooterComponent />
+  </div>
 </template>
 
 <script setup>
-import NavigationBar from '@/components/NavigationBar.vue'
-
-import HeroLandingPage from '@/components/HeroLandingPage.vue'
-import ExampleSection from '@/components/ExampleSection.vue'
-import FooterComponent from '@/components/FooterComponent.vue'
-import AboutUsSection from '@/components/AboutUsSection.vue'
+import NavigationBar from "@/components/NavigationBar.vue"
+import HeroLandingPage from "@/components/HeroLandingPage.vue"
+import TechStack from "@/components/TechStack.vue"
+import OurWork from "@/components/OurWork.vue"
+import ClientTestimonials from "@/components/ClientTestimonials.vue"
+import AboutUs from "@/components/AboutUs.vue"
+import FooterComponent from "@/components/FooterComponent.vue"
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
