@@ -1,25 +1,25 @@
 <template>
-  <section class="who-we-are-section fade-in-on-scroll">    
-    <!-- Founders Sub-Section -->
-    <div class="founders-section">
-      <h3 class="sub-section-heading">Founders</h3>
-      <div class="founders">
-        <div v-for="person in founders" :key="person.name" class="person-container">
-          <img class="image" :src="require(`@/assets/${person.image}`)" alt="Profile Picture">
-          <h3 class="name">{{ person.name }}</h3>
-          <p class="description">{{ person.des }}</p>
-          <div class="social-links">
-            <a :href="person.linkedin" target="_blank">
-              <img class="icon" src="/tech-stack-images/linkedin.png">
-            </a>
-            <a :href="person.github" target="_blank" class="github-logo">
-              <img class="icon" src="/tech-stack-images/github.png">
-            </a>
-          </div>
+    <section class="who-we-are-section fade-in-on-scroll">
+        <!-- Founders Sub-Section -->
+        <div class="founders-section">
+            <h3 class="sub-section-heading">Founders</h3>
+            <div class="founders">
+                <div v-for="person in founders" :key="person.name" class="person-container">
+                    <img class="image" :src="`${person.image}`" alt="Profile Picture">
+                    <h3 class="name">{{ person.name }}</h3>
+                    <p class="description">{{ person.des }}</p>
+                    <div class="social-links">
+                        <a :href="person.linkedin" target="_blank">
+                            <img class="icon" src="/linkedin.png">
+                        </a>
+                        <a :href="person.github" target="_blank" class="github-logo">
+                            <img class="icon" src="/github.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </template>
 
 <script setup>
@@ -76,30 +76,31 @@ const founders = people.filter(person => person.founder)
 
 <style scoped>
 .who-we-are-section {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
-    url('../assets/example-section-bg.png');
-  background-size: cover;
-  background-position: top;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
+        url('../assets/example-section-bg.png');
+    background-size: cover;
+    background-position: top;
 }
 
 .sub-section-heading {
-  font-size: 36px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .founders-section {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .founders {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .person-container {
@@ -115,9 +116,9 @@ const founders = people.filter(person => person.founder)
 }
 
 .image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .name {
@@ -127,33 +128,37 @@ const founders = people.filter(person => person.founder)
 }
 
 .description {
-  word-break: break-word; /* Ensure long words don't cause overflow */
+    word-break: break-word;
+    /* Ensure long words don't cause overflow */
 }
 
 .social-links {
-  margin-top: auto; /* Pushes the social links to the bottom */
-  display: flex;
-  gap: 40px;
-  justify-content: center; 
-  cursor: pointer;
+    margin-top: auto;
+    /* Pushes the social links to the bottom */
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .icon {
-  height: 32px;
-  cursor: pointer;
+    height: 32px;
+    cursor: pointer;
 }
 
-.github-logo {
-}
+.github-logo {}
 
 @media (max-width: 768px) {
-  .founders {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
-  }
+    .founders {
+        flex-direction: column;
+        /* Stack the items vertically on smaller screens */
+    }
 
-  .person-container {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 300px; /* Maximum width to maintain consistency */
-  }
+    .person-container {
+        width: 100%;
+        /* Full width on smaller screens */
+        max-width: 300px;
+        /* Maximum width to maintain consistency */
+    }
 }
 </style>

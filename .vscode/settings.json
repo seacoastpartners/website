@@ -8,7 +8,7 @@
         "typescript"
     ],
     "[html]": {
-        "editor.defaultFormatter": "Vue.volar"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
@@ -18,6 +18,5 @@
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "volar.inlayHints.eventArgumentInInlineHandlers": false,
+    }
 }
