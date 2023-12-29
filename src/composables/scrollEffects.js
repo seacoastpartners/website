@@ -10,7 +10,6 @@ export default function useScrollEffects() {
     
     function runOnScroll() {
         const items = document.querySelectorAll(".fade-in-on-scroll")
-        console.log("items :>> ", items)
         items.forEach(item => {
             if (isInViewport(item)) {
                 item.style.opacity = 1

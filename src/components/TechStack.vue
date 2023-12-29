@@ -41,6 +41,12 @@ window.addEventListener("scroll", runOnScroll)
 </script>
 
 <style scoped>
+.text-section {
+  max-width: 480px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 .tech-stack-section {
   display: flex;
   flex-direction: column;
@@ -55,13 +61,6 @@ window.addEventListener("scroll", runOnScroll)
     gap: 60px;
   }
 }
-
-.text-section {
-  max-width: 480px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -3,7 +3,8 @@
     <NavigationBar />
     <HeroLandingPage />
     <TechStack />
-    <ExampleSection />
+    <OurWork />
+    <ClientTestimonials />
     <AboutUsSection />
     <FooterComponent />
   </div>
@@ -13,7 +14,8 @@
 import NavigationBar from "@/components/NavigationBar.vue"
 import HeroLandingPage from "@/components/HeroLandingPage.vue"
 import TechStack from "@/components/TechStack.vue"
-import ExampleSection from "@/components/ExampleSection.vue"
+import OurWork from "@/components/OurWork.vue"
+import ClientTestimonials from "@/components/ClientTestimonials.vue"
 import AboutUsSection from "@/components/AboutUsSection.vue"
 import FooterComponent from "@/components/FooterComponent.vue"
 </script>
