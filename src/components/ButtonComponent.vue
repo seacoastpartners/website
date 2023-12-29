@@ -1,10 +1,10 @@
 <template>
-  <div
-    class="button"
-    @click="handleClick"
-  >
-    {{ props.text }}
-  </div>
+    <div
+        class="button"
+        @click="handleClick"
+    >
+        {{ props.text }}
+    </div>
 </template>
 
 <script lang="ts" setup>

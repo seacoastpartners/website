@@ -1,9 +1,9 @@
 <template>
-  <div class="footer-container">
-    <div class="footer">
-      © {{ year }} Seacoast Technical Partners, LLC
+    <div class="footer-container">
+        <div class="footer">
+            © {{ year }} Seacoast Technical Partners, LLC
+        </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts" setup>

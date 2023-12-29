@@ -1,12 +1,12 @@
 <template>
-  <div
-    class="logo-container"
-    @click="handleClick"
-  >
-    <div class="logo">
-      STP
+    <div
+        class="logo-container"
+        @click="handleClick"
+    >
+        <div class="logo">
+            STP
+        </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts" setup>

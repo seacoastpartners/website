@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <NavigationBar />
-    <HeroLandingPage />
-    <TechStack />
-    <OurWork />
-    <ClientTestimonials />
-    <AboutUs />
-    <FooterComponent />
-  </div>
+    <div>
+        <NavigationBar />
+        <HeroLandingPage />
+        <TechStack />
+        <OurWork />
+        <ClientTestimonials />
+        <AboutUs />
+        <FooterComponent />
+    </div>
 </template>
 
 <script lang="ts" setup>

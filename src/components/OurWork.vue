@@ -1,39 +1,39 @@
 <template>
-  <section class="our-work-section">
-    <!-- Logo Grid -->
-    <div class="tech-grid">
-      <div
-        v-for="company in companies"
-        :key="company.name"
-        class="tech-item fade-in-on-scroll"
-      >
-        <img
-          :src="company.logo"
-          :alt="company.name"
-          class="tech-logo"
-        >
-        <span class="tech-name">{{ company.name }}</span>
-      </div>
-    </div>
+    <section class="our-work-section">
+        <!-- Logo Grid -->
+        <div class="tech-grid">
+            <div
+                v-for="company in companies"
+                :key="company.name"
+                class="tech-item fade-in-on-scroll"
+            >
+                <img
+                    :src="company.logo"
+                    :alt="company.name"
+                    class="tech-logo"
+                >
+                <span class="tech-name">{{ company.name }}</span>
+            </div>
+        </div>
 
-    <!-- Text Section  -->
-    <div class="text-section fade-in-on-scroll">
-      <h2>Our Work</h2>
-      <p>
-        We have worked with a wide range of clients, from startups to
-        enterprises. We have helped our clients build web and mobile
-        applications, and we have also helped them migrate their applications to
-        the cloud.
-      </p>
-    </div>
-  </section>
+        <!-- Text Section  -->
+        <div class="text-section fade-in-on-scroll">
+            <h2>Our Work</h2>
+            <p>
+                We have worked with a wide range of clients, from startups to
+                enterprises. We have helped our clients build web and mobile
+                applications, and we have also helped them migrate their applications to
+                the cloud.
+            </p>
+        </div>
+    </section>
 </template>
 
 <script lang="ts" setup>
 const companies = [
     { name: "Booz Allen", logo: "/booz-allen.webp" },
     { name: "Notre Dame", logo: "/notre-dame.jpeg" },
-    { name: "Consensus Networks", logo: "/consensus.webp" },
+    { name: "Consensus Networks", logo: "/consensus.webp" }
     // { name: "Shopify", logo: "./shopify.webp" },
 ]
 </script>

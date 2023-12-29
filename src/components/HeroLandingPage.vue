@@ -1,32 +1,32 @@
 <template>
-  <section class="hero-section">
-    <video
-      class="hero-bg"
-      playsinline
-      autoplay
-      muted
-      loop
-      poster="/seacoast.png"
-    >
-      <source
-        src="/seacoast.mp4"
-        type="video/mp4"
-      >
-    </video>
-    <div class="hero-text-container">
-      <h1 class="hero-text-header">
-        Build beautiful
-      </h1>
-      <p class="hero-text-subheader">
-        We're a team of full stack software engineers, designers, and product developers
-        who help you build new products and features to delight your customers.
-      </p>
-      <p class="hero-text-note">
-        <span><img src="@/assets/flag.png"> </span>Based in the USA.
-      </p>
-      <ButtonComponent text="Book Meeting" />
-    </div>
-  </section>
+    <section class="hero-section">
+        <video
+            class="hero-bg"
+            playsinline
+            autoplay
+            muted
+            loop
+            poster="/seacoast.png"
+        >
+            <source
+                src="/seacoast.mp4"
+                type="video/mp4"
+            >
+        </video>
+        <div class="hero-text-container">
+            <h1 class="hero-text-header">
+                Build beautiful
+            </h1>
+            <p class="hero-text-subheader">
+                We're a team of full stack software engineers, designers, and product developers
+                who help you build new products and features to delight your customers.
+            </p>
+            <p class="hero-text-note">
+                <span><img src="@/assets/flag.png"> </span>Based in the USA.
+            </p>
+            <ButtonComponent text="Book Meeting" />
+        </div>
+    </section>
 </template>
 
 <script lang="ts" setup>

@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <NavigationBar />
-    <div
-      id="wrapper"
-      class="form-container"
-      data-tf-widget="gi3hGpQE"
-      data-tf-opacity="100"
-      data-tf-inline-on-mobile
-      data-tf-iframe-props="title=Lead Capture Form STP"
-      data-tf-transitive-search-params
-      data-tf-auto-focus
-    />
-  </div>
+    <div>
+        <NavigationBar />
+        <div
+            id="wrapper"
+            class="form-container"
+            data-tf-widget="gi3hGpQE"
+            data-tf-opacity="100"
+            data-tf-inline-on-mobile
+            data-tf-iframe-props="title=Lead Capture Form STP"
+            data-tf-transitive-search-params
+            data-tf-auto-focus
+        />
+    </div>
 </template>
 
 <script lang="ts" setup>

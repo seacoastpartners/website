@@ -26,6 +26,6 @@
         "vue-eslint-parser": "^9.3.2"
     },
     "lint-staged": {
-        "*.{ts,vue}": "npm run lint"
+        "*.{mts,ts,vue}": "npm run lint"
     }
 }

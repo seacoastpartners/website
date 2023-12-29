@@ -1,28 +1,28 @@
 <template>
-  <div class="client-testimonials-section fade-in-on-scroll">
-    <h2 class="testimonials-section-header">
-      What Our Clients Say
-    </h2>
-    <div class="testimonials-container">
-      <div
-        v-for="(testimonial, index) in testimonials"
-        :key="index"
-        :class="['testimonial', getPositionClass(index)]"
-      >
-        <div class="testimonial-content">
-          <p class="testimonial-text">
-            {{ testimonial.testimonial }}
-          </p>
-          <h3 class="client-name">
-            {{ testimonial.name }}
-          </h3>
-          <p class="client-title">
-            {{ testimonial.title }}
-          </p>
+    <div class="client-testimonials-section fade-in-on-scroll">
+        <h2 class="testimonials-section-header">
+            What Our Clients Say
+        </h2>
+        <div class="testimonials-container">
+            <div
+                v-for="(testimonial, index) in testimonials"
+                :key="index"
+                :class="['testimonial', getPositionClass(index)]"
+            >
+                <div class="testimonial-content">
+                    <p class="testimonial-text">
+                        {{ testimonial.testimonial }}
+                    </p>
+                    <h3 class="client-name">
+                        {{ testimonial.name }}
+                    </h3>
+                    <p class="client-title">
+                        {{ testimonial.title }}
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts" setup>
@@ -32,20 +32,20 @@ const testimonials = [
         title: "CEO, CardioSpeed",
         testimonial: "\"What we had to do was very complicated. We were taking a proprietary computer vision algorithm developed by PHDs at the University of Notre Dame\
         and we brought in Chris and Shane to build us a prototype that we could demo to our initial users. Really glad we were able to rely on STP to build the tech \
-        quickly and cleanly.\"",
+        quickly and cleanly.\""
         // image: "/testimonials-images/juan-manuel-segura.jpeg",
     },
     {
         name: "Andrew Pemberton",
         title: "President, Pemberton Advisory",
         testimonial: "\"Chris and Shane are the best. They are rock solid devs that will exceed your expectations with consistent open, honest communication throughout their development\
-        so that you have the peace of mind that you will be able to deliver to your customers and clients on time.\"",
+        so that you have the peace of mind that you will be able to deliver to your customers and clients on time.\""
     },
     {
         name: "Antonio Cucciniello",
         title: "Founder, Investarters",
         testimonial: "\"I don't know what I would have done if not for STP. I got so much value for working with reasonable guys who understand startups, and where nothing gets lost in \
-        translation. STP worked with my constraints and built me production-ready software products that I am now actively monetizing. It's awesome.\"",
+        translation. STP worked with my constraints and built me production-ready software products that I am now actively monetizing. It's awesome.\""
     }
 ]
 function getPositionClass(index) {
