@@ -125,4 +125,42 @@ function getPositionClass(index) {
     background-size: contain;
     z-index: -1;
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .testimonials-section-header {
+        font-size: 28px; /* Adjusted font size for the header */
+        margin-bottom: 40px; /* Reduced space between header and testimonials */
+    }
+
+    .testimonial {
+        max-width: calc(100% - 40px); /* Subtracting the total horizontal padding */
+        padding: 20px; /* Reduced padding */
+        transform: translateX(0px) !important; /* Ensure this overrides other styles */
+        margin: 20px; /* Check if this margin is causing the overflow */
+    }
+
+    /* Remove specific left/right overrides if they're not needed */
+    .testimonial.left, .testimonial.right {
+        transform: translateX(-20px) !important; /* Explicit override */
+    }
+
+    .testimonial-text {
+        font-size: 18px; /* Smaller font size for the testimonial text */
+    }
+
+    .client-name {
+        font-size: 16px; /* Smaller font size for the client's name */
+        margin-bottom: 2px; /* Adjusted spacing between name and title */
+    }
+
+    .client-title {
+        font-size: 14px; /* Smaller font size for the client's title */
+    }
+
+    .illustration-background {
+        background-size: cover; /* Cover the entire background; adjust as needed */
+        opacity: 0.5; /* Make it more subtle; adjust as needed */
+    }
+}
 </style>

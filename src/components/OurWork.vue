@@ -38,18 +38,12 @@ const companies = [
   gap: 40px;
 }
 
-@media (min-width: 768px) {
-  .our-work-section {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 60px;
-  }
-}
-
 .text-section {
   max-width: 480px;
   text-align: left;
   margin-bottom: 20px;
+  /* Initially, the text section comes first on mobile */
+  order: -1;
 }
 
 .tech-grid {
@@ -75,5 +69,32 @@ const companies = [
 .tech-name {
   margin-top: 5px;
   font-size: 0.9rem;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .tech-grid {
+    /* Adjust the grid for a single column layout on smaller screens */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .our-work-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  
+  .tech-grid {
+    /* Ensure the tech grid appears first (to the left) on larger screens */
+    order: -1;
+  }
+
+  /* Reset the order for the text section so it appears second (to the right) */
+  .text-section {
+    order: 0;
+  }
 }
 </style>
