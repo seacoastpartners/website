@@ -10,7 +10,6 @@
                 </div>
             </div>
         </div>
-        <div class="illustration-background"></div>
     </div>
 </template>
 
@@ -70,22 +69,21 @@ function getPositionClass(index) {
 .testimonial {
     display: flex;
     flex-direction: column;
-    max-width: 600px; /* Increased width for a more rectangular shape */
+    max-width: 600px; /* Adjusted width for a more rectangular shape */
     padding: 20px 40px; /* Adjusted padding for better proportions */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: none;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease;
+    margin: 20px auto; /* Centering testimonials */
+    transition: margin 0.3s ease; /* Smooth transition for margin changes */
 }
 
 .testimonial.left {
-    transform: translateX(-300px);
+    margin-right: 10%; /* Pushes left testimonials a bit to the left */
 }
 
 .testimonial.right {
-    transform: translateX(300px);
+    margin-left: 10%; /* Pushes right testimonials a bit to the right */
 }
 
 .testimonial-content {
@@ -113,19 +111,6 @@ function getPositionClass(index) {
     color: #CCC;
 }
 
-.illustration-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('/path/to/curvy-line.svg'); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: -1;
-}
-
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
     .testimonials-section-header {
@@ -134,15 +119,15 @@ function getPositionClass(index) {
     }
 
     .testimonial {
-        max-width: calc(100% - 40px); /* Subtracting the total horizontal padding */
+        max-width: calc(100% - 40px); /* Adjusting the width to account for padding */
         padding: 20px; /* Reduced padding */
-        transform: translateX(0px) !important; /* Ensure this overrides other styles */
-        margin: 20px; /* Check if this margin is causing the overflow */
+        margin: 20px 20px; /* Adjust margin to prevent overflow */
     }
 
-    /* Remove specific left/right overrides if they're not needed */
+    /* On mobile, don't stagger; stack them normally */
     .testimonial.left, .testimonial.right {
-        transform: translateX(-20px) !important; /* Explicit override */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .testimonial-text {
