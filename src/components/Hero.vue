@@ -24,13 +24,21 @@
             <p class="hero-text-note">
                 <span><img src="@/assets/flag.png"> </span>Based in the USA.
             </p>
-            <ButtonComponent text="Book Meeting" />
+            <button
+                class="button"
+                @click="handleClick"
+            >
+                Book Meeting
+            </button>
         </div>
     </section>
 </template>
 
 <script lang="ts" setup>
-import ButtonComponent from "./ButtonComponent.vue"
+import router from "@/router"
+function handleClick() {
+    router.push({ name: "form" })
+}
 </script>
 
 <style scoped>
@@ -98,6 +106,21 @@ import ButtonComponent from "./ButtonComponent.vue"
     font-size: 18px;
     font-weight: 600;
     gap: 12px;
+}
+
+.button {
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 6px 12px 6px 12px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.button:hover {
+    color: #fff;
+    border-radius: 4px;
+    background-color: #000; 
 }
 
 @media (max-width: 830px) {
