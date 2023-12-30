@@ -1,8 +1,8 @@
 <template>
-  <div class="nav-bar" />
+    <div class="nav-bar" />
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { onMounted, onUnmounted } from "vue"
 
 onMounted(() => {
@@ -26,14 +26,14 @@ function handleScroll() {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-bar {
-  /* visibility: hidden; */
-  max-width: 100%;
-  /* position: sticky; */
-  top: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  padding: 12px 18% 12px 18%;
+    /* visibility: hidden; */
+    max-width: 100%;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 18% 12px 18%;
 }
 
 /* .nav-bar-scrolled {
@@ -43,12 +43,12 @@ function handleScroll() {
 } */
 
 @media (max-width: 830px) {
-  .nav-bar {
-    padding: 12px;
-  }
+    .nav-bar {
+        padding: 12px;
+    }
 
-  .logo {
-    font-size: 24px;
-  }
+    .logo {
+        font-size: 24px;
+    }
 }
 </style>

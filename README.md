@@ -1,31 +1,35 @@
 # Website
 
-> Seacoast Technical Partners website
+> Company website
 
-## Project setup
+## Development
 
-```
+Install dependencies:
+
+```zsh
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Run with hot-reload:
 
-```
-npm run serve
+```zsh
+npm run dev
 ```
 
-### Compiles and minifies for production
+Compile and minify for production:
 
-```
+```zsh
 npm run build
 ```
 
-### Lints and fixes files
+Preview production build:
 
+```zsh
+npm run preview
 ```
+
+Lint and fix files:
+
+```zsh
 npm run lint
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

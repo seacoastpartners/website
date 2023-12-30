@@ -1,40 +1,48 @@
 <template>
-  <section class="tech-stack-section">
-    <!-- Text Section -->
-    <div class="text-section fade-in-on-scroll">
-      <h2>Our Expertise</h2>
-      <p>
-        We are a team of highly skilled developers with expertise in a wide
-        range of technologies. We have experience in developing web and mobile
-        applications, and we are also well versed in cloud technologies.
-      </p>
-    </div>
+    <section class="tech-stack-section">
+        <!-- Text Section -->
+        <div class="text-section fade-in-on-scroll">
+            <h2>Our Expertise</h2>
+            <p>
+                We are a team of highly skilled developers with expertise in a wide
+                range of technologies. We have experience in developing web and mobile
+                applications, and we are also well versed in cloud technologies.
+            </p>
+        </div>
 
-    <!-- Tech Stack Grid -->
-    <div class="tech-grid">
-      <div class="tech-item fade-in-on-scroll" v-for="tech in technologies" :key="tech.name">
-        <img :src="tech.logo" :alt="tech.name" class="tech-logo"/>
-        <span class="tech-name">{{ tech.name }}</span>
-      </div>
-    </div>
-  </section>
+        <!-- Tech Stack Grid -->
+        <div class="tech-grid">
+            <div
+                v-for="tech in technologies"
+                :key="tech.name"
+                class="tech-item fade-in-on-scroll"
+            >
+                <img
+                    :src="tech.logo"
+                    :alt="tech.name"
+                    class="tech-logo"
+                >
+                <span class="tech-name">{{ tech.name }}</span>
+            </div>
+        </div>
+    </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import useScrollEffects from "../composables/scrollEffects"
 
 const { runOnScroll } = useScrollEffects()
 const technologies = [
-    { name: "AWS", logo: "/tech-stack-images/aws.png" },
-    { name: "Google Cloud", logo: "/tech-stack-images/google-cloud.svg" },
-    { name: "Firebase", logo: "./tech-stack-images/firebase.svg" },
-    { name: "JavaScript", logo: "/tech-stack-images/javascript.png" },
-    { name: "NodeJs", logo: "./tech-stack-images/node-js.webp" },
-    { name: "Python", logo: "./tech-stack-images/python.webp" },
-    { name: "React", logo: "./tech-stack-images/react.webp" },
-    { name: "Vue", logo: "./tech-stack-images/vue.webp" },
-    { name: "Angular", logo: "./tech-stack-images/angular.webp" },
-    { name: "MySql", logo: "./tech-stack-images/mysql.svg" },
+    { name: "AWS", logo: "/aws.png" },
+    { name: "Google Cloud", logo: "/google-cloud.svg" },
+    { name: "Firebase", logo: "./firebase.svg" },
+    { name: "JavaScript", logo: "/javascript.png" },
+    { name: "NodeJs", logo: "./node-js.webp" },
+    { name: "Python", logo: "./python.webp" },
+    { name: "React", logo: "./react.webp" },
+    { name: "Vue", logo: "./vue.webp" },
+    { name: "Angular", logo: "./angular.webp" },
+    { name: "MySql", logo: "./mysql.svg" }
 ]
 
 window.addEventListener("scroll", runOnScroll)
@@ -42,47 +50,48 @@ window.addEventListener("scroll", runOnScroll)
 
 <style scoped>
 .text-section {
-  max-width: 480px;
-  text-align: left;
-  margin-bottom: 20px;
+    max-width: 480px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .tech-stack-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 @media (min-width: 768px) {
-  .tech-stack-section {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 60px;
-  }
+    .tech-stack-section {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60px;
+    }
 }
+
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
 }
 
 .tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .tech-logo {
-  width: 75px;
-  height: 75px;
-  object-fit: contain;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
 }
 
 .tech-name {
-  margin-top: 5px;
-  font-size: 0.9rem;
+    margin-top: 5px;
+    font-size: 0.9rem;
 }
 </style>

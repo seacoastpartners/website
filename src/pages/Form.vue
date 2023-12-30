@@ -1,20 +1,20 @@
 <template>
-  <div>
-    <NavigationBar />
-    <div
-      id="wrapper"
-      class="form-container"
-      data-tf-widget="gi3hGpQE"
-      data-tf-opacity="100"
-      data-tf-inline-on-mobile
-      data-tf-iframe-props="title=Lead Capture Form STP"
-      data-tf-transitive-search-params
-      data-tf-auto-focus
-    />
-  </div>
+    <div>
+        <NavigationBar />
+        <div
+            id="wrapper"
+            class="form-container"
+            data-tf-widget="gi3hGpQE"
+            data-tf-opacity="100"
+            data-tf-inline-on-mobile
+            data-tf-iframe-props="title=Lead Capture Form STP"
+            data-tf-transitive-search-params
+            data-tf-auto-focus
+        />
+    </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import NavigationBar from "@/components/NavigationBar.vue"
 ; (() => {
     if (window.localStorage) {
@@ -25,9 +25,9 @@ import NavigationBar from "@/components/NavigationBar.vue"
             localStorage["reload"] = true
             window.location.reload()
         } else {
-        // If there exists a 'reload' item
-        // then clear the 'reload' item in
-        // local storage
+            // If there exists a 'reload' item
+            // then clear the 'reload' item in
+            // local storage
             localStorage.removeItem("reload")
         }
     }
@@ -37,7 +37,7 @@ import NavigationBar from "@/components/NavigationBar.vue"
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .form-container {
-  min-width: 100%;
-  height: 600px;
+    min-width: 100%;
+    height: 600px;
 }
 </style>

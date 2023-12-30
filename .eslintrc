@@ -6,55 +6,34 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/essential"
+        "plugin:vue/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "vue-eslint-parser",
     "parserOptions": {
-        "parser": "@babel/eslint-parser", // This tells vue-eslint-parser to use @babel/eslint-parser for <script> tags
         "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
         "sourceType": "module"
     },
     "plugins": [
-        "vue"
+        "vue",
+        "@typescript-eslint"
     ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "semi": [
-            "error",
-            "never"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "space-before-blocks": [
-            "error",
-            "always"
-        ],
-        "object-curly-spacing": [
-            "error",
-            "always"
-        ],
-        "space-in-parens": [
-            "error",
-            "never"
-        ],
-        "keyword-spacing": [
-            "error",
-            {
-                "before": true,
-                "after": true
-            }
-        ]
+        "indent": ["error", 4],
+        "vue/html-indent": ["error", 4],
+        "semi": ["error", "never"],
+        "quotes": ["error", "double"],
+        "max-len": ["error", { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+        "space-before-blocks": ["error", "always"],
+        "object-curly-spacing": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "comma-dangle": ["error", "never"],
+        "vue/multi-word-component-names": "off"
     },
     "ignorePatterns": [
-        "**/node_modules/**",
-        "**/build/**",
-        "**/dist/**",
-        "**/lib/**",
-        "cdk.out"
+        "dist/**",
+        "node_modules/**"
     ]
 }
