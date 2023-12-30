@@ -182,4 +182,5 @@ function getPositionClass(index) {
         opacity: 0.5;
         /* Make it more subtle; adjust as needed */
     }
-}</style>
+}
+</style>
