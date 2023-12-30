@@ -6,7 +6,7 @@
         <OurWork />
         <Testimonials />
         <AboutUs />
-        <FooterComponent />
+        <Footer />
     </div>
 </template>
 
@@ -17,5 +17,5 @@ import TechStack from "@/components/TechStack.vue"
 import OurWork from "@/components/OurWork.vue"
 import Testimonials from "@/components/Testimonials.vue"
 import AboutUs from "@/components/AboutUs.vue"
-import FooterComponent from "@/components/FooterComponent.vue"
+import Footer from "@/components/Footer.vue"
 </script>
