@@ -1,3 +1,5 @@
+import { onMounted } from "vue"
+
 export default function useScrollEffects() {
     function isInViewport(element: HTMLElement) {
         const rect = element.getBoundingClientRect()
@@ -7,22 +9,21 @@ export default function useScrollEffects() {
             rect.bottom >= -buffer // Adjust buffer as needed.
         )
     }
-    
-    function runOnScroll() {
+
+    function scrollListener() {
         const items = document.querySelectorAll(".fade-in-on-scroll") as NodeListOf<HTMLElement>
         items.forEach(item => {
             if (isInViewport(item)) {
                 item.style.opacity = "1"
-                // item.style.transform = "translateY(0px)";
             } else {
                 item.style.opacity = "0"
-                // item.style.transform = "translateY(20px)";
             }
         })
     }
-
-    return {
-        runOnScroll
-    }
+    
+    onMounted(() => {
+        scrollListener()
+        window.addEventListener("scroll", scrollListener)
+    })
 }
 

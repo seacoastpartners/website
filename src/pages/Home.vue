@@ -1,21 +1,21 @@
 <template>
     <div>
-        <NavigationBar />
-        <Hero />
-        <TechStack />
-        <OurWork />
-        <Testimonials />
-        <AboutUs />
-        <Footer />
+        <NavBar />
+        <HeroSection />
+        <ExpertiseSection />
+        <WorkSection />
+        <TestimonialSection />
+        <AboutSection />
+        <FooterSection />
     </div>
 </template>
 
 <script lang="ts" setup>
-import NavigationBar from "@/components/NavigationBar.vue"
-import Hero from "@/components/Hero.vue"
-import TechStack from "@/components/TechStack.vue"
-import OurWork from "@/components/OurWork.vue"
-import Testimonials from "@/components/Testimonials.vue"
-import AboutUs from "@/components/AboutUs.vue"
-import Footer from "@/components/Footer.vue"
+import NavBar from "@/components/NavBar.vue"
+import HeroSection from "@/components/HeroSection.vue"
+import ExpertiseSection from "@/components/ExpertiseSection.vue"
+import WorkSection from "@/components/WorkSection.vue"
+import TestimonialSection from "@/components/TestimonialSection.vue"
+import AboutSection from "@/components/AboutSection.vue"
+import FooterSection from "@/components/FooterSection.vue"
 </script>

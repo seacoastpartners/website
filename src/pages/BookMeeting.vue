@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavigationBar />
+        <NavBar />
         <div
             id="wrapper"
             class="form-container"
@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-import NavigationBar from "@/components/NavigationBar.vue"
+import NavBar from "@/components/NavBar.vue"
 ; (() => {
     if (window.localStorage) {
         // If there is no item as 'reload'
@@ -38,6 +38,6 @@ import NavigationBar from "@/components/NavigationBar.vue"
 <style scoped>
 .form-container {
     min-width: 100%;
-    height: 600px;
+    height: 100vh;
 }
 </style>

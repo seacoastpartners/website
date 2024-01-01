@@ -1,6 +1,6 @@
 <template>
-    <div class="client-testimonials-section fade-in-on-scroll">
-        <h2 class="testimonials-section-header">
+    <section>
+        <h2 class="text-large font-heavy fade-in-on-scroll">
             What Our Clients Say
         </h2>
         <div class="testimonials-container">
@@ -9,8 +9,8 @@
                 :key="index"
                 :class="['testimonial', getPositionClass(index)]"
             >
-                <div class="testimonial-content">
-                    <p class="testimonial-text">
+                <div class="testimonial-content fade-in-on-scroll">
+                    <p class="testimonial-text text-xsmall">
                         {{ testimonial.testimonial }}
                     </p>
                     <h3 class="client-name">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script lang="ts" setup>
@@ -54,21 +54,12 @@ function getPositionClass(index) {
 </script>
 
 <style scoped>
-.client-testimonials-section {
-    position: relative;
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 40px 20px;
-    color: #DDD;
-}
-
-.testimonials-section-header {
-    margin-bottom: 80px;
-    /* Space between header and testimonials */
-    color: #FFF;
-    /* Bright color for the header */
+    padding: 0 24px;
+    margin-bottom: 120px;
 }
 
 .testimonials-container {
@@ -76,34 +67,28 @@ function getPositionClass(index) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
     width: 100%;
+    margin: 24px 0;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    /* Adjusted width for a more rectangular shape */
     padding: 20px 40px;
-    /* Adjusted padding for better proportions */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: none;
-    margin: 20px auto;
-    /* Centering testimonials */
     transition: margin 0.3s ease;
-    /* Smooth transition for margin changes */
 }
 
 .testimonial.left {
     margin-right: 10%;
-    /* Pushes left testimonials a bit to the left */
 }
 
 .testimonial.right {
     margin-left: 10%;
-    /* Pushes right testimonials a bit to the right */
 }
 
 .testimonial-content {
@@ -112,13 +97,8 @@ function getPositionClass(index) {
 }
 
 .testimonial-text {
-    font-size: 24px;
-    line-height: 1.4;
-    color: #EEE;
     margin-bottom: 8px;
-    /* Decreased space between testimonial and client name */
     font-style: italic;
-    /* Italicized text */
 }
 
 .client-name {
@@ -136,13 +116,6 @@ function getPositionClass(index) {
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
-    .testimonials-section-header {
-        font-size: 28px;
-        /* Adjusted font size for the header */
-        margin-bottom: 40px;
-        /* Reduced space between header and testimonials */
-    }
-
     .testimonial {
         max-width: calc(100% - 40px);
         /* Adjusting the width to account for padding */
@@ -159,11 +132,6 @@ function getPositionClass(index) {
         margin-right: auto;
     }
 
-    .testimonial-text {
-        font-size: 18px;
-        /* Smaller font size for the testimonial text */
-    }
-
     .client-name {
         font-size: 16px;
         /* Smaller font size for the client's name */
@@ -174,13 +142,6 @@ function getPositionClass(index) {
     .client-title {
         font-size: 14px;
         /* Smaller font size for the client's title */
-    }
-
-    .illustration-background {
-        background-size: cover;
-        /* Cover the entire background; adjust as needed */
-        opacity: 0.5;
-        /* Make it more subtle; adjust as needed */
     }
 }
 </style>
