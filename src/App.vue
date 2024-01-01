@@ -1,49 +1,119 @@
 <template>
-    <div class="app-container">
-        <router-view />
-    </div>
+    <router-view />
 </template>
 
+<script lang="ts" setup>
+import useScrollEffects from "@/composables/scroll-effects"
+useScrollEffects()
+</script>
+
 <style>
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     margin: 0px;
-}
-
-.app-container {
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    padding: 50px 18% 50px 18%;
-}
-
-h2 {
-    font-size: 48px;
-    font-family: 'Times New Roman', serif;
-    margin-bottom: 30px;
-    font-weight: 900;
-}
-
-p {
-    font-size: 24px;
-    font-family: 'Times New Roman', serif;
-    line-height: 1.5;
 }
 
 #app {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans Hebrew', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #efeddd;
-    margin: 0px;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.max-width {
+    max-width: 900px;
+    margin: auto;
+}
+
+.text-xlarge {
+    font-size: 120px;
+    line-height: 1;
+}
+
+.text-large {
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.text-medium {
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.text-small {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.text-xsmall {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.text-xxsmall {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.font-heavy {
+    font-weight: 900;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.fade-in {
+    animation: fade-in ease-in 1;
+    animation-fill-mode: both;
+    animation-duration: 1s;
 }
 
 .fade-in-on-scroll {
     opacity: 0;
-    /* Start elements as invisible */
     transition: opacity 1s ease-out, transform 1s ease-out;
-    /* Increased duration for transform */
+}
+
+@media (max-width: 768px) {
+    .text-xlarge {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    .text-large {
+        font-size: 36px;
+        line-height: 1.5;
+    }
+
+    .text-medium {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .text-small {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .text-xsmall {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 </style>

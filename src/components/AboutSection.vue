@@ -1,10 +1,10 @@
 <template>
-    <section class="who-we-are-section fade-in-on-scroll">
+    <section class="fade-in-on-scroll max-width">
         <!-- Founders Sub-Section -->
-        <div class="founders-section">
-            <h3 class="sub-section-heading">
+        <article class="founders-section">
+            <h2 class="sub-section-heading text-large font-heavy">
                 Founders
-            </h3>
+            </h2>
             <div class="founders">
                 <div
                     v-for="person in founders"
@@ -19,7 +19,7 @@
                     <h3 class="name">
                         {{ person.name }}
                     </h3>
-                    <p class="description">
+                    <p class="description text-xsmall">
                         {{ person.des }}
                     </p>
                     <div class="social-links">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 </template>
 
@@ -102,11 +102,13 @@ const founders = people.filter(person => person.founder)
 </script>
 
 <style scoped>
-.who-we-are-section {
+section {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
         url('../assets/example-section-bg.png');
     background-size: cover;
     background-position: top;
+    padding: 0 24px;
+    margin-bottom: 120px;
 }
 
 .sub-section-heading {
