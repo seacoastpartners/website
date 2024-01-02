@@ -83,12 +83,6 @@ h1, h2, h3 {
     font-style: italic;
 }
 
-.fade-in {
-    animation: fade-in ease-in 1;
-    animation-fill-mode: both;
-    animation-duration: 500ms;
-}
-
 .fade-in-on-scroll {
     opacity: 0;
     transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
