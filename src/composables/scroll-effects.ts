@@ -22,7 +22,7 @@ export default function useScrollEffects() {
     }
     
     onMounted(() => {
-        scrollListener()
+        setTimeout(scrollListener, 100)
         window.addEventListener("scroll", scrollListener)
     })
 }

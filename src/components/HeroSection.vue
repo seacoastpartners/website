@@ -12,7 +12,7 @@
                 type="video/mp4"
             >
         </video>
-        <article class="max-width fade-in">
+        <article class="max-width fade-in-on-scroll">
             <h1 class="title text-xlarge font-heavy">
                 Build beautiful.
             </h1>

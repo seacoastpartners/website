@@ -7,7 +7,7 @@
             <div
                 v-for="(testimonial, index) in testimonials"
                 :key="index"
-                :class="['testimonial', getPositionClass(index)]"
+                :class="['testimonial', getPositionClass(index), 'fade-in-on-scroll']"
             >
                 <div class="testimonial-content fade-in-on-scroll">
                     <p class="text-xsmall font-italic">

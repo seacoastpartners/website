@@ -1,14 +1,14 @@
 <template>
-    <section class="fade-in-on-scroll max-width">
+    <section class="max-width">
         <article>
-            <h2 class="text-large font-heavy">
+            <h2 class="text-large font-heavy fade-in-on-scroll">
                 Founders
             </h2>
             <div class="founders">
                 <div
                     v-for="person in founders"
                     :key="person.name"
-                    class="person"
+                    class="person fade-in-on-scroll"
                 >
                     <img
                         class="image"
