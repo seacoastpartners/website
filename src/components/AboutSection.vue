@@ -157,7 +157,7 @@ section > article > h2 {
 }
 
 .icon {
-    height: 32px;
+    height: 24px;
     cursor: pointer;
 }
 
