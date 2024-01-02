@@ -43,6 +43,7 @@ section {
     padding-top: 48px;
     position: relative;
     height: 100vh;
+    min-height: 500px;
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.25) 50%,
             rgba(0, 0, 0, 1));
@@ -53,6 +54,7 @@ video {
     object-fit: cover;
     position: absolute;
     height: 100vh;
+    min-height: 500px;
     width: 100vw;
     top: 0;
     left: 0;
@@ -65,6 +67,11 @@ article {
     flex-direction: column;
     justify-content: center;
     padding: 0 24px;
+}
+
+article > * {
+    max-width: 60%;
+    text-align: left;
 }
 
 .flag {
@@ -114,6 +121,11 @@ article {
 }
 
 @media (max-width: 768px) {
+    article > * {
+        max-width: 100%;
+        text-align: left;
+    }
+
     .hero-text-container {
         max-width: 100%;
     }

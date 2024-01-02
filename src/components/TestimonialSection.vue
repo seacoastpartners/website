@@ -58,7 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 24px;
+    padding: 10vh 24px;
 }
 
 .testimonials-container {

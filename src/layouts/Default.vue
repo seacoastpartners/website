@@ -14,7 +14,7 @@
             </ul>
         </nav>
         <slot />
-        <footer>
+        <footer class="text-xxsmall">
             <span>© {{ year }} Seacoast Technical Partners, LLC</span>
         </footer>
     </div>

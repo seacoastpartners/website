@@ -42,7 +42,7 @@ section {
     flex-direction: row;
     align-items: center;
     gap: 24px;
-    padding: 60px 24px;
+    padding: 10vh 24px;
 }
 
 article {

@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 .max-width {
-    max-width: 900px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -89,8 +89,12 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .max-width {
+        max-width: 100%;
+    }
+
     .text-xlarge {
-        font-size: 64px;
+        font-size: 48px;
         line-height: 1;
     }
 

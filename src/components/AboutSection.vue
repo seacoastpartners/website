@@ -1,6 +1,6 @@
 <template>
-    <section class="max-width">
-        <article>
+    <section>
+        <article class="max-width">
             <h2 class="text-large font-heavy fade-in-on-scroll">
                 Founders
             </h2>
@@ -105,7 +105,7 @@ section {
         url('../assets/example-section-bg.png');
     background-size: cover;
     background-position: top;
-    padding: 60px 24px;
+    padding: 10vh 24px;
 }
 
 article {
@@ -123,14 +123,13 @@ section > article > h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 36px;
+    gap: 60px;
 }
 
 .person {
     width: 400px;
     min-width: 250px;
     min-height: 400px;
-    padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +166,7 @@ section > article > h2 {
     }
 
     .person {
-        width: 300px;
+        width: 100%;
     }
 }
 </style>
