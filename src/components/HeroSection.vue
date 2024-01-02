@@ -46,7 +46,7 @@ section {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.25) 50%,
             rgba(0, 0, 0, 1));
-    transition: all 0.3s;
+    transition: all 500ms ease-in-out;
 }
 
 video {
@@ -88,27 +88,29 @@ article {
 }
 
 .button {
+    font-family: 'Open Sans Hebrew', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 0;
+    text-decoration: none;
     color: white;
-    background: linear-gradient(
+    background-image: linear-gradient(
         90deg, 
         rgba(115, 208, 159, 1) 0%, 
         rgba(31, 192, 166, 1) 25%, 
         rgba(40, 178, 191, 1) 75%, 
         rgba(57, 130, 171, 1) 100%
     );
-    font-family: 'Open Sans Hebrew', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 6px 12px;
-    cursor: pointer;
-    transition: background .25s;
-    border-radius: 4px;
-    border-width: 0;
-    text-decoration: none;
+    background-position: right top;
+    background-size: 100% auto;
+    transition: background-size 500ms ease-in-out;
 }
 
 .button:hover {
-    background: rgb(57, 130, 171);
+    background-size: 400% auto;
 }
 
 @media (max-width: 768px) {

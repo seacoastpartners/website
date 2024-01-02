@@ -80,7 +80,7 @@ section {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: none;
-    transition: margin 0.3s ease;
+    transition: margin 500ms ease-in-out;
 }
 
 .testimonial.left {
