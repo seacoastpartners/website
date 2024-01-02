@@ -32,7 +32,7 @@ const companies = [
     { name: "Booz Allen", logo: "/booz-allen.webp" },
     { name: "Notre Dame", logo: "/notre-dame.jpeg" },
     { name: "Consensus Networks", logo: "/consensus.webp" }
-    // { name: "Shopify", logo: "./shopify.webp" }
+    // { name: "Shopify", logo: "./shopify.svg" }
 ]
 </script>
 
