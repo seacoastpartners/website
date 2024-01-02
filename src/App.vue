@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -77,6 +77,10 @@ h1, h2 {
 
 .font-light {
     font-weight: 300;
+}
+
+.font-italic {
+    font-style: italic;
 }
 
 .fade-in {

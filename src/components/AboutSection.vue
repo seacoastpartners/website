@@ -1,22 +1,21 @@
 <template>
     <section class="fade-in-on-scroll max-width">
-        <!-- Founders Sub-Section -->
-        <article class="founders-section">
-            <h2 class="sub-section-heading text-large font-heavy">
+        <article>
+            <h2 class="text-large font-heavy">
                 Founders
             </h2>
             <div class="founders">
                 <div
                     v-for="person in founders"
                     :key="person.name"
-                    class="person-container"
+                    class="person"
                 >
                     <img
                         class="image"
                         :src="`${person.image}`"
                         alt="Profile Picture"
                     >
-                    <h3 class="name">
+                    <h3 class="text-medium">
                         {{ person.name }}
                     </h3>
                     <p class="description text-xsmall">
@@ -35,7 +34,6 @@
                         <a
                             :href="person.github"
                             target="_blank"
-                            class="github-logo"
                         >
                             <img
                                 class="icon"
@@ -107,32 +105,28 @@ section {
         url('../assets/example-section-bg.png');
     background-size: cover;
     background-position: top;
-    padding: 0 24px;
-    margin-bottom: 120px;
+    padding: 60px 24px;
 }
 
-.sub-section-heading {
-    font-size: 36px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.founders-section {
-    margin-bottom: 20px;
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+section > article > h2 {
+    margin: 48px 0;
+}
+
 .founders {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 36px;
 }
 
-.person-container {
+.person {
     width: 400px;
     min-width: 250px;
     min-height: 400px;
@@ -140,8 +134,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 60px;
+    gap: 24px;
 }
 
 .image {
@@ -150,22 +143,15 @@ section {
     height: 150px;
 }
 
-.name {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
 .description {
     word-break: break-word;
-    /* Ensure long words don't cause overflow */
+    margin: 0;
 }
 
 .social-links {
     margin-top: auto;
-    /* Pushes the social links to the bottom */
     display: flex;
-    gap: 40px;
+    gap: 36px;
     justify-content: center;
     cursor: pointer;
 }
@@ -175,19 +161,13 @@ section {
     cursor: pointer;
 }
 
-.github-logo {}
-
 @media (max-width: 768px) {
     .founders {
         flex-direction: column;
-        /* Stack the items vertically on smaller screens */
     }
 
-    .person-container {
-        width: 100%;
-        /* Full width on smaller screens */
-        max-width: 300px;
-        /* Maximum width to maintain consistency */
+    .person {
+        width: 300px;
     }
 }
 </style>

@@ -10,7 +10,7 @@
                 :class="['testimonial', getPositionClass(index)]"
             >
                 <div class="testimonial-content fade-in-on-scroll">
-                    <p class="testimonial-text text-xsmall">
+                    <p class="text-xsmall font-italic">
                         {{ testimonial.testimonial }}
                     </p>
                     <h3 class="client-name">
@@ -58,8 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 24px;
-    margin-bottom: 120px;
+    padding: 60px 24px;
 }
 
 .testimonials-container {
@@ -96,17 +95,11 @@ section {
     flex-direction: column;
 }
 
-.testimonial-text {
-    margin-bottom: 8px;
-    font-style: italic;
-}
-
 .client-name {
     font-weight: bold;
     font-size: 20px;
     color: #FFF;
     margin-bottom: 2px;
-    /* Decreased spacing between name and title */
 }
 
 .client-title {
@@ -114,34 +107,24 @@ section {
     color: #CCC;
 }
 
-/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
     .testimonial {
         max-width: calc(100% - 40px);
-        /* Adjusting the width to account for padding */
         padding: 20px;
-        /* Reduced padding */
-        margin: 20px 20px;
-        /* Adjust margin to prevent overflow */
     }
 
-    /* On mobile, don't stagger; stack them normally */
     .testimonial.left,
     .testimonial.right {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     .client-name {
         font-size: 16px;
-        /* Smaller font size for the client's name */
         margin-bottom: 2px;
-        /* Adjusted spacing between name and title */
     }
 
     .client-title {
         font-size: 14px;
-        /* Smaller font size for the client's title */
     }
 }
 </style>

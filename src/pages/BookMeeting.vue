@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <NavBar />
+    <DefaultLayout>
         <div
             id="wrapper"
             class="form-container"
@@ -11,11 +10,11 @@
             data-tf-transitive-search-params
             data-tf-auto-focus
         />
-    </div>
+    </DefaultLayout>
 </template>
 
 <script lang="ts" setup>
-import NavBar from "@/components/NavBar.vue"
+import DefaultLayout from "@/layouts/Default.vue"
 ; (() => {
     if (window.localStorage) {
         // If there is no item as 'reload'

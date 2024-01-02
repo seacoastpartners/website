@@ -42,8 +42,7 @@ section {
     flex-direction: row;
     align-items: center;
     gap: 24px;
-    padding: 0 24px;
-    margin-bottom: 120px;
+    padding: 60px 24px;
 }
 
 article {
