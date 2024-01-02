@@ -82,12 +82,12 @@ h1, h2 {
 .fade-in {
     animation: fade-in ease-in 1;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: 500ms;
 }
 
 .fade-in-on-scroll {
     opacity: 0;
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
 @media (max-width: 768px) {
