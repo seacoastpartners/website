@@ -38,6 +38,16 @@
     </section>
 </template>
 
+<script lang="ts" setup>
+const body = document.querySelector("body") as HTMLBodyElement
+body.ontouchstart = () => {
+    const video = document.querySelector("video") as HTMLVideoElement
+    if (video.paused) {
+        video.play()
+    }
+}
+</script>
+
 <style scoped>
 section {
     padding-top: 48px;
