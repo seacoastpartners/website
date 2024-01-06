@@ -14,4 +14,11 @@ const router = createRouter({
     routes
 })
 
+router.beforeEach((to, from, next) => {
+    if (from.fullPath === "/book-meeting") {
+        window.location.reload()
+    }
+    next()
+})
+
 export default router
