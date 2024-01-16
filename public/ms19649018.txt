@@ -1,0 +1,5 @@
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "seacoast.partners",
+  "Id": "38d5591a-d777-4ffe-9568-38a202771622"
+}

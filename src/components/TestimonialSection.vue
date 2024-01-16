@@ -44,8 +44,9 @@ const testimonials = [
     {
         name: "Antonio Cucciniello",
         title: "Founder, Investarters",
-        testimonial: "\"I don't know what I would have done if not for STP. I got so much value for working with reasonable guys who understand startups, and where nothing gets lost in \
-        translation. STP worked with my constraints and built me production-ready software products that I am now actively monetizing. It's awesome.\""
+        testimonial: "\"Working with the STP Team was phenomenal. They actually took the time to truly understand each of the requirements and the real reasoning behind them to build my platform properly. \
+        They built a tool that cut my time running a service by 83% (nearly a full hour every time.) Can’t thank them enough. I'm excited to work with STP on future projects as well! They understand what it’s\
+         like to be a start up and get you production level software quickly.\""
     }
 ]
 function getPositionClass(index) {
