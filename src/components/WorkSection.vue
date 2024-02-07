@@ -29,10 +29,13 @@
 
 <script lang="ts" setup>
 const companies = [
-    { name: "Booz Allen", logo: "/booz-allen.webp" },
-    { name: "Notre Dame", logo: "/notre-dame.jpeg" },
-    { name: "Consensus Networks", logo: "/consensus.webp" }
-    // { name: "Shopify", logo: "./shopify.svg" }
+    { name: "Booz Allen", logo: "/boozallen.png" },
+    { name: "Notre Dame", logo: "/notredame.png" },
+    { name: "Consensus Networks", logo: "/consensusnetworks.png" },
+    { name: "BasisPoint+", logo: "./basispoint+.png" },
+    { name: "WealthFeed", logo: "./wealthfeed.png" },
+    { name: "Otter Therapies", logo: "./ottertherapies.png" },
+    { name: "Tattoo Studio Pro", logo: "./tattoostudiopro.png" }
 ]
 </script>
 
@@ -80,10 +83,6 @@ article {
 
     article:nth-child(2) {
         order: -1;
-    }
-
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 </style>

@@ -28,21 +28,18 @@
 
 <script lang="ts" setup>
 const technologies = [
-    { name: "AWS", logo: "/aws.png" },
-    { name: "Google Cloud", logo: "/google-cloud.svg" },
-    { name: "Firebase", logo: "./firebase.svg" },
-    { name: "JavaScript", logo: "/javascript.png" },
+    { name: "TypeScript", logo: "/typescript.png" },
     { name: "Python", logo: "./python.webp" },
-    { name: "Go", logo: "./go.svg" },
+    { name: "SQL", logo: "./sql.svg" },
     { name: "React", logo: "./react.webp" },
     { name: "Vue", logo: "./vue.webp" },
     { name: "Angular", logo: "./angular.webp" },
-    { name: "MySQL", logo: "./mysql.svg" },
-    { name: "PostgreSQL", logo: "./postgresql.svg" },
-    { name: "Redis", logo: "./redis.svg" }
-    // { name: "MongoDB", logo: "./mongodb.svg" },
-    // { name: "Docker", logo: "./docker.svg" },
-    // { name: "Shopify", logo: "./shopify.svg" }
+    { name: "Docker", logo: "./docker.png" },
+    { name: "Kubernetes", logo: "./kubernetes.png" },
+    { name: "Terraform", logo: "./terraform.png" },
+    { name: "AWS", logo: "/aws.png" },
+    { name: "GCP", logo: "/gcp.svg" },
+    { name: "Azure", logo: "./azure.png" }
 ]
 </script>
 
