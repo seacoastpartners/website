@@ -35,7 +35,8 @@ const companies = [
     { name: "BasisPoint+", logo: "./basispoint+.png" },
     { name: "WealthFeed", logo: "./wealthfeed.png" },
     { name: "Otter Therapies", logo: "./ottertherapies.png" },
-    { name: "Tattoo Studio Pro", logo: "./tattoostudiopro.png" }
+    { name: "Tattoo Studio Pro", logo: "./tattoostudiopro.png" },
+    { name: "CardioSpeed", logo: "./cardiospeed.png" }
 ]
 </script>
 
