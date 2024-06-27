@@ -105,9 +105,6 @@ article > * {
 }
 
 .button {
-    font-family: 'Open Sans Hebrew', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding: 6px 12px;
     cursor: pointer;
     border-radius: 4px;

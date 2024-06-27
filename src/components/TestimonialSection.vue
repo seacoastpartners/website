@@ -1,8 +1,10 @@
 <template>
     <section>
-        <h2 class="text-large font-heavy fade-in-on-scroll">
-            What Our Clients Say
-        </h2>
+        <article class="fade-in-on-scroll">
+            <h2 class="text-large font-heavy">
+                What Our Clients Say
+            </h2>
+        </article>
         <div class="testimonials-container">
             <div
                 v-for="(testimonial, index) in testimonials"
@@ -10,15 +12,12 @@
                 :class="['testimonial', getPositionClass(index), 'fade-in-on-scroll']"
             >
                 <div class="testimonial-content fade-in-on-scroll">
-                    <p class="text-xsmall font-italic">
+                    <blockquote class="text-xsmall">
                         {{ testimonial.testimonial }}
-                    </p>
+                    </blockquote>
                     <h3 class="client-name">
-                        {{ testimonial.name }}
+                        — {{ testimonial.name }}, <span class="client-title">{{ testimonial.title }}</span>
                     </h3>
-                    <p class="client-title">
-                        {{ testimonial.title }}
-                    </p>
                 </div>
             </div>
         </div>
@@ -49,7 +48,7 @@ const testimonials = [
          like to be a start up and get you production level software quickly.\""
     }
 ]
-function getPositionClass(index) {
+function getPositionClass(index: number) {
     return index % 2 === 0 ? "left" : "right"
 }
 </script>
@@ -60,6 +59,10 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 10vh 24px;
+}
+
+article {
+    padding: 30px;
 }
 
 .testimonials-container {
@@ -76,11 +79,17 @@ section {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    padding: 20px 40px;
-    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 8px;
     box-shadow: none;
     transition: margin 500ms ease-in-out;
+}
+
+blockquote {
+    border-left: 6px solid rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    margin-left: 0;
 }
 
 .testimonial.left {
@@ -96,6 +105,10 @@ section {
     flex-direction: column;
 }
 
+.testimonial-content>p {
+    margin-top: 0;
+}
+
 .client-name {
     font-weight: bold;
     font-size: 20px;
@@ -104,11 +117,17 @@ section {
 }
 
 .client-title {
+    font-style: italic;
+    font-weight: 500;
     font-size: 18px;
     color: #CCC;
 }
 
 @media (max-width: 768px) {
+    article {
+        padding: 30px 0;
+    }
+
     .testimonial {
         max-width: calc(100% - 40px);
         padding: 20px;

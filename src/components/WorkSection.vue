@@ -1,42 +1,34 @@
 <template>
     <section class="max-width">
-        <article class="grid">
-            <div
-                v-for="company in companies"
-                :key="company.name"
-                class="fade-in-on-scroll"
-            >
-                <img
-                    :src="company.logo"
-                    :alt="company.name"
-                >
-                <span class="text-xxsmall">{{ company.name }}</span>
-            </div>
-        </article>
         <article class="fade-in-on-scroll">
             <h2 class="text-large font-heavy">
                 Our Work
             </h2>
             <p class="text-xsmall">
                 We have worked with a wide range of clients, from startups to
-                enterprises. We have helped our clients build web and mobile
-                applications, and we have also helped them migrate their applications to
-                the cloud.
+                enterprises. We have helped clients take their product from idea to MVP, and we have helped
+                others grow their product to meet increased demand or integrate new features.
             </p>
         </article>
+        <div class="fade-in-on-scroll">
+            <LogoCard :items="companies" />
+        </div>
     </section>
 </template>
 
 <script lang="ts" setup>
+import LogoCard from "@/components/LogoCard.vue"
+
 const companies = [
-    { name: "Booz Allen", logo: "/boozallen.png" },
-    { name: "Notre Dame", logo: "/notredame.png" },
-    { name: "Consensus Networks", logo: "/consensusnetworks.png" },
-    { name: "BasisPoint+", logo: "./basispoint+.png" },
-    { name: "WealthFeed", logo: "./wealthfeed.png" },
-    { name: "Otter Therapies", logo: "./ottertherapies.png" },
-    { name: "Tattoo Studio Pro", logo: "./tattoostudiopro.png" },
-    { name: "CardioSpeed", logo: "./cardiospeed.png" }
+    { name: "Booz Allen", src: "/boozallen.png" },
+    { name: "Notre Dame", src: "/notredame.png" },
+    { name: "VitalView Technologies", src: "./vitalview.png" },
+    { name: "Consensus Networks", src: "/consensusnetworks.png" },
+    { name: "BasisPoint+", src: "./basispoint+.png" },
+    { name: "WealthFeed", src: "./wealthfeed.png" },
+    { name: "Otter Therapies", src: "./ottertherapies.png" },
+    { name: "Tattoo Studio Pro", src: "./tattoostudiopro.png" },
+    { name: "CardioSpeed", src: "./cardiospeed.png" }
 ]
 </script>
 
@@ -46,31 +38,11 @@ section {
     flex-direction: row;
     align-items: center;
     gap: 24px;
-    padding: 10vh 24px;
+    padding: 5vh 24px 10vh 24px;
 }
 
 article {
-    width: 50%;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.grid > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.grid > div > img {
-    margin-bottom: 4px;
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+    padding: 30px;
 }
 
 @media (max-width: 768px) {
@@ -79,11 +51,8 @@ article {
     }
 
     article {
+        padding: 30px 0;
         width: 100%;
-    }
-
-    article:nth-child(2) {
-        order: -1;
     }
 }
 </style>

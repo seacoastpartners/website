@@ -3,8 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-import useScrollEffects from "@/composables/scroll-effects"
-useScrollEffects()
+import useAnimations from "@/composables/animations"
+useAnimations()
 </script>
 
 <style>

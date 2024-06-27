@@ -1,3 +1,5 @@
+<img width="50px" alt="Logo" src="https://avatars.githubusercontent.com/u/106629901">
+
 # Website
 
 > Company website

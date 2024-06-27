@@ -102,7 +102,7 @@ const founders = people.filter(person => person.founder)
 <style scoped>
 section {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
-        url('../assets/example-section-bg.png');
+        url('../assets/blur.png');
     background-size: cover;
     background-position: top;
     padding: 10vh 24px;
