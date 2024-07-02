@@ -12,7 +12,7 @@
                 type="video/mp4"
             >
         </video>
-        <article class="max-width fade-in-on-scroll">
+        <article class="max-width fade-in-on-scroll text-left">
             <h1 class="title text-xlarge font-heavy">
                 Build beautiful.
             </h1>
@@ -81,7 +81,6 @@ article {
 
 article > * {
     max-width: 60%;
-    text-align: left;
 }
 
 .flag {

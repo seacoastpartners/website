@@ -1,6 +1,6 @@
 <template>
     <section class="max-width">
-        <article class="fade-in-on-scroll">
+        <article class="fade-in-on-scroll text-center">
             <h2 class="text-large font-heavy">
                 Our Expertise
             </h2>
@@ -34,25 +34,25 @@ const technologyMap = {
         { name: "SQL", src: "./sql.svg" },
         { name: "Node", src: "/node.png" }
     ],
-    businessIntegrations: [
+    apiIntegrations: [
         { name: "Shopify", src: "./shopify.png" },
         { name: "Stripe", src: "./stripe.svg" },
-        { name: "Salesforce", src: "./salesforce.png" }
+        { name: "OpenAI", src: "./openai.webp" }
     ],
     cloudDeployments: [
         { name: "AWS", src: "/aws.png" },
         { name: "GCP", src: "/gcp.svg" },
         { name: "Azure", src: "./azure.png" }
     ],
-    hardwareAndEmbeddedSystems: [
-        { name: "Rasberry Pi", src: "./raspberrypi.png" },
-        { name: "SolidWorks", src: "./solidworks.png" },
-        { name: "C", src: "./c.png" }
-    ],
     scalableInfrastructure: [
         { name: "Docker", src: "./docker.png" },
         { name: "Kubernetes", src: "./kubernetes.png" },
         { name: "Terraform", src: "./terraform.png" }
+    ],
+    hardwareAndEmbeddedSystems: [
+        { name: "Rasberry Pi", src: "./raspberrypi.png" },
+        { name: "SolidWorks", src: "./solidworks.png" },
+        { name: "C", src: "./c.png" }
     ]
 }
 </script>
@@ -62,20 +62,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
     padding: 5vh 24px 10vh 24px;
 }
 
 article {
     padding: 30px;
     width: 50%;
-    text-align: center;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
 .grid > div {
@@ -93,9 +91,7 @@ article {
     }
 
     .grid {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
     }
 }
 </style>

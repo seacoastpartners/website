@@ -10,38 +10,27 @@
                     >
                 </router-link>
             </li>
-            <!-- TODO Add back with services -->
-            <!-- <li>
-                <LinkDropdown
+            <li>
+                <NavDropdown
                     title="Services"
-                    :items="services"
+                    :items="serviceItems"
                 />
-            </li> -->
+            </li>
         </ul>
     </nav>
 </template>
 
 <script lang="ts" setup>
-// TODO Add back with services
-// import LinkDropdown from "@/components/LinkDropdown.vue"
-// const services = [
-//     {
-//         name: "Test 1",
-//         to: { name: "service", params: { name: "test-1" } }
-//     },
-//     {
-//         name: "Test 2",
-//         to: { name: "service", params: { name: "test-2" } }
-//     },
-//     {
-//         name: "Test 3",
-//         to: { name: "service", params: { name: "test-3" } }
-//     },
-//     {
-//         name: "Test Long Name to See What Happens",
-//         to: { name: "service", params: { name: "test-3" } }
-//     }
-// ]
+import NavDropdown from "@/components/NavDropdown.vue"
+import useServices from "@/composables/services"
+
+const { services } = useServices()
+const serviceItems = services.map(service => {
+    return {
+        name: service.name,
+        to: { name: "service", params: { name: service.name } }
+    }
+})
 </script>
 
 <style scoped>
@@ -50,11 +39,12 @@ nav {
     height: 48px;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: unset;
     transition: background-color 500ms linear;
 }
 
 ul {
+    max-height: 100%;
     padding-inline-start: 0px;
     padding: 0 24px;
     display: flex;

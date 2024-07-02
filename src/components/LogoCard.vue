@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card text-center">
         <div
             v-if="props.title"
             class="title text-xxsmall"
@@ -28,7 +28,7 @@ type LogoItem = {
 }
 
 const props = defineProps<{
-    title?: string,
+    title: string,
     items: Array<LogoItem>
 }>()
 
@@ -42,8 +42,8 @@ function sentenceCase(str: string) {
 <style scoped>
 .card {
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 8px;
+    background: var(--secondary-bg-color);
+    border-radius: 4px;
     box-shadow: none;
 }
 
@@ -66,7 +66,6 @@ function sentenceCase(str: string) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .grid > div > img {

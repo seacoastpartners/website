@@ -1,14 +1,11 @@
 <template>
-    <div>
-        <NavBar />
-        <slot />
-        <FooterSection />
-    </div>
+    <footer class="text-xxsmall">
+        <span>© {{ year }} Seacoast Technical Partners, LLC</span>
+    </footer>
 </template>
 
 <script lang="ts" setup>
-import NavBar from "@/components/NavBar.vue"
-import FooterSection from "@/components/FooterSection.vue"
+const year = new Date().getFullYear()
 </script>
 
 <style scoped>

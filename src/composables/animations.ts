@@ -4,7 +4,7 @@ export default function useAnimations() {
     function handleScroll() {
         const navElement = document.querySelector("nav")
         if (window.scrollY > 10) {
-            navElement.style.backgroundColor = "rgba(0,0,0,0.5)"
+            navElement.style.backgroundColor = "var(--primary-bg-color)"
         } else {
             navElement.style.backgroundColor = "rgba(0,0,0,0)"
         }

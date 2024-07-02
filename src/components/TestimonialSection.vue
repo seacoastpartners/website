@@ -58,7 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10vh 24px;
+    padding: var(--section-padding);
 }
 
 article {
@@ -80,8 +80,8 @@ article {
     flex-direction: column;
     max-width: 600px;
     padding: 20px 30px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 8px;
+    background: var(--secondary-bg-color);
+    border-radius: 4px;
     box-shadow: none;
     transition: margin 500ms ease-in-out;
 }

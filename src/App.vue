@@ -11,16 +11,25 @@ useAnimations()
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 
+:root {
+    --primary-font-family: 'Open Sans Hebrew', serif;
+    --primary-font-color: #fff;
+    --primary-bg-color: #000;
+    --secondary-bg-color: #1A1A1A;
+    --tertiary-bg-color: #313131;
+    --section-padding: 5vh 24px 10vh 24px;
+}
+
 body {
-    background-color: black;
+    background-color: var(--primary-bg-color);
     margin: 0px;
 }
 
 #app {
-    font-family: 'Open Sans Hebrew', serif;
+    font-family: var(--primary-font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: white;
+    color: var(--primary-font-color);
     overflow-x: hidden;
 }
 
@@ -28,9 +37,29 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
 .max-width {
     max-width: 80%;
     margin: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .text-xlarge {

@@ -11,7 +11,10 @@
             </p>
         </article>
         <div class="fade-in-on-scroll">
-            <LogoCard :items="companies" />
+            <LogoCard
+                :title="'Past Clients'"
+                :items="companies"
+            />
         </div>
     </section>
 </template>
@@ -22,7 +25,7 @@ import LogoCard from "@/components/LogoCard.vue"
 const companies = [
     { name: "Booz Allen", src: "/boozallen.png" },
     { name: "Notre Dame", src: "/notredame.png" },
-    { name: "VitalView Technologies", src: "./vitalview.png" },
+    { name: "VitalView Technologies", src: "./vitalviewtechnologies.png" },
     { name: "Consensus Networks", src: "/consensusnetworks.png" },
     { name: "BasisPoint+", src: "./basispoint+.png" },
     { name: "WealthFeed", src: "./wealthfeed.png" },
@@ -37,12 +40,12 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
-    padding: 5vh 24px 10vh 24px;
+    padding: var(--section-padding);
 }
 
 article {
     padding: 30px;
+    width: 75%;
 }
 
 @media (max-width: 768px) {
