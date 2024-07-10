@@ -10,23 +10,12 @@
                     >
                 </router-link>
             </li>
-            <li>
-                <NavDropdown
-                    title="Services"
-                    :links="serviceLinks"
-                />
-            </li>
         </ul>
     </nav>
 </template>
 
 <script lang="ts" setup>
-import NavDropdown from "@/components/NavDropdown.vue"
-import useServices from "@/composables/services"
-
 const homeLink = { name: "home" }
-const { services, getServiceLink } = useServices()
-const serviceLinks = services.map(getServiceLink)
 </script>
 
 <style scoped>

@@ -1,7 +1,6 @@
 <template>
     <div
         class="card"
-        @click="handleClick"
     >
         <header
             v-if="props.service.name"
@@ -41,29 +40,16 @@
                     </div>
                 </div>
             </div>
-            <div class="button text-right">
-                <ArrowRightIcon class="icon-small" />
-            </div>
         </footer>
     </div>
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from "vue-router"
-import { ArrowRightIcon } from "@heroicons/vue/16/solid"
 import { Service } from "@/types/index"
-import useServices from "@/composables/services"
 
 const props = defineProps<{
     service: Service
 }>()
-
-const { getServiceLink } = useServices()
-const router = useRouter()
-
-function handleClick() {
-    router.push(getServiceLink(props.service).to)
-}
 
 const items = [
     { name: "React", src: "./react.webp" },
@@ -80,13 +66,6 @@ const items = [
     padding: 24px 28px;
     background-color: var(--card-bg-color);
     border-radius: 4px;
-    cursor: pointer;
-    box-shadow: none;
-    transition: filter var(--transition-duration) ease-in-out;
-}
-
-.card:hover {
-    filter: brightness(125%)
 }
 
 .description {
@@ -103,11 +82,6 @@ ul {
 
 li {
     margin-bottom: 8px;
-}
-
-.button {
-    margin-top: 48px;
-    width: 100%;
 }
 
 .grid {
