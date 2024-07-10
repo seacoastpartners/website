@@ -2,14 +2,15 @@
     <div class="card text-center">
         <div
             v-if="props.title"
-            class="title text-xxsmall"
+            class="title text-xxsmall uppercase"
         >
-            {{ sentenceCase(props.title) }}
+            {{ props.title }}
         </div>
         <div class="content grid">
             <div
                 v-for="item in props.items"
                 :key="item.name"
+                class="flex-column align-center"
             >
                 <img
                     :src="item.src"
@@ -31,20 +32,13 @@ const props = defineProps<{
     title: string,
     items: Array<LogoItem>
 }>()
-
-function sentenceCase(str: string) {
-    return str
-        .replace(/([A-Z])/g, " $1")
-        .toUpperCase()
-}
 </script>
 
 <style scoped>
 .card {
-    padding: 20px 30px;
-    background: var(--secondary-bg-color);
+    padding: 24px 28px;
+    background-color: var(--card-bg-color);
     border-radius: 4px;
-    box-shadow: none;
 }
 
 .title {
@@ -59,13 +53,7 @@ function sentenceCase(str: string) {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.grid > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: var(--grid-gap);
 }
 
 .grid > div > img {

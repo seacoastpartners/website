@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="max-width">
         <article class="fade-in-on-scroll">
             <h2 class="text-large font-heavy">
                 What Our Clients Say
@@ -72,7 +72,6 @@ article {
     align-items: center;
     gap: 24px;
     width: 100%;
-    margin: 24px 0;
 }
 
 .testimonial {
@@ -80,10 +79,10 @@ article {
     flex-direction: column;
     max-width: 600px;
     padding: 20px 30px;
-    background: var(--secondary-bg-color);
+    background: var(--card-bg-color);
     border-radius: 4px;
     box-shadow: none;
-    transition: margin 500ms ease-in-out;
+    transition: margin var(--transition-duration) ease-in-out;
 }
 
 blockquote {

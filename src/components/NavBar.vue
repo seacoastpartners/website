@@ -1,8 +1,8 @@
 <template>
     <nav>
-        <ul class="max-width">
-            <li>
-                <router-link to="/">
+        <ul class="max-width flex-row justify-between">
+            <li class="inline-block">
+                <router-link :to="homeLink">
                     <img
                         class="logo"
                         src="/logo-white.svg"
@@ -13,7 +13,7 @@
             <li>
                 <NavDropdown
                     title="Services"
-                    :items="serviceItems"
+                    :links="serviceLinks"
                 />
             </li>
         </ul>
@@ -24,13 +24,9 @@
 import NavDropdown from "@/components/NavDropdown.vue"
 import useServices from "@/composables/services"
 
-const { services } = useServices()
-const serviceItems = services.map(service => {
-    return {
-        name: service.name,
-        to: { name: "service", params: { name: service.name } }
-    }
-})
+const homeLink = { name: "home" }
+const { services, getServiceLink } = useServices()
+const serviceLinks = services.map(getServiceLink)
 </script>
 
 <style scoped>
@@ -38,22 +34,19 @@ nav {
     position: fixed;
     height: 48px;
     width: 100%;
-    z-index: 1;
+    z-index: 20000;
     background-color: unset;
-    transition: background-color 500ms linear;
+    transition: background-color var(--transition-duration) ease-in-out;
 }
 
 ul {
     max-height: 100%;
     padding-inline-start: 0px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
+    padding: 0 var(--layout-padding-x);
 }
 
 li {
     list-style-type: none;
-    display: inline-block;
 }
 
 .logo {

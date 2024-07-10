@@ -10,13 +10,3 @@
 import NavBar from "@/components/NavBar.vue"
 import FooterSection from "@/components/FooterSection.vue"
 </script>
-
-<style scoped>
-footer {
-    width: 100%;
-    padding: 24px 0;
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-}
-</style>

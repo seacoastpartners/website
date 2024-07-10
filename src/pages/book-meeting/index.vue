@@ -31,4 +31,8 @@ import DefaultLayout from "@/layouts/Default.vue"
     min-width: 100%;
     height: 100vh;
 }
+
+.form-container div {
+    z-index: 0;
+}
 </style>

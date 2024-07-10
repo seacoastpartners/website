@@ -1,49 +1,49 @@
 <template>
-    <section>
-        <article class="max-width">
-            <h2 class="text-large font-heavy fade-in-on-scroll">
+    <section class="max-width flex-column justify-center align-center">
+        <header>
+            <h1 class="text-large text-center font-heavy fade-in-on-scroll">
                 Founders
-            </h2>
-            <div class="founders">
-                <div
-                    v-for="person in founders"
-                    :key="person.name"
-                    class="person fade-in-on-scroll"
+            </h1>
+        </header>
+        <div class="grid">
+            <div
+                v-for="person in founders"
+                :key="person.name"
+                class="card fade-in-on-scroll"
+            >
+                <img
+                    class="image"
+                    :src="`${person.image}`"
+                    alt="Profile Picture"
                 >
-                    <img
-                        class="image"
-                        :src="`${person.image}`"
-                        alt="Profile Picture"
+                <h2 class="text-medium">
+                    {{ person.name }}
+                </h2>
+                <p class="description text-xsmall">
+                    {{ person.des }}
+                </p>
+                <div class="social-links">
+                    <a
+                        :href="person.linkedin"
+                        target="_blank"
                     >
-                    <h3 class="text-medium">
-                        {{ person.name }}
-                    </h3>
-                    <p class="description text-xsmall">
-                        {{ person.des }}
-                    </p>
-                    <div class="social-links">
-                        <a
-                            :href="person.linkedin"
-                            target="_blank"
+                        <img
+                            class="icon"
+                            src="/linkedin.png"
                         >
-                            <img
-                                class="icon"
-                                src="/linkedin.png"
-                            >
-                        </a>
-                        <a
-                            :href="person.github"
-                            target="_blank"
+                    </a>
+                    <a
+                        :href="person.github"
+                        target="_blank"
+                    >
+                        <img
+                            class="icon"
+                            src="/github.png"
                         >
-                            <img
-                                class="icon"
-                                src="/github.png"
-                            >
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </article>
+        </div>
     </section>
 </template>
 
@@ -101,34 +101,24 @@ const founders = people.filter(person => person.founder)
 
 <style scoped>
 section {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000),
-        url('../assets/blur.png');
-    background-size: cover;
-    background-position: top;
-    padding: 10vh 24px;
+    padding: var(--section-padding);
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+section > header {
+    padding: 32px 0;
 }
 
-section > article > h2 {
-    margin: 48px 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
 }
 
-.founders {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-}
-
-.person {
-    width: 400px;
-    min-width: 250px;
+.card {
+    padding: 24px 28px;
+    background-color: var(--card-bg-color);
+    border-radius: 4px;
+    max-width: 400px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -162,12 +152,12 @@ section > article > h2 {
 }
 
 @media (max-width: 768px) {
-    .founders {
-        flex-direction: column;
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .person {
-        width: 100%;
+    .card {
+        max-width: 100%;
     }
 }
 </style>

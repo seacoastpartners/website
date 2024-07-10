@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+:root {
+    --primary-font-family: 'Open Sans Hebrew', serif;
+    --card-bg-color: #1A1A1A;
+    --card-hover-bg-color: #313131;
+    --primary-color: rgba(57, 130, 171, 1);
+    --secondary-color: rgba(40, 178, 191, 1);
+    --tertiary-color: rgba(31, 192, 166, 1);
+    --accent-color: rgba(115, 208, 159, 1);
+    --layout-padding-x: 48px; 
+    --section-padding: 5vh var(--layout-padding-x);
+    --grid-gap: 28px;
+    --transition-duration: 300ms;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+#app {
+    font-family: var(--primary-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    overflow-x: hidden;
+}
+
+.max-width {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.half-width {
+    width: 50%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-xlarge {
+    font-size: 120px;
+    line-height: 1;
+}
+
+.text-large {
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.text-medium {
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.text-small {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.text-xsmall {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.text-xxsmall {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.font-heavy {
+    font-weight: 900;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.icon-small {
+    height: 18px;
+    width: 18px;
+    margin: auto 0;
+}
+
+.icon-xsmall {
+    height: 16px;
+    width: 16px;
+    margin: auto 0;
+}
+
+.icon-medium {
+    height: 24px;
+    width: 24px;
+    margin: auto 0;
+}
+
+.icon-large {
+    height: 50px;
+    width: 50px;
+    margin: auto 0;
+}
+
+.fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity var(--transition-duration) ease-in-out, transform var(--transition-duration) ease-in-out;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --layout-padding-x: 32px;
+    }
+
+    .text-xlarge {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .text-large {
+        font-size: 36px;
+        line-height: 1.5;
+    }
+
+    .text-medium {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .text-small {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .text-xsmall {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

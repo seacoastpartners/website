@@ -1,17 +1,17 @@
 <template>
     <div class="dropdown">
-        <div class="button text-xsmall flex">
+        <div class="button text-xsmall flex-row">
             {{ props.title }}
-            <ChevronDownIcon class="icon" />
+            <ChevronDownIcon class="icon-small" />
         </div>
         <div class="container">
             <div class="content">
                 <router-link
-                    v-for="item in props.items"
-                    :key="item.name"
-                    :to="item.to"
+                    v-for="link in props.links"
+                    :key="link.name"
+                    :to="link.to"
                 >
-                    {{ item.name }}
+                    {{ link.name }}
                 </router-link>
             </div>
         </div>
@@ -19,17 +19,12 @@
 </template>
 
 <script lang="ts" setup>
-import { RouteLocationNamedRaw } from "vue-router"
 import { ChevronDownIcon } from "@heroicons/vue/16/solid"
-
-type LinkItem = {
-    name: string
-    to: RouteLocationNamedRaw
-}
+import { Link } from "@/types"
 
 const props = defineProps<{
     title?: string,
-    items: Array<LinkItem>
+    links: Link[]
 }>()
 </script>
 
@@ -45,17 +40,12 @@ const props = defineProps<{
     padding: 12px;
     border-width: 0;
     color: white;
-}
-
-.icon {
-    height: 18px;
-    width: 18px;
-    margin: auto;
+    transition: background-color var(--transition-duration) ease-in-out;
 }
 
 .dropdown:hover > .button {
     text-decoration: underline;
-    background: var(--secondary-bg-color);
+    background-color: var(--card-bg-color);
 }
 
 .container {
@@ -67,8 +57,9 @@ const props = defineProps<{
 
 .content {
     border-radius: 4px;
-    background: var(--secondary-bg-color);
     min-width: 200px;
+    background-color: var(--card-bg-color);
+    transition: background-color var(--transition-duration) ease-in-out;
 }
 
 .content a {
@@ -76,10 +67,12 @@ const props = defineProps<{
     padding: 12px;
     text-decoration: none;
     display: block;
+    background-color: var(--card-bg-color);
+    transition: filter var(--transition-duration) ease-in-out;
 }
 
 .content a:hover {
-    background: var(--tertiary-bg-color);
+    filter: brightness(125%)
 }
 
 .dropdown:hover .container {

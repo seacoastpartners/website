@@ -1,14 +1,19 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Home from "../pages/Home.vue"
-import Service from "../pages/Service.vue"
-import BookMeeting from "../pages/BookMeeting.vue"
+import Home from "@/pages/home/index.vue"
+import BookMeeting from "@/pages/book-meeting/index.vue"
+import Service from "@/pages/service/index.vue"
+
+enum RouteName {
+    HOME = "home",
+    BOOK_MEETING = "book-meeting",
+    SERVICE = "service"
+}
 
 const routes = [
-    { path: "/", name: "home", component: Home },
-    // TODO Add back with services
-    { path: "/services/:name", name: "service", component: Service },
-    { path: "/book-meeting", name: "book-meeting", component: BookMeeting },
-    { path: "/:pathMatch(.*)*", name: "not-found", component: Home }
+    { path: "/", name: RouteName.HOME, component: Home },
+    { path: "/book-meeting", name: RouteName.BOOK_MEETING, component: BookMeeting },
+    { path: "/services/:name", name: RouteName.SERVICE, component: Service },
+    { path: "/:pathMatch(.*)*", component: Home }
 ]
 
 const router = createRouter({
@@ -16,11 +21,4 @@ const router = createRouter({
     routes
 })
 
-router.beforeEach((_to, from, next) => {
-    if (from.fullPath === "/book-meeting") {
-        window.location.reload()
-    }
-    next()
-})
-
-export default router
+export { RouteName, router }

@@ -1,6 +1,6 @@
 <template>
     <section class="max-width">
-        <article class="fade-in-on-scroll">
+        <header class="fade-in-on-scroll">
             <h2 class="text-large font-heavy">
                 Our Work
             </h2>
@@ -9,8 +9,8 @@
                 enterprises. We have helped clients take their product from idea to MVP, and we have helped
                 others grow their product to meet increased demand or integrate new features.
             </p>
-        </article>
-        <div class="fade-in-on-scroll">
+        </header>
+        <div class="card fade-in-on-scroll">
             <LogoCard
                 :title="'Past Clients'"
                 :items="companies"
@@ -25,7 +25,7 @@ import LogoCard from "@/components/LogoCard.vue"
 const companies = [
     { name: "Booz Allen", src: "/boozallen.png" },
     { name: "Notre Dame", src: "/notredame.png" },
-    { name: "VitalView Technologies", src: "./vitalviewtechnologies.png" },
+    { name: "VitalView", src: "./vitalview.png" },
     { name: "Consensus Networks", src: "/consensusnetworks.png" },
     { name: "BasisPoint+", src: "./basispoint+.png" },
     { name: "WealthFeed", src: "./wealthfeed.png" },
@@ -43,8 +43,8 @@ section {
     padding: var(--section-padding);
 }
 
-article {
-    padding: 30px;
+header {
+    padding: 32px 32px 32px 0;
     width: 75%;
 }
 
@@ -53,8 +53,12 @@ article {
         flex-direction: column;
     }
 
-    article {
-        padding: 30px 0;
+    header {
+        padding: 32px 0;
+        width: 100%;
+    }
+
+    .card {
         width: 100%;
     }
 }

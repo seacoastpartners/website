@@ -1,12 +1,15 @@
-import { onMounted } from "vue"
+import { onMounted, watch } from "vue"
+import { useRoute } from "vue-router"
 
 export default function useAnimations() {
+    const route = useRoute()
+
     function handleScroll() {
         const navElement = document.querySelector("nav")
         if (window.scrollY > 10) {
-            navElement.style.backgroundColor = "var(--primary-bg-color)"
+            navElement.style.backgroundColor = "black"
         } else {
-            navElement.style.backgroundColor = "rgba(0,0,0,0)"
+            navElement.style.backgroundColor = "transparent"
         }
         
         const fadableElements = document.querySelectorAll(".fade-in-on-scroll") as NodeListOf<HTMLElement>
@@ -25,8 +28,12 @@ export default function useAnimations() {
     }
     
     onMounted(() => {
-        setTimeout(handleScroll, 100)
         window.addEventListener("scroll", handleScroll)
+    })
+
+    watch(() => route, () => {
+        console.log(route)
+        handleScroll()
     })
 }
 
