@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@heroicons/vue": "^2.1.4",
+        "firebase": "^10.12.3",
         "vue": "^3.4.0",
         "vue-router": "^4.2.5"
     },
