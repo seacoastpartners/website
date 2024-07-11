@@ -75,7 +75,7 @@ section > header {
 
 .card {
     padding: 24px 28px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 .card:nth-of-type(1) {

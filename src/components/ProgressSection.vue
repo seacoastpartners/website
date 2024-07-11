@@ -45,7 +45,7 @@ article {
 .card {
     padding: 24px 28px;
     background-color: var(--card-bg-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     box-shadow: none;
     transition: background-color var(--transition-duration) ease-in-out;

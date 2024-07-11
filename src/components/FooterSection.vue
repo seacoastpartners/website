@@ -10,6 +10,7 @@ const year = new Date().getFullYear()
 
 <style scoped>
 footer {
+    margin-top: auto;
     width: 100%;
     padding: 24px 0;
     height: fit-content;

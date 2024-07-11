@@ -1,5 +1,5 @@
 <template>
-    <DefaultLayout>
+    <div id="page">
         <div 
             id="form"
             data-tf-opacity="100"
@@ -9,11 +9,10 @@
             data-tf-auto-focus
             data-tf-live="01HKFVE05H4YBC5HQ39DR5A0WM" 
         />
-    </DefaultLayout>
+    </div>
 </template>
 
 <script lang="ts" setup>
-import DefaultLayout from "@/layouts/Default.vue"
 import { onMounted, onUnmounted } from "vue"
 
 function handleLoad() {

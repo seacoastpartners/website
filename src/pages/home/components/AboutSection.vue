@@ -118,14 +118,21 @@ section > header {
 
 .card {
     padding: 24px 28px;
-    background: rgb(115,208,159);
-    background: linear-gradient(180deg, rgba(57, 130, 171, 1) 0%, rgba(26,26,26,1) 50%);
-    border-radius: 4px;
+    background-color: var(--card-bg-color);
+    border-radius: var(--border-radius);
     min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
+}
+
+.card:nth-of-type(1) {
+    background: linear-gradient(145deg, var(--primary-color) 0%, var(--card-bg-color) 40%);
+}
+
+.card:nth-of-type(2) {
+    background: linear-gradient(315deg, var(--primary-color) 0%, var(--card-bg-color) 40%);
 }
 
 .image {

@@ -27,18 +27,18 @@
                 >Based in the USA.
             </p>
             <p class="actions flex-row">
-                <router-link
+                <RouterLink
                     class="button text-small font-bold"
                     :to="pricingLink"
                 >
                     View Pricing
-                </router-link>
-                <router-link
+                </RouterLink>
+                <RouterLink
                     class="button text-small font-bold"
                     :to="bookMeetingLink"
                 >
                     Book Meeting
-                </router-link>
+                </RouterLink>
             </p>
         </header>
     </section>
@@ -122,7 +122,7 @@ header > * {
 .button {
     padding: 6px 12px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     text-decoration: none;
     color: white;
 }

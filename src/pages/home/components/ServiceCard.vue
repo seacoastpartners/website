@@ -5,7 +5,7 @@
         <header
             v-if="props.service.name"
         >
-            <component
+            <Component
                 :is="props.service.icon"
                 class="icon-large"
             />
@@ -56,7 +56,7 @@ const props = defineProps<{
 .card {
     padding: 24px 28px;
     background-color: var(--card-bg-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 h2 {

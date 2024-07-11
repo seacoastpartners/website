@@ -2,21 +2,21 @@
     <nav>
         <ul class="max-width flex-row justify-between">
             <li class="inline-block">
-                <router-link :to="homeLink">
+                <RouterLink :to="homeLink">
                     <img
                         class="logo"
                         src="/logo-white.svg"
                         alt="Seacoast Technical Partners"
                     >
-                </router-link>
+                </RouterLink>
             </li>
-            <li class="inline-block">
-                <router-link
+            <li class="flex-row">
+                <RouterLink
                     class="button text-xsmall"
                     :to="bookMeetingLink"
                 >
                     Book Meeting
-                </router-link>
+                </RouterLink>
             </li>
         </ul>
     </nav>
@@ -53,12 +53,10 @@ li {
 }
 
 .button {
-    display: block;
-    height: 26px;
-    margin: 6px 0;
+    margin: auto 0;
     padding: 4px 8px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     border: 1px solid white;
     text-decoration: none;
     color: white;

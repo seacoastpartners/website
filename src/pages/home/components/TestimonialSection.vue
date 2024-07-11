@@ -9,7 +9,8 @@
             <div
                 v-for="(testimonial, index) in testimonials"
                 :key="index"
-                :class="['testimonial', getPositionClass(index), 'fade-in-on-scroll']"
+                :class="['card', getPositionClass(index), 'fade-in-on-scroll']"
+                :style="{ 'background-image': `url(${testimonial.background})` }"
             >
                 <div class="content fade-in-on-scroll">
                     <blockquote class="text-xsmall">
@@ -31,21 +32,24 @@ const testimonials = [
         title: "CEO, CardioSpeed",
         testimonial: "\"What we had to do was very complicated. We were taking a proprietary computer vision algorithm developed by PHDs at the University of Notre Dame\
         and we brought in Chris and Shane to build us a prototype that we could demo to our initial users. Really glad we were able to rely on STP to build the tech \
-        quickly and cleanly.\""
+        quickly and cleanly.\"",
+        background: "./cardiospeed.png"
         // image: "/testimonials-images/juan-manuel-segura.jpeg",
     },
     {
         name: "Andrew Pemberton",
-        title: "President, Pemberton Advisory",
+        title: "CEO, BasisPoint+",
         testimonial: "\"Chris and Shane are the best. They are rock solid devs that will exceed your expectations with consistent open, honest communication throughout their development\
-        so that you have the peace of mind that you will be able to deliver to your customers and clients on time.\""
+        so that you have the peace of mind that you will be able to deliver to your customers and clients on time.\"",
+        background: "./basispoint+.png"
     },
     {
         name: "Antonio Cucciniello",
         title: "Founder, Investarters",
         testimonial: "\"Working with the STP Team was phenomenal. They actually took the time to truly understand each of the requirements and the real reasoning behind them to build my platform properly. \
         They built a tool that cut my time running a service by 83% (nearly a full hour every time.) Can’t thank them enough. I'm excited to work with STP on future projects as well! They understand what it’s\
-         like to be a start up and get you production level software quickly.\""
+         like to be a start up and get you production level software quickly.\"",
+        background: "./investarters.jpeg"
     }
 ]
 function getPositionClass(index: number) {
@@ -74,13 +78,17 @@ header {
     width: 100%;
 }
 
-.testimonial {
+.card {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     padding: 20px 30px;
-    background: var(--card-bg-color);
-    border-radius: 4px;
+    background-color: var(--card-bg-color);
+    background-position: 97.5% 90%;
+    background-size: 25%;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
     box-shadow: none;
     transition: margin var(--transition-duration) ease-in-out;
 }
@@ -91,11 +99,11 @@ blockquote {
     margin-left: 0;
 }
 
-.testimonial.left {
+.card.left {
     margin-right: 10%;
 }
 
-.testimonial.right {
+.card.right {
     margin-left: 10%;
 }
 

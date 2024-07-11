@@ -10,6 +10,7 @@
     --tertiary-color: rgba(40, 178, 191, 1);
     --quaternary-color: rgba(31, 192, 166, 1);
     --quinary-color: rgba(115, 208, 159, 1);
+    --border-radius: 8px;
     --layout-padding-x: 48px; 
     --section-padding: 5vh var(--layout-padding-x);
     --grid-gap: 24px;
