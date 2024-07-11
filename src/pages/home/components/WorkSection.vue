@@ -12,7 +12,7 @@
         </header>
         <div class="card fade-in-on-scroll">
             <LogoCard
-                :title="'Past Clients'"
+                :title="'Current and Past Clients'"
                 :items="companies"
             />
         </div>
@@ -59,7 +59,7 @@ header {
     }
 
     .card {
-        width: 100%;
+        max-width: 100%;
     }
 }
 </style>

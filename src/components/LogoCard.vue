@@ -2,7 +2,7 @@
     <div class="card text-center">
         <div
             v-if="props.title"
-            class="title text-xxsmall uppercase"
+            class="title font-heavy text-xxsmall uppercase"
         >
             {{ props.title }}
         </div>
@@ -42,7 +42,6 @@ const props = defineProps<{
 }
 
 .title {
-    font-weight: bold;
     margin-bottom: 16px;
 }
 

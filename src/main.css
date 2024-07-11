@@ -6,12 +6,13 @@
     --card-bg-color: #1A1A1A;
     --card-hover-bg-color: #313131;
     --primary-color: rgba(57, 130, 171, 1);
-    --secondary-color: rgba(40, 178, 191, 1);
-    --tertiary-color: rgba(31, 192, 166, 1);
-    --accent-color: rgba(115, 208, 159, 1);
+    --secondary-color: rgba(49, 154, 181, 1);
+    --tertiary-color: rgba(40, 178, 191, 1);
+    --quaternary-color: rgba(31, 192, 166, 1);
+    --quinary-color: rgba(115, 208, 159, 1);
     --layout-padding-x: 48px; 
     --section-padding: 5vh var(--layout-padding-x);
-    --grid-gap: 28px;
+    --grid-gap: 24px;
     --transition-duration: 300ms;
 }
 

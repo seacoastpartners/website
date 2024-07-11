@@ -6,10 +6,16 @@ export interface Link {
     to: RouteLocationNamedRaw
 }
 
+export interface Logo {
+    name: string
+    src: string
+}
+
 export interface Work {
-    icon: FunctionalComponent
     name: string
     summary: string
+    icon?: FunctionalComponent
+    logos?: Logo[]
 }
 
 export interface Service extends Work {

@@ -11,15 +11,17 @@
                 :key="person.name"
                 class="card fade-in-on-scroll"
             >
-                <img
-                    class="image"
-                    :src="`${person.image}`"
-                    alt="Profile Picture"
-                >
-                <h2 class="text-medium">
-                    {{ person.name }}
-                </h2>
-                <p class="description text-xsmall">
+                <header>
+                    <img
+                        class="image"
+                        :src="`${person.image}`"
+                        alt="Profile Picture"
+                    >
+                    <h2 class="text-center text-medium">
+                        {{ person.name }}
+                    </h2>
+                </header>
+                <p class="content text-xsmall">
                     {{ person.des }}
                 </p>
                 <div class="social-links">
@@ -53,7 +55,7 @@ const people = [
         name: "Chris",
         image: "chris.jpg",
         github: "https://github.com/ccali11",
-        linkedin: "https://www.linkedin.com/in/christophercali/",
+        linkedin: "https://www.linkedin.com/in/christophercali",
         des: "Chris started his career in consulting for Booz Allen Hamilton where he would eventually serve as Chief of Staff. While there he led a team \
          of engineers to build internal knowledge management tools. Since then he's launched multiple companies that have raised over $5M in funding and has\
           been coding full stack for the better part of the last 10 years.",
@@ -62,8 +64,8 @@ const people = [
     {
         name: "Shane",
         image: "shane.jpg",
-        github: "https://shanejearley.github.io",
-        linkedin: "https://www.linkedin.com/in/shanejearley/",
+        github: "https://github.com/shanejearley",
+        linkedin: "https://www.linkedin.com/in/shanejearley",
         des: "Shane has been a full stack developer for over 10 years. He has helped build prototypes for companies that have gone on to raise over $5M in funding.\
          Shane is a true swiss army knife when it comes to software; he has demonstrated the ability to learn and implement bleeding edge technologies \
          very quickly.",
@@ -110,15 +112,15 @@ section > header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--grid-gap);
 }
 
 .card {
     padding: 24px 28px;
-    background-color: var(--card-bg-color);
+    background: rgb(115,208,159);
+    background: linear-gradient(180deg, rgba(57, 130, 171, 1) 0%, rgba(26,26,26,1) 50%);
     border-radius: 4px;
-    max-width: 400px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -133,7 +135,7 @@ section > header {
     object-fit: cover;
 }
 
-.description {
+.content {
     word-break: break-word;
     margin: 0;
 }
@@ -149,15 +151,5 @@ section > header {
 .icon {
     height: 24px;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .card {
-        max-width: 100%;
-    }
 }
 </style>

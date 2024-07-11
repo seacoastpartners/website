@@ -27,16 +27,16 @@
         <footer>
             <div class="grid">
                 <div
-                    v-for="item in items"
-                    :key="item.name"
+                    v-for="logo in props.service.logos"
+                    :key="logo.name"
                     class="flex-column align-center"
                 >
                     <img
-                        :src="item.src"
-                        :alt="item.name"
+                        :src="logo.src"
+                        :alt="logo.name"
                     >
                     <div class="text-xxsmall">
-                        {{ item.name }}
+                        {{ logo.name }}
                     </div>
                 </div>
             </div>
@@ -50,15 +50,6 @@ import { Service } from "@/types/index"
 const props = defineProps<{
     service: Service
 }>()
-
-const items = [
-    { name: "React", src: "./react.webp" },
-    { name: "Vue", src: "./vue.webp" },
-    { name: "Angular", src: "./angular.webp" },
-    { name: "Swift", src: "./swift.png" },
-    { name: "Flutter", src: "./flutter.png" },
-    { name: "Figma", src: "./figma.png" }
-]
 </script>
 
 <style scoped>
@@ -66,10 +57,6 @@ const items = [
     padding: 24px 28px;
     background-color: var(--card-bg-color);
     border-radius: 4px;
-}
-
-.description {
-    padding: 12px 0;
 }
 
 h2 {
@@ -81,11 +68,12 @@ ul {
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .grid {
-    padding: 24px 28px;
+    max-width: 95%;
+    margin: 12px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--grid-gap);
@@ -98,15 +86,15 @@ li {
     object-fit: contain;
 }
 
-header {
-    margin-bottom: auto;
-}
-
 .content {
     margin-bottom: 24px;
 }
 
 footer {
     margin-top: auto;
+}
+
+footer > .title {
+    margin-bottom: 16px;
 }
 </style>

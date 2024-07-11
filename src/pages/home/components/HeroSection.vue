@@ -26,10 +26,16 @@
                     src="/flag.png"
                 >Based in the USA.
             </p>
-            <p>
+            <p class="actions flex-row">
                 <router-link
                     class="button text-small font-bold"
-                    to="/book-meeting"
+                    :to="pricingLink"
+                >
+                    View Pricing
+                </router-link>
+                <router-link
+                    class="button text-small font-bold"
+                    :to="bookMeetingLink"
                 >
                     Book Meeting
                 </router-link>
@@ -46,6 +52,8 @@ body.ontouchstart = () => {
         video.play()
     }
 }
+const pricingLink = { name: "home", hash: "#pricing" }
+const bookMeetingLink = { name: "book-meeting" }
 </script>
 
 <style scoped>
@@ -107,25 +115,45 @@ header > * {
     gap: 12px;
 }
 
+.actions {
+    gap: 12px;
+}
+
 .button {
     padding: 6px 12px;
     cursor: pointer;
     border-radius: 4px;
-    border-width: 0;
     text-decoration: none;
     color: white;
-    background-image: linear-gradient(90deg,
-            rgba(115, 208, 159, 1) 0%,
-            rgba(31, 192, 166, 1) 25%,
-            rgba(40, 178, 191, 1) 75%,
-            rgba(57, 130, 171, 1) 100%);
-    background-position: right top;
-    background-size: 100% auto;
-    transition: background-size 250ms ease-in-out;
 }
 
-.button:hover {
+.button:first-child {
+    border: 1px solid var(--primary-color);
+    background-image: linear-gradient(90deg,
+            var(--quinary-color) 0%,
+            var(--quaternary-color) 20%,
+            var(--tertiary-color) 40%,
+            var(--secondary-color) 60%,
+            var(--primary-color) 100%);
+    background-position: right top;
+    background-size: 100% auto;
+    transition: background-size var(--transition-duration) ease-in-out;
+}
+
+.button:first-child:hover {
     background-size: 400% auto;
+    background-color: var(--secondary-color);
+}
+
+.button:last-child {
+    border: 1px solid white;
+    transition: color var(--transition-duration) ease-in-out;
+    transition: background-color var(--transition-duration) ease-in-out;
+}
+
+.button:last-child:hover {
+    color: black;
+    background-color: white;
 }
 
 @media (max-width: 768px) {

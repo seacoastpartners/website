@@ -10,12 +10,21 @@
                     >
                 </router-link>
             </li>
+            <li class="inline-block">
+                <router-link
+                    class="button text-xsmall"
+                    :to="bookMeetingLink"
+                >
+                    Book Meeting
+                </router-link>
+            </li>
         </ul>
     </nav>
 </template>
 
 <script lang="ts" setup>
 const homeLink = { name: "home" }
+const bookMeetingLink = { name: "book-meeting" }
 </script>
 
 <style scoped>
@@ -41,5 +50,24 @@ li {
 .logo {
     height: 24px;
     margin: 12px 0;
+}
+
+.button {
+    display: block;
+    height: 26px;
+    margin: 6px 0;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: color var(--transition-duration) ease-in-out;
+    transition: background-color var(--transition-duration) ease-in-out;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
 }
 </style>

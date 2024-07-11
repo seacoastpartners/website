@@ -1,68 +1,55 @@
 <template>
-    <section class="max-width">
-        <header>
+    <section
+        id="pricing"
+        class="max-width"
+    >
+        <header class="fade-in-on-scroll">
             <h1 class="text-large font-heavy">
                 Pricing
             </h1>
         </header>
         <div class="grid">
-            <div class="card">
+            <div
+                v-for="price in prices"
+                :key="price.name"
+                class="card fade-in-on-scroll"
+            >
                 <header>
                     <h2 class="text-small font-heavy">
-                        MVP Sprint Development
+                        {{ price.name }}
                     </h2>
                     <p class="text-small">
-                        $20k / mo.*
+                        {{ price.price }}
                     </p>
                 </header>
                 <ul>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
-                    </li>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
-                    </li>
-                </ul>
-            </div>
-            <div class="card">
-                <header>
-                    <h2 class="text-small font-heavy">
-                        Monthly App Development
-                    </h2>
-                    <p class="text-small">
-                        $20k / mo.*
-                    </p>
-                </header>
-                <ul>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
-                    </li>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
+                    <li
+                        v-for="item in price.items"
+                        :key="item"
+                        class="text-xsmall"
+                    >
+                        {{ item }}
                     </li>
                 </ul>
-            </div>
-            <div class="card">
-                <header>
-                    <h2 class="text-small font-heavy">
-                        Fractional CTO and Team
-                    </h2>
-                    <p class="text-small">
-                        $40k / mo.*
-                    </p>
-                </header>
-                <ul>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
-                    </li>
-                    <li class="text-xsmall">
-                        Custom MVP developed and deployed
-                    </li>
-                </ul>
+                <footer>
+                    <div
+                        v-for="note in price.notes"
+                        :key="note"
+                        class="text-xxsmall"
+                    >
+                        {{ note }}
+                    </div>
+                </footer>
             </div>
         </div>
     </section>
 </template>
+
+<script lang="ts" setup>
+import usePrices from "@/composables/prices"
+
+const { prices } = usePrices()
+</script>
 
 <style scoped>
 section {
@@ -77,8 +64,13 @@ section > header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--grid-gap);
+}
+
+.grid > div {
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -102,9 +94,11 @@ ul {
     padding-inline-start: 28px;
 }
 
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+li {
+    margin-bottom: 4px;
+}
+
+footer {
+    margin-top: auto;
 }
 </style>

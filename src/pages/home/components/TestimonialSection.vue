@@ -1,22 +1,22 @@
 <template>
     <section class="max-width">
-        <article class="fade-in-on-scroll">
+        <header class="fade-in-on-scroll">
             <h2 class="text-large font-heavy">
                 What Our Clients Say
             </h2>
-        </article>
-        <div class="testimonials-container">
+        </header>
+        <div class="container">
             <div
                 v-for="(testimonial, index) in testimonials"
                 :key="index"
                 :class="['testimonial', getPositionClass(index), 'fade-in-on-scroll']"
             >
-                <div class="testimonial-content fade-in-on-scroll">
+                <div class="content fade-in-on-scroll">
                     <blockquote class="text-xsmall">
                         {{ testimonial.testimonial }}
                     </blockquote>
-                    <h3 class="client-name">
-                        — {{ testimonial.name }}, <span class="client-title">{{ testimonial.title }}</span>
+                    <h3 class="client">
+                        — {{ testimonial.name }}, <span class="title">{{ testimonial.title }}</span>
                     </h3>
                 </div>
             </div>
@@ -61,11 +61,11 @@ section {
     padding: var(--section-padding);
 }
 
-article {
+header {
     padding: 30px;
 }
 
-.testimonials-container {
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -99,23 +99,23 @@ blockquote {
     margin-left: 10%;
 }
 
-.testimonial-content {
+.content {
     display: flex;
     flex-direction: column;
 }
 
-.testimonial-content>p {
+.content > p {
     margin-top: 0;
 }
 
-.client-name {
+.client {
     font-weight: bold;
     font-size: 20px;
     color: #FFF;
     margin-bottom: 2px;
 }
 
-.client-title {
+.title {
     font-style: italic;
     font-weight: 500;
     font-size: 18px;
@@ -123,7 +123,7 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-    article {
+    header {
         padding: 30px 0;
     }
 
@@ -137,12 +137,12 @@ blockquote {
         margin: 0 auto;
     }
 
-    .client-name {
+    .client {
         font-size: 16px;
         margin-bottom: 2px;
     }
 
-    .client-title {
+    .title {
         font-size: 14px;
     }
 }
