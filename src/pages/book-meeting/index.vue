@@ -1,7 +1,7 @@
 <template>
     <DefaultLayout>
         <div 
-            class="form-container"
+            id="form"
             data-tf-opacity="100"
             data-tf-inline-on-mobile
             data-tf-iframe-props="title=Lead Capture Form STP"
@@ -14,25 +14,43 @@
 
 <script lang="ts" setup>
 import DefaultLayout from "@/layouts/Default.vue"
-; (() => {
-    if (window.localStorage) {
-        if (!localStorage.getItem("reload")) {
-            localStorage["reload"] = true
-            window.location.reload()
-        } else {
-            localStorage.removeItem("reload")
-        }
+import { onMounted, onUnmounted } from "vue"
+
+function handleLoad() {
+    const container: HTMLDivElement = document.querySelector("#form")
+    container.style.opacity = "1"
+}
+
+const selector = "script[src*='typeform.com']"
+
+onMounted(() => {
+    let typeform: HTMLScriptElement = document.querySelector(selector)
+    if (!typeform) {
+        typeform = document.createElement("script")
+        typeform.src = "//embed.typeform.com/next/embed.js"
+        document.head.appendChild(typeform)
     }
-})()
+    typeform.onload = handleLoad
+})
+
+onUnmounted(() => {
+    const typeform = document.querySelector(selector)
+    if (typeform) {
+        typeform.remove()
+    }
+    document.body.style.overflow = "auto"
+})
 </script>
 
 <style scoped>
-.form-container {
+#form {
     min-width: 100%;
     height: 100vh;
+    opacity: 0;
+    transition: opacity var(--transition-duration) ease-in-out;
 }
 
-.form-container div {
+#form div {
     z-index: 0;
 }
 </style>

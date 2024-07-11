@@ -40,11 +40,11 @@ export default function useServices() {
                     summary: "Some work item summary."
                 },
                 {
-                    name: "SQL and NoSQL data modeling",
+                    name: "SQL and NoSQL database modeling",
                     summary: "Some work item summary."
                 },
                 {
-                    name: "Automated data processing pipelines",
+                    name: "Analytics and IoT data processing pipelines",
                     summary: "Some work item summary."
                 }
             ],
