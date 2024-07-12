@@ -46,7 +46,7 @@ export default function usePrices() {
                 "Fully documented and portable code",
                 "Direct comms and daily updates",
                 "Weekly syncs",
-                "Pause / cancel anytime (monthly plan)"
+                "Pause or cancel anytime (monthly plan)"
             ],
             notes: [
                 "*$35k / mo for 3-6 months (save up to $30k)",
