@@ -1,6 +1,10 @@
+import "./main.css"
 import { createApp } from "vue"
 import App from "./App.vue"
+import router from "./plugins/router"
+import firebase from "./plugins/firebase"
 
-import router from "./router"
-
-createApp(App).use(router).mount("#app")
+createApp(App)
+    .use(router)
+    .use(firebase, { analytics: import.meta.env.PROD })
+    .mount("#app")
