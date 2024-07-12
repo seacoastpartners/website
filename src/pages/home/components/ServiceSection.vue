@@ -39,7 +39,7 @@ section > header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
     gap: var(--grid-gap);
 }
 
@@ -48,7 +48,7 @@ section > header {
     flex-direction: column;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     section > header {
         width: 100%;
         text-align: left;

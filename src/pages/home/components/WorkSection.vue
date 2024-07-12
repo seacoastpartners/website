@@ -48,7 +48,7 @@ header {
     width: 75%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     section {
         flex-direction: column;
     }

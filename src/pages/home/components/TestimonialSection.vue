@@ -130,18 +130,18 @@ blockquote {
     color: #CCC;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     header {
         padding: 30px 0;
     }
 
-    .testimonial {
+    .card {
         max-width: calc(100% - 40px);
         padding: 20px;
     }
 
-    .testimonial.left,
-    .testimonial.right {
+    .card.left,
+    .card.right {
         margin: 0 auto;
     }
 

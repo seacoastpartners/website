@@ -30,12 +30,10 @@ export default function useAnimations() {
     }
     
     onMounted(() => {
-        console.log("scroll activated")
         window.addEventListener("scroll", handleScroll)
     })
 
     onUnmounted(() => {
-        console.log("scroll deactivated")
         window.removeEventListener("scroll", handleScroll)
     })
 

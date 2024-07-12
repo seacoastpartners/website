@@ -64,7 +64,7 @@ section > header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
     gap: var(--grid-gap);
 }
 

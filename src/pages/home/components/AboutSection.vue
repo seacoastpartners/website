@@ -31,7 +31,7 @@
                     >
                         <img
                             class="icon"
-                            src="/linkedin.png"
+                            :src="'./linkedin.png'"
                         >
                     </a>
                     <a
@@ -40,7 +40,7 @@
                     >
                         <img
                             class="icon"
-                            src="/github.png"
+                            :src="'./github.png'"
                         >
                     </a>
                 </div>
@@ -53,7 +53,7 @@
 const people = [
     {
         name: "Chris",
-        image: "chris.jpg",
+        image: "./chris.jpg",
         github: "https://github.com/ccali11",
         linkedin: "https://www.linkedin.com/in/christophercali",
         des: "Chris started his career in consulting for Booz Allen Hamilton where he would eventually serve as Chief of Staff. While there he led a team \
@@ -63,7 +63,7 @@ const people = [
     },
     {
         name: "Shane",
-        image: "shane.jpg",
+        image: "./shane.jpg",
         github: "https://github.com/shanejearley",
         linkedin: "https://www.linkedin.com/in/shanejearley",
         des: "Shane has been a full stack developer for over 10 years. He has helped build prototypes for companies that have gone on to raise over $5M in funding.\
@@ -73,7 +73,7 @@ const people = [
     },
     {
         name: "Ian",
-        image: "ian.png",
+        image: "./ian.png",
         github: "https://ianherri.github.io",
         linkedin: "https://www.linkedin.com/in/ian-herrington-16939693/",
         des: "",
@@ -112,7 +112,7 @@ section > header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
     gap: var(--grid-gap);
 }
 

@@ -156,7 +156,7 @@ header > * {
     background-color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     header > * {
         max-width: 100%;
         text-align: left;

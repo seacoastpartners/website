@@ -13,7 +13,8 @@
     --border-radius: 8px;
     --layout-padding-x: 48px; 
     --section-padding: 5vh var(--layout-padding-x);
-    --grid-gap: 24px;
+    --grid-gap: 18px;
+    --grid-column-min: 285px;
     --transition-duration: 300ms;
 }
 
@@ -180,9 +181,9 @@ h1, h2, h3 {
     transition: opacity var(--transition-duration) ease-in-out, transform var(--transition-duration) ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     :root {
-        --layout-padding-x: 32px;
+        --layout-padding-x: 24px;
     }
 
     .text-xlarge {
@@ -201,7 +202,7 @@ h1, h2, h3 {
     }
 
     .text-small {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
     }
 

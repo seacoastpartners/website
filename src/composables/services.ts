@@ -53,8 +53,8 @@ export default function useServices() {
                 { name: "Node", src: "/node.png" },
                 { name: "Go", src: "./go.svg" },
                 { name: "PostgreSQL", src: "./postgresql.svg" },
-                { name: "MongoDB", src: "./mongodb.svg" },
-                { name: "OpenAI", src: "./openai.webp" }
+                { name: "Snowflake", src: "./snowflake.png" },
+                { name: "MongoDB", src: "./mongodb.svg" }
             ]
         },
         {
