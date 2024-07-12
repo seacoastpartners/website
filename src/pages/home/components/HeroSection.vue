@@ -100,6 +100,7 @@ header > * {
 }
 
 .emphasized {
+    display: inline-block;
     text-decoration: none;
     color: white;
     background-image: linear-gradient(90deg,
