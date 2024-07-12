@@ -22,15 +22,20 @@
                         {{ price.price }}
                     </p>
                 </header>
-                <ul>
-                    <li
-                        v-for="item in price.items"
-                        :key="item"
-                        class="text-xsmall"
-                    >
-                        {{ item }}
-                    </li>
-                </ul>
+                <div class="content">
+                    <div class="text-xsmall">
+                        {{ price.deliverable }}
+                    </div>
+                    <ul>
+                        <li
+                            v-for="item in price.items"
+                            :key="item"
+                            class="text-xsmall"
+                        >
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
                 <footer>
                     <div
                         v-for="note in price.notes"
@@ -49,31 +54,34 @@
 const prices = [
     {
         name: "MVP Development",
-        price: "$20k / mo.*",
+        price: "$15k / mo.*",
+        deliverable: "Build your MVP to onboard users",
         items: [
-            "Custom MVP development",
-            "Multi-environment setup (dev, stage, prod)",
+            "Landing page",
             "User auth management",
-            "Cloud config and deployment",
-            "Continuous integration testing",
-            "Fully documented and portable code"
+            "Secure server and database",
+            "Data model (SQL or NoSQL)",
+            "Multiple cloud environments",
+            "Your differentiating feature",
+            "Fully documented, portable code",
+            "30 days post completion support"
         ],
         notes: [
-            "*$20k / mo. for 1 month",
-            "*$10k / mo. for 2 months"
+            "*$30k for 60 day delivery",
+            "*$40k for 30 day rush delivery"
         ]
     },
     {
         name: "Monthly Development",
         price: "$20k / mo.*",
+        deliverable: "Crush your feature backlog",
         items: [
-            "Discrete task and project scoping",
-            "Pay on task completion",
-            "Dedicated project lead (Chris)",
+            "Project management lead",
+            "Unlimited features and revisions",
             "Direct comms and daily updates",
-            "Unlimited requests and revisions",
             "Weekly syncs",
-            "Pause or cancel anytime (monthly plan)"
+            "Fully documented, portable code",
+            "Pause or cancel anytime (monthly)"
         ],
         notes: [
             "*$18k / mo for 3 months (save $6k)",
@@ -83,17 +91,18 @@ const prices = [
     {
         name: "Fractional CTO",
         price: "$40k / mo.*",
+        deliverable: "Get your entire technical team",
         items: [
-            "Full product tech stack development",
-            "Dedicated project lead (Chris)",
+            "Project management lead",
             "1 frontend engineer",
             "1 backend engineer",
             "1 devops engineer",
             "UI/UX design (as needed)",
-            "Fully documented and portable code",
+            "Unlimited features and revisions",
             "Direct comms and daily updates",
             "Weekly syncs",
-            "Pause or cancel anytime (monthly plan)"
+            "Fully documented, portable code",
+            "Pause or cancel anytime (monthly)"
         ],
         notes: [
             "*$35k / mo for 3-6 months (save up to $30k)",
@@ -110,7 +119,7 @@ section {
     padding: var(--section-padding);
 }
 
-section>header {
+section > header {
     padding: 32px 0;
 }
 
@@ -120,7 +129,7 @@ section>header {
     gap: var(--grid-gap);
 }
 
-.grid>div {
+.grid > div {
     display: flex;
     flex-direction: column;
 }

@@ -183,7 +183,7 @@ h1, h2, h3 {
 
 @media (max-width: 640px) {
     .text-xlarge {
-        font-size: 48px;
+        font-size: 60px;
         line-height: 1;
     }
 

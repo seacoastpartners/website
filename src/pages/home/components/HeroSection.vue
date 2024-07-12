@@ -16,9 +16,13 @@
             <h1 class="title text-xlarge font-heavy">
                 Build beautiful.
             </h1>
-            <p class="text-small font-bold">
-                We're a team of full stack software engineers, designers, and product developers
-                who help you build new products and features to delight your customers.
+            <p class="text-small">
+                We build, deploy, and scale your software applications <RouterLink
+                    :to="pricingLink"
+                    class="emphasized"
+                >
+                    the right way
+                </RouterLink>.
             </p>
             <p class="text-xsmall">
                 <img
@@ -28,13 +32,13 @@
             </p>
             <p class="actions flex-row">
                 <RouterLink
-                    class="button text-small font-bold"
+                    class="button text-small"
                     :to="pricingLink"
                 >
                     View Pricing
                 </RouterLink>
                 <RouterLink
-                    class="button text-small font-bold"
+                    class="button text-small"
                     :to="bookMeetingLink"
                 >
                     Book Meeting
@@ -62,8 +66,8 @@ section {
     height: 100vh;
     min-height: 500px;
     background-image: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0.25) 50%,
-    rgba(0, 0, 0, 1));
+        rgba(0, 0, 0, 0.25) 50%,
+        rgba(0, 0, 0, 1));
     transition: all var(--transition-duration) ease-in-out;
     padding: var(--section-padding);
     padding-top: 48px;
@@ -88,11 +92,25 @@ header {
 }
 
 header > h1 {
-   margin-left: -0.05em;
+    margin-left: -0.05em;
 }
 
 header > * {
     max-width: 60%;
+}
+
+.emphasized {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(90deg,
+        var(--quinary-color) 0%,
+        var(--quaternary-color) 20%,
+        var(--tertiary-color) 40%,
+        var(--secondary-color) 60%,
+        var(--primary-color) 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 2px;
 }
 
 .flag {

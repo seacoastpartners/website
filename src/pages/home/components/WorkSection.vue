@@ -12,7 +12,7 @@
         </header>
         <div class="content">
             <LogoCard
-                :title="'Current and Past Clients'"
+                :title="'Current and Past'"
                 :items="companies"
                 class="card fade-in-on-scroll"
             />

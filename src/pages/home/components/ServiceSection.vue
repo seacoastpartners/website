@@ -5,7 +5,9 @@
                 Our Services
             </h2>
             <p class="text-xsmall">
-                We'll help you prove a concept, launch a minimum awesome product, then harden and scale your offering.
+                Have a new idea or need help with an existing project?
+                <br>
+                We're here to help across the entire stack.
             </p>
         </header>
         <div class="grid">
@@ -34,7 +36,7 @@ const services = [
                 summary: "Just as Wright designed Fallingwater to blend perfectly with the landscape, we craft intuitive, visually appealing user interfaces that fit seamlessly into the lives of our users. Our designs prioritize user engagement and satisfaction, ensuring every interaction is both meaningful and delightful."
             },
             {
-                name: "Cross platform application development",
+                name: "Cross-platform app development",
                 summary: "Fallingwater’s design adapts beautifully to its environment, much like our responsive web designs adapt to any device. By utilizing reusable code and theming, we ensure consistency, efficiency, and ease of maintenance across all your digital assets, mirroring Wright’s commitment to enduring quality."
             },
             {
@@ -73,9 +75,9 @@ const services = [
             { name: "Python", src: "./python.webp" },
             { name: "Node", src: "/node.png" },
             { name: "Go", src: "./go.svg" },
+            { name: "MongoDB", src: "./mongodb.svg" },
             { name: "PostgreSQL", src: "./postgresql.svg" },
-            { name: "Snowflake", src: "./snowflake.png" },
-            { name: "MongoDB", src: "./mongodb.svg" }
+            { name: "Snowflake", src: "./snowflake.png" }
         ]
     },
     {
@@ -111,10 +113,12 @@ const services = [
 <style scoped>
 section {
     padding: var(--section-padding);
+    padding-top: 0;
 }
 
-section>header {
+section > header {
     padding: 32px 0;
+    padding-top: 0;
     width: 50%;
     margin: 0 auto;
 }
@@ -125,13 +129,13 @@ section>header {
     gap: var(--grid-gap);
 }
 
-.grid>div {
+.grid > div {
     display: flex;
     flex-direction: column;
 }
 
 @media (max-width: 640px) {
-    section>header {
+    section > header {
         width: 100%;
         text-align: left;
     }
