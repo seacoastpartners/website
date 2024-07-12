@@ -49,7 +49,7 @@ const testimonials = [
         testimonial: "\"Working with the STP Team was phenomenal. They actually took the time to truly understand each of the requirements and the real reasoning behind them to build my platform properly. \
         They built a tool that cut my time running a service by 83% (nearly a full hour every time.) Can’t thank them enough. I'm excited to work with STP on future projects as well! They understand what it’s\
          like to be a start up and get you production level software quickly.\"",
-        background: "./investarters.jpeg"
+        background: "./investarters.png"
     }
 ]
 function getPositionClass(index: number) {

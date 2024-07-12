@@ -10,10 +10,11 @@
                 others grow their product to meet increased demand or integrate new features.
             </p>
         </header>
-        <div class="card fade-in-on-scroll">
+        <div class="content">
             <LogoCard
                 :title="'Current and Past Clients'"
                 :items="companies"
+                class="card fade-in-on-scroll"
             />
         </div>
     </section>
@@ -58,8 +59,8 @@ header {
         width: 100%;
     }
 
-    .card {
-        max-width: 100%;
+    .content {
+        width: 100%;
     }
 }
 </style>

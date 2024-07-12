@@ -1,5 +1,5 @@
 <template>
-    <div class="card text-center">
+    <div class="card flex-column text-center">
         <div
             v-if="props.title"
             class="title font-heavy text-xxsmall uppercase"
