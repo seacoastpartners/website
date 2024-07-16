@@ -92,14 +92,14 @@ const cases = [
         color: "#7382FA",
         link: "https://basispointplus.com",
         areas: ["Product design", "Frontend", "Backend", "Startup planning"],
-        src: "./basispointpluscase.svg",
+        src: "./basispointpluscase.png",
         summary: "We built the initial prototype integrating an advanced analytics SDK to help BPP’s clients visualize their data via customized dashboards. BPP also contracted us as its sole development partner to enhance its full stack application, build new features, and address technical customer support issues.",
         details: "Named Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, BasisPointPlus provides fund managers the ability to track key metrics across their portfolio companies throughout its investment horizon."
     },
     {
         name: "WealthFeed",
         link: "https://wealthfeed.com",
-        color: "#17AA89",
+        color: "#46DAA8",
         areas: ["Data pipelines", "Infrastructure as Code", "CI/CD", "Application monitoring"],
         src: "./wealthfeedcase.png",
         summary: "We built a data pipeline to ingest and process financial data from multiple sources, including APIs and web scraping. We also implemented Infrastructure as Code to deploy and manage the application on AWS, and set up CI/CD pipelines to automate the deployment process.",
@@ -110,9 +110,18 @@ const cases = [
         color: "#FF6B6B",
         link: "https://consensusnetworks.com/healthnet",
         areas: ["Product design", "Frontend", "Backend", "Data Architecture", "API Design", "Serverless", "IoT"],
-        src: "./healthnetcase.svg",
+        src: "./healthnetcase.png",
         summary: "As part of Consensus Networks, we helped architect and build the full stack web application that ultimately received a $1.5M grant from the US Navy to develop an IoT-enabled medical supply chain logistics platform to help track and allocate its supplies (e.g., blood products) to its various medical and field locations more efficiently.",
         details: "Consensus Networks specializes in designing, building, and securing decentralized communications solutions, such as HealthNet, which integrates logistics systems and real-time data for tracking medical supplies, and ensures secure global connectivity through IoT and satellite communications."
+    },
+    {
+        name: "Investarters",
+        color: "#012B65",
+        link: "https://investarters.com",
+        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
+        src: "./investarterscase.png",
+        summary: "Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success. Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success.",
+        details: "Test item detail 1. Test item detail 2. Test item detail 3. Test item detail 1. Test item detail 2. Test item detail 3."
     },
     {
         name: "CardioSpeed",
@@ -124,20 +133,11 @@ const cases = [
         details: "Based in Washington DC, CardioSpeed was a spinout of a technology developed in partnership between Securiport (a federal contractor) and AI researchers at the University of Notre Dame. The technology used computer vision to measure and track the heart rate of people in view of a web camera. CardioSpeed ceased operations for strategic reasons, largely due to competitive and market-driven forces."
     },
     {
-        name: "Investarters",
-        color: "#0A12CA",
-        link: "https://investarters.com",
-        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
-        src: "./investarterscase.png",
-        summary: "Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success. Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success.",
-        details: "Test item detail 1. Test item detail 2. Test item detail 3. Test item detail 1. Test item detail 2. Test item detail 3."
-    },
-    {
         name: "VitalView",
         color: "#38C2D5",
         link: "https://vitalviewtech.com",
         areas: ["Product design", "Algorithms", "Hardware systems", "Startup planning"],
-        src: "./vitalviewcase.svg",
+        src: "./vitalviewcase.png",
         summary: "Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success. Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success.",
         details: "Test item detail 1. Test item detail 2. Test item detail 3. Test item detail 1. Test item detail 2. Test item detail 3."
     }
@@ -191,10 +191,6 @@ section > header {
 .track {
     display: inline-block;
     animation: 35s slide infinite linear;
-}
-
-.slider:hover .track {
-    animation-play-state: paused;
 }
 
 .slide {
