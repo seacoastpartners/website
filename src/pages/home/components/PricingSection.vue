@@ -126,7 +126,7 @@ section > header {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
-    gap: var(--grid-gap);
+    gap: var(--item-gap);
 }
 
 .grid > div {

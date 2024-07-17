@@ -13,7 +13,7 @@
     --border-radius: 8px;
     --layout-padding-x: 20px; 
     --section-padding: 5vh var(--layout-padding-x);
-    --grid-gap: 16px;
+    --item-gap: 16px;
     --grid-column-min: 285px;
     --transition-duration: 300ms;
 }

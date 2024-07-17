@@ -160,7 +160,7 @@ section > header {
 section > .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
-    gap: var(--grid-gap);
+    gap: var(--item-gap);
 }
 
 section > .grid > div {
@@ -199,7 +199,7 @@ section > .grid > div {
     margin: 12px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--grid-gap);
+    gap: var(--item-gap);
 }
 
 .card > footer > .grid > div > img {

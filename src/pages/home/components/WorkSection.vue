@@ -91,7 +91,7 @@ const cases = [
         name: "BasisPoint+",
         color: "#7382FA",
         link: "https://basispointplus.com",
-        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
+        areas: ["Product design", "Frontend", "Backend", "Startup strategy"],
         src: "./basispointpluscase.png",
         summary: "We built the initial prototype for BasisPoint+, integrating an advanced analytics SDK to enable clients to visualize their data through customized dashboards. BasisPoint+ also entrusted us as their exclusive development partner to enhance their full-stack application, build new features, and address technical customer support issues.",
         details: "BasisPoint+, recognized as the Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, empowers fund managers to track key metrics across their portfolio companies throughout the investment horizon from due diligence to exit."
@@ -118,7 +118,7 @@ const cases = [
         name: "VitalView",
         color: "#38C2D5",
         link: "https://vitalviewtech.com",
-        areas: ["Product design", "Digital signal processing", "Hardware systems", "Startup planning"],
+        areas: ["Product design", "Digital signal processing", "Hardware systems", "Startup strategy"],
         src: "./vitalviewcase.png",
         summary: "We founded VitalView by developing the business case, raising capital, recruiting the initial team, and building the first hardware prototype. This prototype required complex algorithm development to handle high bandwidth signal processing.",
         details: "In partnership with the University of Notre Dame, VitalView was established to create a scalable solution for monitoring and addressing the symptoms of heart failure patients, thereby reducing hospital readmissions. The company's core technology and intellectual property were developed by Dr. Tom Pratt at the University of Notre Dame. VitalView has successfully raised over $5M in funding to date."
@@ -127,7 +127,7 @@ const cases = [
         name: "CardioSpeed",
         color: "#817FBC",
         link: "https://www.linkedin.com/company/cardiospeed",
-        areas: ["Frontend", "Backend", "AI/ML", "Computer vision", "Startup planning"],
+        areas: ["Frontend", "Backend", "AI/ML", "Computer vision", "Startup strategy"],
         src: "./cardiospeedcase.png",
         summary: "We developed a cross-platform prototype that packaged CardioSpeed's core AI and computer vision technology into a cross-platform desktop app. This prototype was essential for CardioSpeed's initial customer validation and feedback, playing a critical role in gathering valuable insights from users and informing launch strategy.",
         details: "Based in Washington, DC, CardioSpeed originated as a spinout from a partnership between Securiport, a federal contractor, and AI researchers at the University of Notre Dame. The technology utilized computer vision to measure and track heart rates of individuals captured by a web camera. Despite the innovative approach, CardioSpeed ceased operations due to strategic reasons, influenced primarily by competitive and market-driven forces."
@@ -136,7 +136,7 @@ const cases = [
         name: "Investarters",
         color: "#012B65",
         link: "https://mentoring.investarters.com",
-        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
+        areas: ["Product design", "Frontend", "Backend", "Startup strategy"],
         src: "./investarterscase.png",
         summary: "We partnered with startup founder, social media personality, and content creator Antonio Cucciniello to develop a service that helps his clients find and invest in real estate properties. We built a backend process that streamlined his previously manual workflow with a series of integrations, including Google Cloud and OpenAI APIs, to automate the creation of personalized investment plans for his clients.",
         details: "Antonio Cucciniello is a social media personality and content creator with close to 1M followers on TikTok and Instagram. Antonio founded Investarters to give his social media following the tools they need to successfully invest in their first real estate investment properties."
@@ -212,7 +212,7 @@ section > header {
 }
 
 .card:not(:last-of-type) {
-    margin-bottom: var(--grid-gap);
+    margin-bottom: var(--item-gap);
 }
 
 .card > .description,
@@ -264,7 +264,7 @@ section > header {
 
     .card {
         flex-direction: column;
-        gap: var(--grid-gap);
+        gap: var(--item-gap);
     }
 
     .card > .description,
