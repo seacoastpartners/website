@@ -56,9 +56,9 @@ const people = [
         image: "./chris.jpg",
         github: "https://github.com/ccali11",
         linkedin: "https://www.linkedin.com/in/christophercali",
-        des: "Chris started his career in consulting for Booz Allen Hamilton where he would eventually serve as Chief of Staff. While there he led a team \
-         of engineers to build internal knowledge management tools. Since then he's launched multiple companies that have raised over $5M in funding and has\
-          been coding full stack for the better part of the last 10 years.",
+        des: "Chris started his career at Booz Allen Hamilton where he would eventually serve as Chief of Staff. A self-taught engineer, he built an \
+         internal knowledge management tool that the firm still uses today. Since then, Chris has launched multiple companies, collectively raising over \
+         $5M in funding. He has transitioned to a full-time software developer, startup advisor, and co-founder of Seacoast Technical Partners (STP).",
         founder: true
     },
     {

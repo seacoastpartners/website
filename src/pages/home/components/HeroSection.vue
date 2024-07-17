@@ -17,12 +17,13 @@
                 Build beautiful.
             </h1>
             <p class="text-small">
-                We build, deploy, and scale your software applications <RouterLink
+                We build, deploy, and scale your software applications&nbsp;
+                <RouterLink
                     :to="pricingLink"
-                    class="emphasized"
+                    class="link"
                 >
-                    the right way
-                </RouterLink>.
+                    the right way.
+                </RouterLink>
             </p>
             <p class="text-xsmall">
                 <img
@@ -99,7 +100,7 @@ header > * {
     max-width: 60%;
 }
 
-.emphasized {
+.link {
     display: inline-block;
     text-decoration: none;
     color: white;

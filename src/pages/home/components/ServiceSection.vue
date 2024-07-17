@@ -5,25 +5,59 @@
                 Our Services
             </h2>
             <p class="text-xsmall">
-                Have a new idea or need help with an existing project?
-                <br>
-                We're here to help across the entire stack.
+                Have a new idea or needs for an existing project?<br>We're here to help across the entire stack.
             </p>
         </header>
         <div class="grid">
-            <ServiceCard
+            <div
                 v-for="service in services"
                 :key="service.name"
-                :service="service"
-                class="fade-in-on-scroll"
-            />
+                class="card fade-in-on-scroll"
+            >
+                <header>
+                    <Component
+                        :is="service.icon"
+                        class="icon-large"
+                    />
+                    <h2 class="font-bold text-small">
+                        {{ service.name }}
+                    </h2>
+                </header>
+                <div class="content">
+                    <ul class="text-left">
+                        <li
+                            v-for="item in service.items"
+                            :key="item.name"
+                            class="text-xsmall"
+                        >
+                            {{ item.name }}
+                        </li>
+                    </ul>
+                </div>
+                <footer>
+                    <div class="grid">
+                        <div
+                            v-for="logo in service.logos"
+                            :key="logo.name"
+                            class="flex-column align-center"
+                        >
+                            <img
+                                :src="logo.src"
+                                :alt="logo.name"
+                            >
+                            <div class="text-xxsmall">
+                                {{ logo.name }}
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </section>
 </template>
 
 <script setup>
 import { BuildingOffice2Icon, UserGroupIcon, WrenchScrewdriverIcon } from "@heroicons/vue/16/solid"
-import ServiceCard from "./ServiceCard.vue"
 
 const services = [
     {
@@ -119,19 +153,60 @@ section {
 section > header {
     padding: 32px 0;
     padding-top: 0;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
-.grid {
+section > .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
     gap: var(--grid-gap);
 }
 
-.grid > div {
+section > .grid > div {
     display: flex;
     flex-direction: column;
+}
+
+.card {
+    padding: 24px 28px;
+    background-color: var(--card-bg-color);
+    border-radius: var(--border-radius);
+}
+
+.card > header > h2 {
+    margin-block: 0.5em;
+}
+
+.card > .content {
+    margin-bottom: 24px;
+}
+
+.card > .content > ul {
+    padding-inline-start: 28px;
+}
+
+.card > .content > ul > li {
+    margin-bottom: 4px;
+}
+
+.card > footer {
+    margin-top: auto;
+}
+
+.card > footer > .grid {
+    max-width: 95%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+}
+
+.card > footer > .grid > div > img {
+    margin-bottom: 4px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 @media (max-width: 640px) {

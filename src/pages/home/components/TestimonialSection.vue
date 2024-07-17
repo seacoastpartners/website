@@ -41,7 +41,7 @@ const testimonials = [
         title: "CEO, BasisPoint+",
         testimonial: "\"Chris and Shane are the best. They are rock solid devs that will exceed your expectations with consistent open, honest communication throughout their development\
         so that you have the peace of mind that you will be able to deliver to your customers and clients on time.\"",
-        background: "./basispoint+.png"
+        background: "./basispointplus.png"
     },
     {
         name: "Antonio Cucciniello",
