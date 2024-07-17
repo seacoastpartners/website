@@ -93,8 +93,8 @@ const cases = [
         link: "https://basispointplus.com",
         areas: ["Product design", "Frontend", "Backend", "Startup planning"],
         src: "./basispointpluscase.png",
-        summary: "We built the initial prototype integrating an advanced analytics SDK to help BPP’s clients visualize their data via customized dashboards. BPP also contracted us as its sole development partner to enhance its full stack application, build new features, and address technical customer support issues.",
-        details: "Named Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, BasisPointPlus provides fund managers the ability to track key metrics across their portfolio companies throughout its investment horizon."
+        summary: "We built the initial prototype for BasisPointPlus (BPP), integrating an advanced analytics SDK to enable BPP’s clients to visualize their data through customized dashboards. BPP also entrusted us as their exclusive development partner to enhance their full-stack application, build new features, and address technical customer support issues.",
+        details: "BasisPointPlus, recognized as the Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, empowers fund managers to track key metrics across their portfolio companies throughout the investment horizon from due diligence to exit."
     },
     {
         name: "WealthFeed",
@@ -111,17 +111,8 @@ const cases = [
         link: "https://consensusnetworks.com/healthnet",
         areas: ["Product design", "Frontend", "Backend", "Data Architecture", "API Design", "Serverless", "IoT"],
         src: "./healthnetcase.png",
-        summary: "As part of Consensus Networks, we helped architect and build the full stack web application that ultimately received a $1.5M grant from the US Navy to develop an IoT-enabled medical supply chain logistics platform to help track and allocate its supplies (e.g., blood products) to its various medical and field locations more efficiently.",
-        details: "Consensus Networks specializes in designing, building, and securing decentralized communications solutions, such as HealthNet, which integrates logistics systems and real-time data for tracking medical supplies, and ensures secure global connectivity through IoT and satellite communications."
-    },
-    {
-        name: "Investarters",
-        color: "#012B65",
-        link: "https://investarters.com",
-        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
-        src: "./investarterscase.png",
-        summary: "Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success. Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success.",
-        details: "Test item detail 1. Test item detail 2. Test item detail 3. Test item detail 1. Test item detail 2. Test item detail 3."
+        summary: "As part of Consensus Networks, we helped architect and build a full-stack web application and secured a $1.5M grant from the US Navy to develop an IoT-enabled medical supply chain logistics platform. This platform enhances the tracking and allocation of supplies, such as blood products, across various medical and field locations, significantly improving efficiency.",
+        details: "Consensus Networks specializes in designing, building, and securing decentralized communications solutions such as HealthNet, a globally secure logistics system using real-time data to track medical supplies through IoT and satellite communications."
     },
     {
         name: "CardioSpeed",
@@ -129,17 +120,26 @@ const cases = [
         link: "https://www.linkedin.com/company/cardiospeed",
         areas: ["Frontend", "Backend", "AI/ML Integration", "Startup planning"],
         src: "./cardiospeedcase.png",
-        summary: "STP built the cross-platform prototype that embedded the core AI / computer vision technology into a desktop app that CardioSpeed used for initial customer validation and feedback. The prototype was critical to acquire feedback from customers.",
-        details: "Based in Washington DC, CardioSpeed was a spinout of a technology developed in partnership between Securiport (a federal contractor) and AI researchers at the University of Notre Dame. The technology used computer vision to measure and track the heart rate of people in view of a web camera. CardioSpeed ceased operations for strategic reasons, largely due to competitive and market-driven forces."
+        summary: "STP developed a cross-platform prototype that embedded CardioSpeed's core AI and computer vision technology into a cross-platform desktop app. This prototype was essential for CardioSpeed's initial customer validation and feedback, playing a critical role in gathering valuable insights from users and informing launch strategy.",
+        details: "Based in Washington, DC, CardioSpeed originated as a spinout from a partnership between Securiport, a federal contractor, and AI researchers at the University of Notre Dame. The technology utilized computer vision to measure and track heart rates of individuals captured by a web camera. Despite the innovative approach, CardioSpeed ceased operations due to strategic reasons, influenced primarily by competitive and market-driven forces."
     },
     {
-        name: "VitalView",
+        name: "VitalView Technologies",
         color: "#38C2D5",
         link: "https://vitalviewtech.com",
         areas: ["Product design", "Algorithms", "Hardware systems", "Startup planning"],
         src: "./vitalviewcase.png",
-        summary: "Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success. Test short summary of things done. Goals accomplished. Challenges, failures, and ultimate success.",
-        details: "Test item detail 1. Test item detail 2. Test item detail 3. Test item detail 1. Test item detail 2. Test item detail 3."
+        summary: "Chris and Shane founded VitalView Technologies by developing the business case, raising capital, recruiting the initial team, and building the first hardware prototype. This prototype required complex algorithm development to handle high bandwidth signal processing.",
+        details: "In partnership with the University of Notre Dame, VitalView Technologies was established to create a scalable solution for monitoring and addressing the symptoms of heart failure patients, thereby reducing hospital readmissions. The company's core technology and intellectual property were developed by Dr. Tom Pratt at the University of Notre Dame. VitalView Technologies has successfully raised over $5M in funding to date."
+    },
+    {
+        name: "Investarters",
+        color: "#012B65",
+        link: "https://investarters.com",
+        areas: ["Product design", "Frontend", "Backend", "Startup planning"],
+        src: "./investarterscase.png",
+        summary: "We partnered with startup founder, social media personality, and content creator Antonio Cucciniello to develop a service that helps his clients find and invest in real estate properties. We built a backend process that streamlined his previously manual workflow by integrating a series of APIs, including Google Cloud Services and OpenAI, to automate the creation of personalized investment plans for his clients.",
+        details: "Antonio Cucciniello is a social media personality and content creator with close to 1M followers on TikTok and Instagram. Antonio founded Investarters to give his social media following the tools they need to successfully invest in their first real estate investment properties."
     }
 ]
 </script>
