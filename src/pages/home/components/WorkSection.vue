@@ -212,7 +212,7 @@ section > header {
 }
 
 .card:not(:last-of-type) {
-    margin-bottom: var(--grid-gap);
+    margin-bottom: var(--item-gap);
 }
 
 .card > .description,
@@ -264,7 +264,7 @@ section > header {
 
     .card {
         flex-direction: column;
-        gap: var(--grid-gap);
+        gap: var(--item-gap);
     }
 
     .card > .description,

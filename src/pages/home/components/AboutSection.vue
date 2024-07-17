@@ -13,25 +13,24 @@
             >
                 <header>
                     <img
-                        class="image"
-                        :src="`${person.image}`"
-                        alt="Profile Picture"
+                        :src="person.image"
+                        :alt="person.name"
                     >
                     <h2 class="text-center text-medium">
                         {{ person.name }}
                     </h2>
                 </header>
-                <p class="content text-xsmall">
-                    {{ person.des }}
+                <p class="text-xsmall">
+                    {{ person.summary }}
                 </p>
-                <div class="social-links">
+                <footer>
                     <a
                         :href="person.linkedin"
                         target="_blank"
                     >
                         <img
-                            class="icon"
                             :src="'./linkedin.png'"
+                            alt="linkedin"
                         >
                     </a>
                     <a
@@ -39,11 +38,11 @@
                         target="_blank"
                     >
                         <img
-                            class="icon"
                             :src="'./github.png'"
+                            alt="github"
                         >
                     </a>
-                </div>
+                </footer>
             </div>
         </div>
     </section>
@@ -56,10 +55,10 @@ const people = [
         image: "./chris.jpg",
         github: "https://github.com/ccali11",
         linkedin: "https://www.linkedin.com/in/christophercali",
-        des: "Chris started his career at Booz Allen Hamilton where he would eventually serve as Chief of Staff. A self-taught engineer, he built an \
-         internal knowledge management tool that the firm still uses today. Since then, Chris has launched multiple companies, collectively raising over \
-         $5M in funding. He has transitioned to a full-time software developer, startup advisor, and co-founder of STP. While he contributes as a full \
-         stack developer on client projects, he is ultimately responsible for STP's project management and assuring maximum client satisfaction.",
+        summary: "Chris started his career at Booz Allen Hamilton where he would eventually serve as Chief of Staff. A self-taught engineer, he built an \
+            internal knowledge management tool that the firm still uses today. Since then, Chris has launched multiple companies, collectively raising over \
+            $5M in funding. He has transitioned to a full-time software developer, startup advisor, and co-founder of STP. While he contributes as a full \
+            stack developer on client projects, he is ultimately responsible for STP's project management and assuring maximum client satisfaction.",
         founder: true
     },
     {
@@ -67,10 +66,10 @@ const people = [
         image: "./shane.jpg",
         github: "https://github.com/shanejearley",
         linkedin: "https://www.linkedin.com/in/shanejearley",
-        des: "With over a decade of experience as a full stack developer, Shane has played the lead engineer role for multiple startups. \
-         Shane's expertise spans a wide range of technologies making him a true Swiss army knife in the software world. His remarkable ability to quickly learn and \
-         implement cutting-edge technologies sets him apart as an exceptional engineer. As a co-founder of STP, Shane drives technology architecture decisions and provides technical \
-         thought leadership ensuring that STP clients receive the best possible solutions to their technical challenges.",
+        summary: "With over a decade of experience as a full stack developer, Shane has played the lead engineer role for multiple startups. \
+            Shane's expertise spans a wide range of technologies making him a true Swiss army knife in the software world. His remarkable ability to quickly learn and \
+            implement cutting-edge technologies sets him apart as an exceptional engineer. As a co-founder of STP, Shane drives technology architecture decisions and provides technical \
+            thought leadership ensuring that STP clients receive the best possible solutions to their technical challenges.",
         founder: true
     },
     {
@@ -78,7 +77,7 @@ const people = [
         image: "./ian.png",
         github: "https://ianherri.github.io",
         linkedin: "https://www.linkedin.com/in/ian-herrington-16939693/",
-        des: "",
+        summary: "",
         founder: false
     }
     // {
@@ -86,7 +85,7 @@ const people = [
     //     image: "steve.jpg",
     //     github: "",
     //     linkedin: "",
-    //     des: "Steve is chief designer, front-end guru, and full time philosophizer.",
+    //     summary: "Steve is chief designer, front-end guru, and full time philosophizer.",
     //     founder: false
     // },
     // {
@@ -94,7 +93,7 @@ const people = [
     //     image: "hawyar.jpg",
     //     github: "",
     //     linkedin: "",
-    //     des: "Hawyar is chief designer, front-end guru, and full time philosophizer.",
+    //     summary: "Hawyar is chief designer, front-end guru, and full time philosophizer.",
     //     founder: false
     // }
 ]
@@ -115,7 +114,7 @@ section > header {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
-    gap: var(--grid-gap);
+    gap: var(--item-gap);
 }
 
 .card {
@@ -137,27 +136,26 @@ section > header {
     background: linear-gradient(315deg, var(--primary-color) 0%, var(--card-bg-color) 40%);
 }
 
-.image {
+.card > header > img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
 
-.content {
-    word-break: break-word;
-    margin: 0;
+.card > p {
+    margin-top: 0;
 }
 
-.social-links {
+.card > footer {
     margin-top: auto;
     display: flex;
-    gap: 36px;
+    gap: var(--item-gap);
     justify-content: center;
     cursor: pointer;
 }
 
-.icon {
+.card > footer > a > img {
     height: 24px;
     cursor: pointer;
 }
