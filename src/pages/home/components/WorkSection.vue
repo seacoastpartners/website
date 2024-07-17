@@ -135,7 +135,7 @@ const cases = [
     {
         name: "Investarters",
         color: "#012B65",
-        link: "https://investarters.com",
+        link: "https://mentoring.investarters.com",
         areas: ["Product design", "Frontend", "Backend", "Startup planning"],
         src: "./investarterscase.png",
         summary: "We partnered with startup founder, social media personality, and content creator Antonio Cucciniello to develop a service that helps his clients find and invest in real estate properties. We built a backend process that streamlined his previously manual workflow with a series of integrations, including Google Cloud and OpenAI APIs, to automate the creation of personalized investment plans for his clients.",
