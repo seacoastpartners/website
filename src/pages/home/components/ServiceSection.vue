@@ -134,7 +134,7 @@ const services = [
         ],
         logos: [
             { name: "AWS", src: "./aws.png" },
-            { name: "GCP", src: "./gcp.svg" },
+            { name: "GCP", src: "./gcp.png" },
             { name: "Azure", src: "./azure.png" },
             { name: "Docker", src: "./docker.png" },
             { name: "Kubernetes", src: "./kubernetes.png" },
