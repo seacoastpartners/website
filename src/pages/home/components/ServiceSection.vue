@@ -108,7 +108,7 @@ const services = [
         logos: [
             { name: "Python", src: "./python.webp" },
             { name: "Node", src: "/node.png" },
-            { name: "Go", src: "./go.svg" },
+            { name: "Go", src: "./go.png" },
             { name: "MongoDB", src: "./mongodb.svg" },
             { name: "PostgreSQL", src: "./postgresql.svg" },
             { name: "Snowflake", src: "./snowflake.png" }
