@@ -58,7 +58,8 @@ const people = [
         linkedin: "https://www.linkedin.com/in/christophercali",
         des: "Chris started his career at Booz Allen Hamilton where he would eventually serve as Chief of Staff. A self-taught engineer, he built an \
          internal knowledge management tool that the firm still uses today. Since then, Chris has launched multiple companies, collectively raising over \
-         $5M in funding. He has transitioned to a full-time software developer, startup advisor, and co-founder of Seacoast Technical Partners (STP).",
+         $5M in funding. He has transitioned to a full-time software developer, startup advisor, and co-founder of STP. While he contributes as a full \
+         stack developer on client projects, he is ultimately responsible for STP's project management and assuring maximum client satisfaction.",
         founder: true
     },
     {
@@ -66,9 +67,10 @@ const people = [
         image: "./shane.jpg",
         github: "https://github.com/shanejearley",
         linkedin: "https://www.linkedin.com/in/shanejearley",
-        des: "Shane has been a full stack developer for over 10 years. He has helped build prototypes for companies that have gone on to raise over $5M in funding.\
-         Shane is a true swiss army knife when it comes to software; he has demonstrated the ability to learn and implement bleeding edge technologies \
-         very quickly.",
+        des: "With over a decade of experience as a full stack developer, Shane has played the lead engineer role for multiple startups. \
+         Shane's expertise spans a wide range of technologies making him a true Swiss army knife in the software world. His remarkable ability to quickly learn and \
+         implement cutting-edge technologies sets him apart as an exceptional engineer. As a co-founder of STP, Shane drives technology architecture decisions and provides technical \
+         thought leadership ensuring that STP clients receive the best possible solutions to their technical challenges.",
         founder: true
     },
     {
