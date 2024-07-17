@@ -79,7 +79,7 @@ const services = [
             }
         ],
         logos: [
-            { name: "React", src: "./react.webp" },
+            { name: "React", src: "./react.png" },
             { name: "Vue", src: "./vue.webp" },
             { name: "Angular", src: "./angular.webp" },
             { name: "Swift", src: "./swift.png" },
