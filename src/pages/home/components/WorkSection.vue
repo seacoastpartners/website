@@ -93,8 +93,8 @@ const cases = [
         link: "https://basispointplus.com",
         areas: ["Product design", "Frontend", "Backend", "Startup planning"],
         src: "./basispointpluscase.png",
-        summary: "We built the initial prototype for BasisPointPlus (BPP), integrating an advanced analytics SDK to enable BPP’s clients to visualize their data through customized dashboards. BPP also entrusted us as their exclusive development partner to enhance their full-stack application, build new features, and address technical customer support issues.",
-        details: "BasisPointPlus, recognized as the Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, empowers fund managers to track key metrics across their portfolio companies throughout the investment horizon from due diligence to exit."
+        summary: "We built the initial prototype for BasisPoint+, integrating an advanced analytics SDK to enable clients to visualize their data through customized dashboards. BasisPoint+ also entrusted us as their exclusive development partner to enhance their full-stack application, build new features, and address technical customer support issues.",
+        details: "BasisPoint+, recognized as the Best Sustainable Investing Tech Innovator of the Year by the Wealth and Finance International Ethical Finance Awards in 2024, empowers fund managers to track key metrics across their portfolio companies throughout the investment horizon from due diligence to exit."
     },
     {
         name: "WealthFeed",
@@ -115,22 +115,22 @@ const cases = [
         details: "Consensus Networks specializes in designing, building, and securing decentralized communications solutions such as HealthNet, a globally secure logistics system using real-time data to track medical supplies through IoT and satellite communications."
     },
     {
+        name: "VitalView",
+        color: "#38C2D5",
+        link: "https://vitalviewtech.com",
+        areas: ["Product design", "Algorithms", "Hardware systems", "Startup planning"],
+        src: "./vitalviewcase.png",
+        summary: "We founded VitalView by developing the business case, raising capital, recruiting the initial team, and building the first hardware prototype. This prototype required complex algorithm development to handle high bandwidth signal processing.",
+        details: "In partnership with the University of Notre Dame, VitalView was established to create a scalable solution for monitoring and addressing the symptoms of heart failure patients, thereby reducing hospital readmissions. The company's core technology and intellectual property were developed by Dr. Tom Pratt at the University of Notre Dame. VitalView has successfully raised over $5M in funding to date."
+    },
+    {
         name: "CardioSpeed",
         color: "#817FBC",
         link: "https://www.linkedin.com/company/cardiospeed",
         areas: ["Frontend", "Backend", "AI/ML Integration", "Startup planning"],
         src: "./cardiospeedcase.png",
-        summary: "STP developed a cross-platform prototype that embedded CardioSpeed's core AI and computer vision technology into a cross-platform desktop app. This prototype was essential for CardioSpeed's initial customer validation and feedback, playing a critical role in gathering valuable insights from users and informing launch strategy.",
+        summary: "We developed a cross-platform prototype that embedded CardioSpeed's core AI and computer vision technology into a cross-platform desktop app. This prototype was essential for CardioSpeed's initial customer validation and feedback, playing a critical role in gathering valuable insights from users and informing launch strategy.",
         details: "Based in Washington, DC, CardioSpeed originated as a spinout from a partnership between Securiport, a federal contractor, and AI researchers at the University of Notre Dame. The technology utilized computer vision to measure and track heart rates of individuals captured by a web camera. Despite the innovative approach, CardioSpeed ceased operations due to strategic reasons, influenced primarily by competitive and market-driven forces."
-    },
-    {
-        name: "VitalView Technologies",
-        color: "#38C2D5",
-        link: "https://vitalviewtech.com",
-        areas: ["Product design", "Algorithms", "Hardware systems", "Startup planning"],
-        src: "./vitalviewcase.png",
-        summary: "Chris and Shane founded VitalView Technologies by developing the business case, raising capital, recruiting the initial team, and building the first hardware prototype. This prototype required complex algorithm development to handle high bandwidth signal processing.",
-        details: "In partnership with the University of Notre Dame, VitalView Technologies was established to create a scalable solution for monitoring and addressing the symptoms of heart failure patients, thereby reducing hospital readmissions. The company's core technology and intellectual property were developed by Dr. Tom Pratt at the University of Notre Dame. VitalView Technologies has successfully raised over $5M in funding to date."
     },
     {
         name: "Investarters",
