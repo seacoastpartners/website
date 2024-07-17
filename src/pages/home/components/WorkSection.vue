@@ -118,7 +118,7 @@ const cases = [
         name: "VitalView",
         color: "#38C2D5",
         link: "https://vitalviewtech.com",
-        areas: ["Product design", "Algorithms", "Hardware systems", "Startup planning"],
+        areas: ["Product design", "Digital signal processing", "Hardware systems", "Startup planning"],
         src: "./vitalviewcase.png",
         summary: "We founded VitalView by developing the business case, raising capital, recruiting the initial team, and building the first hardware prototype. This prototype required complex algorithm development to handle high bandwidth signal processing.",
         details: "In partnership with the University of Notre Dame, VitalView was established to create a scalable solution for monitoring and addressing the symptoms of heart failure patients, thereby reducing hospital readmissions. The company's core technology and intellectual property were developed by Dr. Tom Pratt at the University of Notre Dame. VitalView has successfully raised over $5M in funding to date."
