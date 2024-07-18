@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 import Home from "@/pages/home/index.vue"
 import BookMeeting from "@/pages/book-meeting/index.vue"
+import { titleCase } from "@/utils/strings"
 
 const routes = [
     { path: "/", name: "home", component: Home },
@@ -21,8 +22,12 @@ const router = createRouter({
                 behavior: "smooth"
             }
         }
-        return { x: 0, y: 0 }
+        return { top: 0, left: 0 }
     }
+})
+
+router.beforeEach((to) => {
+    document.title = `STP | ${titleCase(to.name as string)}`
 })
 
 export default router

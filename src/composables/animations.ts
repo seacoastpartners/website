@@ -1,7 +1,7 @@
 import { onMounted, onUnmounted, watch } from "vue"
 import { useRoute } from "vue-router"
 
-export default function useAnimations() {
+export function useAnimations() {
     const route = useRoute()
 
     function handleScroll() {

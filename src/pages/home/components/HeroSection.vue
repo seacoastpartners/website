@@ -50,15 +50,27 @@
 </template>
 
 <script lang="ts" setup>
-const body = document.querySelector("body") as HTMLBodyElement
-body.ontouchstart = () => {
+import { onMounted, onUnmounted } from "vue"
+
+const pricingLink = { name: "home", hash: "#pricing" }
+const bookMeetingLink = { name: "book-meeting" }
+
+function handleTouchStart() {
     const video = document.querySelector("video") as HTMLVideoElement
     if (video.paused) {
         video.play()
     }
 }
-const pricingLink = { name: "home", hash: "#pricing" }
-const bookMeetingLink = { name: "book-meeting" }
+
+onMounted(() => {
+    const body = document.querySelector("body") as HTMLBodyElement
+    body.addEventListener("touchstart", handleTouchStart)
+})
+
+onUnmounted(() => {
+    const body = document.querySelector("body") as HTMLBodyElement
+    body.removeEventListener("touchstart", handleTouchStart)
+})
 </script>
 
 <style scoped>
