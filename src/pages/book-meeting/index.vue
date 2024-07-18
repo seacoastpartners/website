@@ -44,7 +44,7 @@ onUnmounted(() => {
 <style scoped>
 #form {
     min-width: 100%;
-    height: 100%;
+    height: 100vh;
     opacity: 0;
     transition: opacity var(--transition-duration) ease-in-out;
 }
