@@ -7,8 +7,12 @@
             loop
             poster="/seacoast.png"
         >
-            <source
+            <!-- <source
                 src="/seacoast.mp4"
+                type="video/mp4"
+            > -->
+            <source
+                src="/seacoast-dissolved.mp4"
                 type="video/mp4"
             >
         </video>
@@ -162,11 +166,11 @@ header > * {
 .button:first-child {
     border: 1px solid var(--primary-color);
     background-image: linear-gradient(90deg,
-            var(--quinary-color) 0%,
-            var(--quaternary-color) 20%,
-            var(--tertiary-color) 40%,
-            var(--secondary-color) 60%,
-            var(--primary-color) 100%);
+        var(--quinary-color) 0%,
+        var(--quaternary-color) 20%,
+        var(--tertiary-color) 40%,
+        var(--secondary-color) 60%,
+        var(--primary-color) 100%);
     background-position: right top;
     background-size: 100% auto;
     transition: background-size var(--transition-duration) ease-in-out;
