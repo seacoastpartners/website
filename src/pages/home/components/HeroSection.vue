@@ -7,12 +7,8 @@
             loop
             poster="/seacoast.png"
         >
-            <!-- <source
-                src="/seacoast.mp4"
-                type="video/mp4"
-            > -->
             <source
-                src="/seacoast-dissolved.mp4"
+                src="/seacoast.mp4"
                 type="video/mp4"
             >
         </video>
@@ -193,6 +189,15 @@ header > * {
 }
 
 @media (max-width: 640px) {
+    section {
+        height: 100svh;
+    }
+
+    video {
+        height: 100svh;
+        width: 100svw;
+    }
+
     header > * {
         max-width: 100%;
         text-align: left;
