@@ -207,7 +207,7 @@ section > header {
 
 .card {
     padding: 24px 28px;
-    background-color: var(--card-bg-color);
+    background-color: var(--dark-color);
     border-radius: var(--border-radius);
 }
 

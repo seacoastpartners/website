@@ -119,7 +119,7 @@ section > header {
 
 .card {
     padding: 24px 28px;
-    background-color: var(--card-bg-color);
+    background-color: var(--dark-color);
     border-radius: var(--border-radius);
     min-height: 400px;
     display: flex;
@@ -129,11 +129,11 @@ section > header {
 }
 
 .card:nth-of-type(1) {
-    background: linear-gradient(145deg, var(--primary-color) 0%, var(--card-bg-color) 40%);
+    background: linear-gradient(145deg, var(--primary-color) 0%, var(--dark-color) 40%);
 }
 
 .card:nth-of-type(2) {
-    background: linear-gradient(315deg, var(--primary-color) 0%, var(--card-bg-color) 40%);
+    background: linear-gradient(315deg, var(--primary-color) 0%, var(--dark-color) 40%);
 }
 
 .card > header > img {

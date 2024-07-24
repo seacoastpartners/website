@@ -69,7 +69,8 @@ section > header {
 .stepper {
     --circle-size: 3rem;
     --circle-border-width: 0.5rem;
-    --spacing: 0.5rem;
+    --line-width: 0.25rem;
+    --line-spacing: 0.5rem;
     padding: 0;
     width: 100%;
 }
@@ -92,8 +93,8 @@ section > header {
     height: var(--circle-size);
     border-radius: 50%;
     box-sizing: border-box;
-    border: var(--circle-border-width) solid var(--primary-color);
-    background-color: var(--primary-color);
+    border: var(--circle-border-width) solid var(--dark-color);
+    background-color: var(--dark-color);
 }
 
 .stepper > li:nth-child(1):before {
@@ -112,12 +113,12 @@ section > header {
     content: "";
     position: absolute;
     left: 0;
-    top: calc(var(--circle-size) + var(--spacing));
-    bottom: var(--spacing);
-    z-index: -1;
+    top: calc(var(--circle-size) + var(--line-spacing));
+    bottom: var(--line-spacing);
     transform: translateX(calc(var(--circle-size) / 2));
-    width: 2px;
-    background-color: var(--primary-color);
+    width: var(--line-width);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
 }
 
 .button {
@@ -146,12 +147,6 @@ section > header {
 @media (max-width: 640px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .stepper {
-        --circle-size: 1.75rem;
-        --circle-border-width: 0.25rem;
-        --spacing: 0.25rem;
     }
 }
 </style>

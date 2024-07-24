@@ -83,7 +83,7 @@ header {
     flex-direction: column;
     max-width: 600px;
     padding: 20px 30px;
-    background-color: var(--card-bg-color);
+    background-color: var(--dark-color);
     background-position: 97.5% 90%;
     background-size: 25%;
     background-blend-mode: color-burn;

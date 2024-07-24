@@ -3,8 +3,7 @@
 
 :root {
     --primary-font-family: 'Open Sans Hebrew', serif;
-    --card-bg-color: #1A1A1A;
-    --card-hover-bg-color: #313131;
+    --dark-color: rgba(26, 26, 26, 1);
     --primary-color: rgba(57, 130, 171, 1);
     --secondary-color: rgba(49, 154, 181, 1);
     --tertiary-color: rgba(40, 178, 191, 1);
