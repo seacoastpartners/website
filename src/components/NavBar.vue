@@ -30,7 +30,7 @@ const bookMeetingLink = { name: "book-meeting" }
 <style scoped>
 nav {
     position: fixed;
-    height: 48px;
+    height: var(--nav-bar-height);
     width: 100%;
     z-index: 20000;
     background-color: unset;

@@ -13,7 +13,7 @@
             >
         </video>
         <header class="max-width text-left">
-            <h1 class="title text-xlarge font-heavy">
+            <h1 class="title text-xxlarge font-heavy">
                 Build beautiful.
             </h1>
             <p class="text-small">
@@ -82,8 +82,7 @@ section {
         rgba(0, 0, 0, 0.25) 50%,
         rgba(0, 0, 0, 1));
     transition: all var(--transition-duration) ease-in-out;
-    padding: var(--section-padding);
-    padding-top: 48px;
+    padding: var(--layout-padding-y) var(--layout-padding-x) 0 var(--layout-padding-x);
 }
 
 video {

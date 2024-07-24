@@ -11,8 +11,10 @@
     --quaternary-color: rgba(31, 192, 166, 1);
     --quinary-color: rgba(115, 208, 159, 1);
     --border-radius: 8px;
-    --layout-padding-x: 20px; 
-    --section-padding: 5vh var(--layout-padding-x);
+    --nav-bar-height: 48px;
+    --layout-padding-y: 5vh;
+    --layout-padding-x: 20px;
+    --section-padding: var(--layout-padding-y) var(--layout-padding-x);
     --item-gap: 16px;
     --grid-column-min: 285px;
     --transition-duration: 300ms;
@@ -102,14 +104,19 @@ h1, h2, h3 {
     text-align: right;
 }
 
-.text-xlarge {
+.text-xxlarge {
     font-size: 120px;
+    line-height: 1;
+}
+
+.text-xlarge {
+    font-size: 72px;
     line-height: 1;
 }
 
 .text-large {
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .text-medium {
@@ -186,14 +193,18 @@ h1, h2, h3 {
 }
 
 @media (max-width: 640px) {
-    .text-xlarge {
+    .text-xxlarge {
         font-size: 60px;
         line-height: 1;
     }
 
+    .text-xlarge {
+        font-size: 48px;
+    }
+
     .text-large {
         font-size: 36px;
-        line-height: 1.5;
+        line-height: 1;
     }
 
     .text-medium {
