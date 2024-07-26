@@ -8,14 +8,12 @@
                 Go from new idea to product launch in 45 days for $5k.
             </p>
         </header>
-        <video
-            controls
-        >
-            <source
-                src="/test.mp4"
-                type="video/mp4"
-            >
-        </video>
+        <div class="video">
+            <iframe
+                frameborder="0"
+                src="https://www.youtube.com/embed/fSj-2o2ttAE"
+            />
+        </div>
     </section>
 </template>
 
@@ -32,29 +30,17 @@ section > header {
     padding: 32px 0;
 }
 
-video {
-    object-fit: cover;
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     border-radius: var(--border-radius);
-}
-
-.actions {
-    padding-top: 32px;
-}
-
-.button {
-    padding: 6px 12px;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    transition: color var(--transition-duration) ease-in-out;
-    transition: background-color var(--transition-duration) ease-in-out;
-}
-
-.button:hover {
-    color: black;
-    background-color: white;
 }
 </style>
