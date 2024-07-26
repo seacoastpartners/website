@@ -52,4 +52,10 @@ onUnmounted(() => {
 #form div {
     z-index: 0;
 }
+
+@media (max-width: 640px) {
+    #form {
+        height: 100svh;
+    }
+}
 </style>
