@@ -1,23 +1,18 @@
-import { FunctionalComponent } from "vue"
-import { RouteLocationNamedRaw } from "vue-router"
-
-export interface Link {
+export interface Case {
     name: string
-    to: RouteLocationNamedRaw
-}
-
-export interface Logo {
-    name: string
-    src: string
-}
-
-export interface Work {
-    name: string
+    color: string
+    link: string
+    areas: string[]
+    image: string
     summary: string
-    icon?: FunctionalComponent
-    logos?: Logo[]
+    details: string
+    tags: string[]
 }
 
-export interface Service extends Work {
-    items: Work[]
+export interface Testimonial {
+    name: string
+    title: string
+    quote: string
+    image: string
+    tags: string[]
 }

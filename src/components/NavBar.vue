@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul class="max-width flex-row justify-between">
-            <li class="inline-block">
+            <li class="flex-row">
                 <RouterLink :to="homeLink">
                     <img
                         class="logo"

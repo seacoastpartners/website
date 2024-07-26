@@ -17,9 +17,17 @@
     --item-gap: 16px;
     --grid-column-min: 285px;
     --transition-duration: 300ms;
+    --font-xxlarge: 120px;
+    --font-xlarge: 72px;
+    --font-large: 48px;
+    --font-medium: 36px;
+    --font-small: 24px;
+    --font-xsmall: 18px;
+    --font-xxsmall: 12px;
 }
 
 body {
+    overscroll-behavior: none;
     background-color: black;
     margin: 0px;
 }
@@ -104,37 +112,37 @@ h1, h2, h3 {
 }
 
 .text-xxlarge {
-    font-size: 120px;
+    font-size: var(--font-xxlarge);
     line-height: 1;
 }
 
 .text-xlarge {
-    font-size: 72px;
+    font-size: var(--font-xlarge);
     line-height: 1;
 }
 
 .text-large {
-    font-size: 48px;
+    font-size: var(--font-large);
     line-height: 1;
 }
 
 .text-medium {
-    font-size: 36px;
+    font-size: var(--font-medium);
     line-height: 1.5;
 }
 
 .text-small {
-    font-size: 24px;
+    font-size: var(--font-small);
     line-height: 1.5;
 }
 
 .text-xsmall {
-    font-size: 18px;
+    font-size: var(--font-xsmall);
     line-height: 1.5;
 }
 
 .text-xxsmall {
-    font-size: 12px;
+    font-size: var(--font-xxsmall);
     line-height: 1.5;
 }
 
@@ -146,7 +154,7 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-.font-medium {
+.font-regular {
     font-weight: 500;
 }
 
@@ -162,27 +170,37 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-.icon-small {
-    height: 18px;
-    width: 18px;
-    margin: auto 0;
+.underline {
+    text-decoration: underline;
 }
 
-.icon-xsmall {
-    height: 16px;
-    width: 16px;
+.card {
+    padding: 24px 28px;
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
+}
+
+.icon-large {
+    height: var(--font-large);
+    width: var(--font-large);
     margin: auto 0;
 }
 
 .icon-medium {
-    height: 24px;
-    width: 24px;
+    height: var(--font-medium);
+    width: var(--font-medium);
     margin: auto 0;
 }
 
-.icon-large {
-    height: 50px;
-    width: 50px;
+.icon-small {
+    height: var(--font-small);
+    width: var(--font-small);
+    margin: auto 0;
+}
+
+.icon-xsmall {
+    height: var(--font-xsmall);
+    width: var(--font-xsmall);
     margin: auto 0;
 }
 
@@ -192,32 +210,13 @@ h1, h2, h3 {
 }
 
 @media (max-width: 640px) {
-    .text-xxlarge {
-        font-size: 60px;
-        line-height: 1;
-    }
-
-    .text-xlarge {
-        font-size: 48px;
-    }
-
-    .text-large {
-        font-size: 36px;
-        line-height: 1;
-    }
-
-    .text-medium {
-        font-size: 24px;
-        line-height: 1.5;
-    }
-
-    .text-small {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-    .text-xsmall {
-        font-size: 14px;
-        line-height: 1.5;
+    :root {
+        --font-xxlarge: 60px;
+        --font-xlarge: 48px;
+        --font-large: 36px;
+        --font-medium: 24px;
+        --font-small: 18px;
+        --font-xsmall: 14px;
+        --font-xxsmall: 12px;
     }
 }

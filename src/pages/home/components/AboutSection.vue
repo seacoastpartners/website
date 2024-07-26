@@ -118,9 +118,6 @@ section > header {
 }
 
 .card {
-    padding: 24px 28px;
-    background-color: var(--dark-color);
-    border-radius: var(--border-radius);
     min-height: 400px;
     display: flex;
     flex-direction: column;

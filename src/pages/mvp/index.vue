@@ -3,6 +3,8 @@
         <IntroSection />
         <IncludedSection />
         <ProcessSection />
+        <WorkSection />
+        <TestimonialSection />
     </div>
 </template>
 
@@ -10,4 +12,6 @@
 import IntroSection from "./components/IntroSection.vue"
 import IncludedSection from "./components/IncludedSection.vue"
 import ProcessSection from "./components/ProcessSection.vue"
+import WorkSection from "./components/WorkSection.vue"
+import TestimonialSection from "./components/TestimonialSection.vue"
 </script>

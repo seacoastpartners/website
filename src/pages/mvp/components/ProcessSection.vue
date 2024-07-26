@@ -10,8 +10,9 @@
                 <li
                     v-for="step in steps"
                     :key="step.name"
+                    class="fade-in-on-scroll"
                 >
-                    <div class="step fade-in-on-scroll">
+                    <div class="step">
                         <h3 class="text-small">
                             {{ step.name }}
                         </h3>
@@ -86,6 +87,7 @@ section > header {
 }
 
 .stepper > li:before {
+    opacity: inherit;
     content: "";
     position: relative;
     z-index: 1;

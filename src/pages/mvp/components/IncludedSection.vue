@@ -9,22 +9,22 @@
             <div
                 v-for="deliverable in deliverables"
                 :key="deliverable.name"
-                class="card fade-in-on-scroll"
+                class="card flex-column fade-in-on-scroll"
             >
                 <header>
                     <h2 class="text-small font-heavy">
                         {{ deliverable.name }}
                     </h2>
+                    <p class="text-small">
+                        {{ deliverable.summary }}
+                    </p>
                 </header>
                 <div class="content">
-                    <div class="text-xsmall">
-                        {{ deliverable.summary }}
-                    </div>
-                    <ul>
+                    <ul class="flex-column">
                         <li
                             v-for="detail in deliverable.details"
                             :key="detail"
-                            class="text-xsmall"
+                            class="text-xsmall flex-row align-center"
                         >
                             {{ detail }}
                         </li>
@@ -38,27 +38,30 @@
 <script lang="ts" setup>
 const deliverables = [
     {
-        name: "Test 1",
-        summary: "Test summary",
+        name: "Live MVP",
+        summary: "Onboard your first users",
         details: [
-            "Detail 1",
-            "Detail 2"
+            "Minimum awesome product",
+            "Secure server/database",
+            "Privacy-first user management"
         ]
     },
     {
-        name: "Test 2",
-        summary: "Test summary",
+        name: "Quality Codebase",
+        summary: "Avoid technical debt",
         details: [
-            "Detail 1",
-            "Detail 2"
+            "Documented code/workflows",
+            "Reusable components/libraries",
+            "Extensible infrastructure"
         ]
     },
     {
-        name: "Test 3",
-        summary: "Test summary",
+        name: "Extended Support",
+        summary: "Respond to critical requests",
         details: [
-            "Detail 1",
-            "Detail 2"
+            "Cost/performance optimization",
+            "Hot bug fixes",
+            "Developer onboarding"
         ]
     }
 ]
@@ -79,14 +82,25 @@ section > header {
     gap: var(--item-gap);
 }
 
-.grid > div {
-    display: flex;
-    flex-direction: column;
+.card > header > p {
+    margin-block: 0.5em;
 }
 
-.card {
-    padding: 24px 28px;
-    border-radius: var(--border-radius);
-    background-color: var(--dark-color);
+.content > ul {
+    list-style: none;
+    padding-inline-start: 0;
+    gap: var(--item-gap);
+}
+
+.content > ul > li {
+    gap: calc(var(--item-gap) / 2);
+}
+
+.content > ul > li:before {
+    content: "";
+    background-image: url("/check.svg");
+    flex: 0 0 var(--font-xsmall);
+    height: var(--font-xsmall);
+    width: var(--font-xsmall);
 }
 </style>
