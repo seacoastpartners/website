@@ -1,4 +1,4 @@
-<template>
+f<template>
     <section class="max-width">
         <header class="fade-in-on-scroll text-center">
             <h2 class="text-large font-heavy">
@@ -38,10 +38,10 @@
 <script lang="ts" setup>
 const deliverables = [
     {
-        name: "Live MVP",
+        name: "Deployed MVP",
         summary: "Onboard your first users",
         details: [
-            "Minimum awesome product",
+            "Modern UI/UX",
             "Secure server/database",
             "Privacy-first user management"
         ]
@@ -50,14 +50,14 @@ const deliverables = [
         name: "Quality Codebase",
         summary: "Avoid technical debt",
         details: [
-            "Documented code/workflows",
+            "Fully documented codebase",
             "Reusable components/libraries",
             "Extensible infrastructure"
         ]
     },
     {
         name: "Extended Support",
-        summary: "Respond to critical requests",
+        summary: "Get 30 days free support",
         details: [
             "Cost/performance optimization",
             "Hot bug fixes",

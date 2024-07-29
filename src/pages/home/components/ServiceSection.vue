@@ -13,14 +13,7 @@
                 v-for="service in services"
                 :key="service.name"
                 class="card flex-column fade-in-on-scroll"
-                @click="$router.push(service.link)"
             >
-                <div
-                    v-if="service.emphasis"
-                    class="ribbon text-xsmall"
-                >
-                    {{ service.emphasis }}
-                </div>
                 <header>
                     <h2 class="text-small font-heavy">
                         {{ service.name }}
@@ -40,21 +33,12 @@
                         </li>
                     </ul>
                 </div>
-                <footer class="flex-row justify-end">
-                    <Component
-                        :is="service.icon"
-                        class="icon-small"
-                    />
-                </footer>
             </div>
         </div>
     </section>
 </template>
 
 <script lang="ts" setup>
-import ArrowRightIcon from "@heroicons/vue/16/solid/ArrowRightIcon"
-import CalendarDaysIcon from "@heroicons/vue/16/solid/CalendarDaysIcon"
-
 const services = [
     {
         name: "MVP Development",
@@ -68,10 +52,7 @@ const services = [
             "Your differentiating feature",
             "Fully documented, portable code",
             "30 days post completion support"
-        ],
-        icon: ArrowRightIcon,
-        link: { name: "mvp" },
-        emphasis: "Apply Now"
+        ]
     },
     {
         name: "Monthly Development",
@@ -83,13 +64,11 @@ const services = [
             "Weekly syncs",
             "Fully documented, portable code",
             "Pause or cancel anytime (monthly)"
-        ],
-        icon: CalendarDaysIcon,
-        link: { name: "book-meeting" }
+        ]
     },
     {
         name: "Fractional CTO",
-        summary: "Scale your tech venture",
+        summary: "Scale your tech team",
         items: [
             "Project management lead",
             "1 frontend engineer",
@@ -101,9 +80,7 @@ const services = [
             "Weekly syncs",
             "Fully documented, portable code",
             "Pause or cancel anytime (monthly)"
-        ],
-        icon: CalendarDaysIcon,
-        link: { name: "book-meeting" }
+        ]
     }
 ]
 </script>
@@ -123,17 +100,6 @@ section > header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-column-min), 1fr));
     gap: var(--item-gap);
-}
-
-.card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: filter var(--transition-duration) ease-in-out;
-}
-
-.card:hover {
-    filter: brightness(105%);
 }
 
 .card > header > p {
@@ -168,20 +134,5 @@ section > header {
     flex: 0 0 var(--font-xsmall);
     height: var(--font-xsmall);
     width: var(--font-xsmall);
-}
-
-.ribbon {
-    position: absolute;
-    inset: 0 0 auto auto;
-    background: var(--quinary-color);
-    transform-origin: top left;
-    transform: translate(29.3%) rotate(45deg);
-    box-shadow: 0 0 0 999px var(--quinary-color);
-    clip-path: inset(0 -100%);
-}
-
-footer {
-    margin-top: auto;
-    padding-top: 32px;
 }
 </style>
