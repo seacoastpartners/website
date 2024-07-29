@@ -13,13 +13,13 @@
             >
         </video>
         <header class="max-width text-left">
-            <h1 class="title text-xlarge font-heavy">
+            <h1 class="title text-xxlarge font-heavy">
                 Build beautiful.
             </h1>
             <p class="text-small">
                 We build, deploy, and scale your software applications&nbsp;
                 <RouterLink
-                    :to="pricingLink"
+                    :to="servicesLink"
                     class="link"
                 >
                     the right way.
@@ -34,9 +34,9 @@
             <p class="actions flex-row">
                 <RouterLink
                     class="button text-small"
-                    :to="pricingLink"
+                    :to="servicesLink"
                 >
-                    View Pricing
+                    View Services
                 </RouterLink>
                 <RouterLink
                     class="button text-small"
@@ -52,7 +52,7 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted } from "vue"
 
-const pricingLink = { name: "home", hash: "#pricing" }
+const servicesLink = { name: "home", hash: "#services" }
 const bookMeetingLink = { name: "book-meeting" }
 
 function handleTouchStart() {
@@ -76,22 +76,21 @@ onUnmounted(() => {
 <style scoped>
 section {
     position: relative;
-    height: 100vh;
+    height: 100svh;
     min-height: 500px;
     background-image: linear-gradient(to bottom,
         rgba(0, 0, 0, 0.25) 50%,
         rgba(0, 0, 0, 1));
     transition: all var(--transition-duration) ease-in-out;
-    padding: var(--section-padding);
-    padding-top: 48px;
+    padding: var(--layout-padding-y) var(--layout-padding-x) 0 var(--layout-padding-x);
 }
 
 video {
     object-fit: cover;
     position: absolute;
-    height: 100vh;
+    height: 100svh;
+    width: 100svw;
     min-height: 500px;
-    width: 100vw;
     top: 0;
     left: 0;
     z-index: -1;
@@ -189,15 +188,6 @@ header > * {
 }
 
 @media (max-width: 640px) {
-    section {
-        height: 100svh;
-    }
-
-    video {
-        height: 100svh;
-        width: 100svw;
-    }
-
     header > * {
         max-width: 100%;
         text-align: left;

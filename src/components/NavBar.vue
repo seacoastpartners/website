@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul class="max-width flex-row justify-between">
-            <li class="inline-block">
+            <li class="flex-row">
                 <RouterLink :to="homeLink">
                     <img
                         class="logo"
@@ -30,7 +30,7 @@ const bookMeetingLink = { name: "book-meeting" }
 <style scoped>
 nav {
     position: fixed;
-    height: 48px;
+    height: var(--nav-bar-height);
     width: 100%;
     z-index: 20000;
     background-color: unset;

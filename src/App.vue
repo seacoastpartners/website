@@ -7,8 +7,17 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted, onUnmounted } from "vue"
 import DefaultLayout from "@/layouts/DefaultLayout.vue"
 import { useAnimations } from "@/composables/animations"
 
-useAnimations()
+const { handleScroll } = useAnimations()
+
+onMounted(() => {
+    window.addEventListener("scroll", handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll)
+})
 </script>

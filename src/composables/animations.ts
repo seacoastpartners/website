@@ -1,9 +1,4 @@
-import { onMounted, onUnmounted, watch } from "vue"
-import { useRoute } from "vue-router"
-
 export function useAnimations() {
-    const route = useRoute()
-
     function handleScroll() {
         const navElement = document.querySelector("nav")
         if (navElement) {
@@ -15,6 +10,7 @@ export function useAnimations() {
         }
         
         const fadableElements = document.querySelectorAll(".fade-in-on-scroll") as NodeListOf<HTMLElement>
+        console.log(fadableElements)
         fadableElements.forEach(element => {
             const rect = element.getBoundingClientRect()
             const buffer = 100
@@ -28,17 +24,7 @@ export function useAnimations() {
             }
         })
     }
-    
-    onMounted(() => {
-        window.addEventListener("scroll", handleScroll)
-    })
 
-    onUnmounted(() => {
-        window.removeEventListener("scroll", handleScroll)
-    })
-
-    watch(() => route.name, () => {
-        handleScroll()
-    })
+    return { handleScroll }
 }
 
