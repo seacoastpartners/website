@@ -5,13 +5,13 @@
                 Build Your MVP
             </h1>
             <p class="text-small">
-                Go from new idea to product launch in 45 days for $5k.
+                Go from idea to minimum viable product in 45 days for $5k.
             </p>
         </header>
         <div class="video">
             <iframe
                 frameborder="0"
-                src="https://www.youtube.com/embed/fSj-2o2ttAE"
+                src="https://www.youtube.com/embed/0a2uPyg_kXQ"
             />
         </div>
     </section>
