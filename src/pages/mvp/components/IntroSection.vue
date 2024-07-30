@@ -1,3 +1,5 @@
+
+import GradientButton from '@/components/GradientButton.vue';
 <template>
     <section class="max-width">
         <header class="flex-column align-center text-center">
@@ -5,7 +7,7 @@
                 Build Your MVP
             </h1>
             <p class="text-small">
-                Go from idea to minimum viable product in 45 days for $5k.
+                Go from idea to minimum viable product <span class="inline-block">in 45 days for $5k.</span>
             </p>
         </header>
         <div class="video">
@@ -14,8 +16,20 @@
                 src="https://www.youtube.com/embed/0a2uPyg_kXQ"
             />
         </div>
+        <p class="actions flex-row align-center justify-center">
+            <GradientButton
+                text="Apply Now"
+                :to="bookMeetingLink"
+            />
+        </p>
     </section>
 </template>
+
+<script lang="ts" setup>
+import GradientButton from "@/components/GradientButton.vue"
+
+const bookMeetingLink = { name: "book-meeting" }
+</script>
 
 <style scoped>
 section {
@@ -30,9 +44,14 @@ section > header {
     padding: 32px 0;
 }
 
+section > header > p {
+    margin-bottom: 0;
+}
+
 .video {
     position: relative;
     padding-bottom: 56.25%;
+    border-radius: var(--border-radius);
 }
 
 .video > iframe {
@@ -42,5 +61,17 @@ section > header {
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius);
+}
+
+.actions {
+    padding-top: 32px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .video {
+        width: 100%;
+        height: 100%;
+    }
 }
 </style>

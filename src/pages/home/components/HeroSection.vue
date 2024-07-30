@@ -32,24 +32,22 @@
                 >Based in the USA.
             </p>
             <p class="actions flex-row">
-                <RouterLink
-                    class="button text-small"
+                <GradientButton
+                    text="View Services"
                     :to="servicesLink"
-                >
-                    View Services
-                </RouterLink>
-                <RouterLink
-                    class="button text-small"
+                />
+                <TransparentButton
+                    text="Book Meeting"
                     :to="bookMeetingLink"
-                >
-                    Book Meeting
-                </RouterLink>
+                />
             </p>
         </header>
     </section>
 </template>
 
 <script lang="ts" setup>
+import GradientButton from "@/components/GradientButton.vue"
+import TransparentButton from "@/components/TransparentButton.vue"
 import { onMounted, onUnmounted } from "vue"
 
 const servicesLink = { name: "home", hash: "#services" }
@@ -148,43 +146,6 @@ header > * {
 
 .actions {
     gap: 12px;
-}
-
-.button {
-    padding: 6px 12px;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    color: white;
-}
-
-.button:first-child {
-    border: 1px solid var(--primary-color);
-    background-image: linear-gradient(90deg,
-        var(--quinary-color) 0%,
-        var(--quaternary-color) 20%,
-        var(--tertiary-color) 40%,
-        var(--secondary-color) 60%,
-        var(--primary-color) 100%);
-    background-position: right top;
-    background-size: 100% auto;
-    transition: background-size var(--transition-duration) ease-in-out;
-}
-
-.button:first-child:hover {
-    background-size: 400% auto;
-    background-color: var(--secondary-color);
-}
-
-.button:last-child {
-    border: 1px solid white;
-    transition: color var(--transition-duration) ease-in-out;
-    transition: background-color var(--transition-duration) ease-in-out;
-}
-
-.button:last-child:hover {
-    color: black;
-    background-color: white;
 }
 
 @media (max-width: 640px) {

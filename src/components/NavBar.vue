@@ -10,12 +10,15 @@
                     >
                 </RouterLink>
             </li>
-            <li class="flex-row">
+            <li
+                v-if="$route.name !== 'book-meeting'"
+                class="flex-row"
+            >
                 <RouterLink
                     class="button text-xsmall"
                     :to="bookMeetingLink"
                 >
-                    Book Meeting
+                    {{ bookMeetingText }}
                 </RouterLink>
             </li>
         </ul>
@@ -23,7 +26,17 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from "vue"
+import { useRoute } from "vue-router"
+
+const route = useRoute()
 const homeLink = { name: "home" }
+const bookMeetingText = computed(() => {
+    if (route.name === "mvp") {
+        return "Apply Now"
+    }
+    return "Book Meeting"
+})
 const bookMeetingLink = { name: "book-meeting" }
 </script>
 

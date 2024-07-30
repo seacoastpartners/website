@@ -22,19 +22,19 @@
                     </div>
                 </li>
             </ol>
-            <div class="flex-column align-center justify-center fade-in-on-scroll">
-                <RouterLink
-                    class="button text-small"
+            <p class="flex-column align-center justify-center fade-in-on-scroll">
+                <GradientButton
+                    text="Apply Now"
                     :to="bookMeetingLink"
-                >
-                    Apply Now
-                </RouterLink>
-            </div>
+                />
+            </p>
         </div>
     </section>
 </template>
 
 <script lang="ts" setup>
+import GradientButton from "@/components/GradientButton.vue"
+
 const bookMeetingLink = { name: "book-meeting" }
 const steps = [
     {
@@ -121,29 +121,6 @@ section > header {
     width: var(--line-width);
     border-radius: var(--border-radius);
     background-color: var(--dark-color);
-}
-
-.button {
-    padding: 6px 12px;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    color: white;
-    border: 1px solid var(--primary-color);
-    background-image: linear-gradient(90deg,
-        var(--quinary-color) 0%,
-        var(--quaternary-color) 20%,
-        var(--tertiary-color) 40%,
-        var(--secondary-color) 60%,
-        var(--primary-color) 100%);
-    background-position: right top;
-    background-size: 100% auto;
-    transition: background-size var(--transition-duration) ease-in-out;
-}
-
-.button:hover {
-    background-size: 400% auto;
-    background-color: var(--secondary-color);
 }
 
 @media (max-width: 640px) {
