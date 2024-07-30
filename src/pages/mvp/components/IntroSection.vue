@@ -4,7 +4,7 @@
             <h1 class="text-xlarge font-heavy">
                 Build Your MVP
             </h1>
-            <p class="text-small">
+            <p class="subtitle text-small">
                 Go from idea to minimum viable product in 45 days for $5k.
             </p>
         </header>
@@ -27,12 +27,17 @@ section {
 }
 
 section > header {
-    padding: 32px 0;
+    padding: 16px 0;
+}
+
+.subtitle {
+    margin: 16px 0;
 }
 
 .video {
     position: relative;
     padding-bottom: 56.25%;
+    margin-bottom: 16px;
 }
 
 .video > iframe {
