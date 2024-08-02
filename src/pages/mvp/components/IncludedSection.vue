@@ -57,7 +57,7 @@ const deliverables = [
     },
     {
         name: "Extended Support",
-        summary: "Get 30 days free support",
+        summary: "Get 15 days free support",
         details: [
             "Cost/performance optimization",
             "Hot bug fixes",
