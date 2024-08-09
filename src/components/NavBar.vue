@@ -5,20 +5,17 @@
                 <RouterLink :to="homeLink">
                     <img
                         class="logo"
-                        src="/logo-white.svg"
-                        alt="Seacoast Technical Partners"
+                        src="/stp.svg"
+                        alt="STP"
                     >
                 </RouterLink>
             </li>
-            <li
-                v-if="$route.name !== 'book-meeting'"
-                class="flex-row"
-            >
+            <li class="flex-row">
                 <RouterLink
                     class="button text-xsmall"
                     :to="bookMeetingLink"
                 >
-                    {{ bookMeetingText }}
+                    {{ $route.path.includes("mvp") ? "Apply Now" : "Book Meeting" }}
                 </RouterLink>
             </li>
         </ul>
@@ -26,17 +23,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from "vue"
-import { useRoute } from "vue-router"
-
-const route = useRoute()
 const homeLink = { name: "home" }
-const bookMeetingText = computed(() => {
-    if (route.name === "mvp") {
-        return "Apply Now"
-    }
-    return "Book Meeting"
-})
 const bookMeetingLink = { name: "book-meeting" }
 </script>
 
