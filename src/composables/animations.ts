@@ -10,7 +10,6 @@ export function useAnimations() {
         }
         
         const fadableElements = document.querySelectorAll(".fade-in-on-scroll") as NodeListOf<HTMLElement>
-        console.log(fadableElements)
         fadableElements.forEach(element => {
             const rect = element.getBoundingClientRect()
             const buffer = 100

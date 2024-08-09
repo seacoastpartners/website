@@ -19,7 +19,7 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm run build
+        run: npm run generate
 
       - name: Deploy website to firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
