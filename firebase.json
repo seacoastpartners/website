@@ -3,6 +3,14 @@
         "public": "dist",
         "rewrites": [
             {
+                "source": "/book-meeting",
+                "destination": "/book-meeting.html"
+            },
+            {
+                "source": "/mvp",
+                "destination": "/mvp.html"
+            },
+            {
                 "source": "**",
                 "destination": "/index.html"
             }
