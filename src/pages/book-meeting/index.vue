@@ -16,8 +16,15 @@
 import { useHead } from "@unhead/vue"
 import { onMounted, onUnmounted } from "vue"
 
+const title = "STP | Book a meeting with us."
 useHead({
-    title: "STP | Book a meeting with us."
+    title,
+    meta: [
+        {
+            name: "og:title",
+            content: title
+        }
+    ]
 })
 
 function handleLoad() {

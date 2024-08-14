@@ -18,7 +18,14 @@ import TestimonialSection from "./components/TestimonialSection.vue"
 import AboutSection from "./components/AboutSection.vue"
 import { useHead } from "@unhead/vue"
 
+const title = "STP | We build, deploy, and scale your software applications the right way."
 useHead({
-    title: "STP | We build, deploy, and scale your software applications the right way."
+    title,
+    meta: [
+        {
+            name: "og:title",
+            content: title
+        }
+    ]
 })
 </script>

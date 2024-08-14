@@ -16,7 +16,14 @@ import WorkSection from "./components/WorkSection.vue"
 import TestimonialSection from "./components/TestimonialSection.vue"
 import { useHead } from "@unhead/vue"
 
+const title = "STP | Build your MVP in 45 days for $5k."
 useHead({
-    title: "STP | Build your MVP in 45 days for $5k."
+    title,
+    meta: [
+        {
+            name: "og:title",
+            content: title
+        }
+    ]
 })
 </script>
