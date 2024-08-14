@@ -1,5 +1,3 @@
-
-import GradientButton from '@/components/GradientButton.vue';
 <template>
     <section class="max-width">
         <header class="flex-column align-center text-center">

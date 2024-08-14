@@ -13,12 +13,10 @@
 </template>
 
 <script lang="ts" setup>
-import { useHead } from "@unhead/vue"
+import { useMeta } from "@/composables/meta"
 import { onMounted, onUnmounted } from "vue"
 
-useHead({
-    title: "STP | Book a meeting with us."
-})
+useMeta("Book a meeting with us.")
 
 function handleLoad() {
     const container: HTMLDivElement = document.querySelector("#form")

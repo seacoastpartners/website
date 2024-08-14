@@ -14,9 +14,7 @@ import IncludedSection from "./components/IncludedSection.vue"
 import ProcessSection from "./components/ProcessSection.vue"
 import WorkSection from "./components/WorkSection.vue"
 import TestimonialSection from "./components/TestimonialSection.vue"
-import { useHead } from "@unhead/vue"
+import { useMeta } from "@/composables/meta"
 
-useHead({
-    title: "STP | Build your MVP in 45 days for $5k."
-})
+useMeta("Build your MVP in 45 days for $5k.")
 </script>

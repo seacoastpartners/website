@@ -16,9 +16,7 @@ import ServiceSection from "./components/ServiceSection.vue"
 import WorkSection from "./components/WorkSection.vue"
 import TestimonialSection from "./components/TestimonialSection.vue"
 import AboutSection from "./components/AboutSection.vue"
-import { useHead } from "@unhead/vue"
+import { useMeta } from "@/composables/meta"
 
-useHead({
-    title: "STP | We build, deploy, and scale your software applications the right way."
-})
+useMeta("We build, deploy, and scale your software applications the right way.")
 </script>
