@@ -21,6 +21,14 @@ useHead({
     title,
     meta: [
         {
+            name: "title",
+            content: title
+        },
+        {
+            name: "og:title",
+            content: title
+        },
+        {
             name: "description",
             content: title
         },
