@@ -16,5 +16,5 @@ import WorkSection from "./components/WorkSection.vue"
 import TestimonialSection from "./components/TestimonialSection.vue"
 import { useMeta } from "@/composables/meta"
 
-useMeta("Build your MVP in 45 days for $5k.")
+useMeta({ page: "Build your MVP in 45 days for $5k.", path: "/mvp" })
 </script>
