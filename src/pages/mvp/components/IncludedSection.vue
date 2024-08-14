@@ -1,4 +1,4 @@
-f<template>
+<template>
     <section class="max-width">
         <header class="fade-in-on-scroll text-center">
             <h2 class="text-large font-heavy">
