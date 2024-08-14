@@ -16,7 +16,7 @@ import WorkSection from "./components/WorkSection.vue"
 import TestimonialSection from "./components/TestimonialSection.vue"
 import { useHead } from "@unhead/vue"
 
-const title = "STP | Build your MVP in 45 days for $5k. | Longer description to hit the 100 character minimum for LinkedIn preview."
+const title = "STP | Build your MVP in 45 days for $5k."
 useHead({
     title,
     meta: [
