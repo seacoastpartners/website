@@ -13,9 +13,9 @@
             <li class="flex-row">
                 <RouterLink
                     class="button text-xsmall"
-                    :to="bookMeetingLink"
+                    :to="startBuildingLink"
                 >
-                    {{ $route.path.includes("mvp") ? "Apply Now" : "Book Meeting" }}
+                    Start Building
                 </RouterLink>
             </li>
         </ul>
@@ -24,7 +24,7 @@
 
 <script lang="ts" setup>
 const homeLink = { name: "home" }
-const bookMeetingLink = { name: "book-meeting" }
+const startBuildingLink = { name: "start-building" }
 </script>
 
 <style scoped>

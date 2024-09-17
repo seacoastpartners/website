@@ -16,7 +16,7 @@
 import { useMeta } from "@/composables/meta"
 import { onMounted, onUnmounted } from "vue"
 
-useMeta({ page: "Book a meeting with us.", path: "/book-meeting" })
+useMeta({ page: "Start building with us.", path: "/start-building" })
 
 function handleLoad() {
     const container: HTMLDivElement = document.querySelector("#form")

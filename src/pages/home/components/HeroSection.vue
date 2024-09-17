@@ -14,16 +14,10 @@
         </video>
         <header class="max-width text-left">
             <h1 class="title text-xxlarge font-heavy">
-                Build beautiful.
+                Build beautiful apps fast.
             </h1>
             <p class="text-small">
-                We build, deploy, and scale your software applications&nbsp;
-                <RouterLink
-                    :to="servicesLink"
-                    class="link"
-                >
-                    the right way.
-                </RouterLink>
+                Team with us to build, launch, and scale quality apps that delight your users.
             </p>
             <p class="text-xsmall">
                 <img
@@ -33,12 +27,8 @@
             </p>
             <p class="actions flex-row">
                 <GradientButton
-                    text="View Services"
-                    :to="servicesLink"
-                />
-                <TransparentButton
-                    text="Book Meeting"
-                    :to="bookMeetingLink"
+                    text="Start Building"
+                    :to="startBuildingLink"
                 />
             </p>
         </header>
@@ -47,11 +37,9 @@
 
 <script lang="ts" setup>
 import GradientButton from "@/components/GradientButton.vue"
-import TransparentButton from "@/components/TransparentButton.vue"
 import { onMounted, onUnmounted } from "vue"
 
-const servicesLink = { name: "home", hash: "#services" }
-const bookMeetingLink = { name: "book-meeting" }
+const startBuildingLink = { name: "start-building" }
 
 function handleTouchStart() {
     const video = document.querySelector("video") as HTMLVideoElement
