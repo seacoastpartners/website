@@ -18,5 +18,5 @@ import TestimonialSection from "./components/TestimonialSection.vue"
 import AboutSection from "./components/AboutSection.vue"
 import { useMeta } from "@/composables/meta"
 
-useMeta({ page: "Build, launch, and scale products to delight your users now." })
+useMeta({ page: "Build, launch, and scale quality apps that delight your users." })
 </script>
